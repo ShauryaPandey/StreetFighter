@@ -1,9 +1,0 @@
-<map id="Game/include/impactinfo.h" name="Game/include/impactinfo.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="36,5,212,32"/>
-<area shape="rect" id="Node000002" href="$_object_8h.html" title=" " alt="" coords="18,80,88,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,34,78,71,74,67,109,31"/>
-<area shape="rect" id="Node000004" href="$gameplaystatemanager_8h.html" title=" " alt="" coords="112,80,279,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,31,174,67,171,71,134,34"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,101,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="56,107,56,139,50,139,50,107"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="_faceUpdateMood" name="_faceUpdateMood">
-<area shape="rect" id="Node000001" title="Choose a random mood." alt="" coords="5,5,133,32"/>
-<area shape="rect" id="Node000002" href="$random_8c.html#a7e26156708e5570097073702725db637" title="Return a random 32&#45;bit value in the specified range." alt="" coords="181,5,263,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,16,165,16,165,21,133,21"/>
-</map>

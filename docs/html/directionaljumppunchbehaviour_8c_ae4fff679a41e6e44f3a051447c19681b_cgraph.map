@@ -1,7 +1,0 @@
-<map id="DirectionalJumpPunch_CanStart" name="DirectionalJumpPunch_CanStart">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,158,65"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="206,5,431,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,33,190,30,190,35,159,38"/>
-<area shape="rect" id="Node000003" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="224,56,413,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,50,209,55,208,60,158,55"/>
-</map>

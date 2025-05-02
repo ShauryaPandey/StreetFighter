@@ -1,7 +1,0 @@
-<map id="Retract_CanStart" name="Retract_CanStart">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,129,57"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="177,5,402,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,34,161,31,161,36,129,40"/>
-<area shape="rect" id="Node000003" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="195,56,384,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,48,179,54,179,59,129,54"/>
-</map>

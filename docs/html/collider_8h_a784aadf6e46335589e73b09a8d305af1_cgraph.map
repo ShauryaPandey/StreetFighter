@@ -1,5 +1,0 @@
-<map id="Collider_OnCollisionEnter" name="Collider_OnCollisionEnter">
-<area shape="rect" id="Node000001" title="When 2 objects collide, this function runs and calls onCOllisionEnter overriden logic in the objects." alt="" coords="5,13,176,40"/>
-<area shape="rect" id="Node000002" href="$collider_8c.html#aa4232b096684beb652106a672fd270f5" title="DO we even need this? Maybe not. I don&#39;t think there is a default reaction to collision in my applica..." alt="" coords="224,5,394,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,24,208,24,208,29,176,29"/>
-</map>

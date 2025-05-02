@@ -1,9 +1,0 @@
-<map id="_ballCollideField" name="_ballCollideField">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,122,57"/>
-<area shape="rect" id="Node000002" href="$ball_8c.html#a876408006bf6be2913a2d1a6d1324a1a" title="Sets the color of the ball to a random RGB." alt="" coords="170,5,318,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,33,154,29,155,34,122,38"/>
-<area shape="rect" id="Node000004" href="$ball_8c.html#a98e76aa61ca5c824a4f00af99fd8983b" title="Triggers the callback, if one is registered." alt="" coords="170,56,318,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,50,155,54,154,59,122,55"/>
-<area shape="rect" id="Node000003" href="$random_8c.html#a7e26156708e5570097073702725db637" title="Return a random 32&#45;bit value in the specified range." alt="" coords="366,5,448,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,16,350,16,350,21,318,21"/>
-</map>

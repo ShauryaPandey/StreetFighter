@@ -1,5 +1,0 @@
-<map id="setHealthBar" name="setHealthBar">
-<area shape="rect" id="Node000001" title="Set it to a certain value. Gives us the capability to update the health bar every frame even if it is..." alt="" coords="178,5,275,32"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#a4d88a13c4a85f784963a0d29d136abbc" title=" " alt="" coords="5,5,130,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,21,130,21,130,16,162,16"/>
-</map>

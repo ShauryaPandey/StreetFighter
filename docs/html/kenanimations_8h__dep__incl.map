@@ -1,7 +1,0 @@
-<map id="Game/include/kenanimations.h" name="Game/include/kenanimations.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="73,5,274,32"/>
-<area shape="rect" id="Node000002" href="$animation_8c.html" title=" " alt="" coords="5,80,155,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,44,98,82,94,77,143,40"/>
-<area shape="rect" id="Node000003" href="$kenanimations_8c.html" title=" " alt="" coords="179,80,357,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,40,253,77,250,82,200,44"/>
-</map>

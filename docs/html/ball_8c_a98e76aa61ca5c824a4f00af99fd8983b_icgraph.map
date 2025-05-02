@@ -1,9 +1,0 @@
-<map id="_ballTriggerCollideCB" name="_ballTriggerCollideCB">
-<area shape="rect" id="Node000001" title="Triggers the callback, if one is registered." alt="" coords="478,5,626,32"/>
-<area shape="rect" id="Node000002" href="$ball_8c.html#adbc02f72caa0f3a8edcc8cb7d3150b59" title=" " alt="" coords="314,5,430,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="463,21,431,21,431,16,463,16"/>
-<area shape="rect" id="Node000003" href="$ball_8c.html#a811f01dadcf181512a317a15eada5ba8" title=" " alt="" coords="144,5,266,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,21,267,21,267,16,298,16"/>
-<area shape="rect" id="Node000004" href="$ball_8c.html#aebbd0862c45d74863ece4cbf68e102e6" title="Mainly process ball collisions." alt="" coords="5,5,96,32"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="128,21,96,21,96,16,128,16"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="objMgrInit" name="objMgrInit">
-<area shape="rect" id="Node000001" title="Initialize the object manager." alt="" coords="5,56,84,83"/>
-<area shape="rect" id="Node000002" href="$object_8c.html#aedfb2e22326e2d0d452931a37173cf37" title="Enable callback to a registrar on ObjInit/Deinit." alt="" coords="132,5,280,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,55,145,35,147,40,85,60"/>
-<area shape="rect" id="Node000003" href="$objmgr_8c.html#a621786e10695206cc43da15ec9fad703" title="Add an object to be tracked by the manager." alt="" coords="164,56,248,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="84,67,149,67,149,72,84,72"/>
-<area shape="rect" id="Node000004" href="$objmgr_8c.html#a50f6e451e7e4694458d8c1b01df750a7" title="Remove an object from the manager&#39;s tracking." alt="" coords="151,107,260,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="85,79,147,99,145,104,83,84"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="Game/include/crouchblockbehaviour.h" name="Game/include/crouchblockbehaviour.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,248,32"/>
-<area shape="rect" id="Node000002" href="$_object_8h.html" title=" " alt="" coords="91,80,162,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,33,129,64,124,64,124,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="79,155,174,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,107,129,139,124,139,124,107"/>
-</map>

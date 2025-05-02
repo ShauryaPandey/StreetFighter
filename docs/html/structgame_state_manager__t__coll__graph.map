@@ -1,3 +1,0 @@
-<map id="gameStateManager_t" name="gameStateManager_t">
-<area shape="rect" id="Node000001" title="This is like a state machine that keeps track of which state the game is in. Its data is used to make..." alt="" coords="5,5,140,96"/>
-</map>

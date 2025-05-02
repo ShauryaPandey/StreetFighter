@@ -1,5 +1,0 @@
-<map id="animation_t" name="animation_t">
-<area shape="rect" id="Node000001" title="Animation struct holds the array of frames that define that animation." alt="" coords="15,181,93,251"/>
-<area shape="rect" id="Node000002" href="$structframe__t.html" title="A frame of animation holds information that identify it in a sprite sheet." alt="" coords="5,5,102,117"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,117,56,164,51,164,51,117"/>
-</map>

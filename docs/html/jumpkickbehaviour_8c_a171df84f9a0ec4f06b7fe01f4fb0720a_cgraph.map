@@ -1,7 +1,0 @@
-<map id="JumpKick_CanStart" name="JumpKick_CanStart">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,144,57"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="192,5,417,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,34,176,30,176,35,144,39"/>
-<area shape="rect" id="Node000003" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="210,56,399,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,49,195,55,194,60,144,54"/>
-</map>

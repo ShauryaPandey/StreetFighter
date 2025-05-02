@@ -1,9 +1,0 @@
-<map id="GameplayController_Update" name="GameplayController_Update">
-<area shape="rect" id="Node000001" title="This is the function/system where current running action on the gameplay component is executed...." alt="" coords="5,48,142,91"/>
-<area shape="rect" id="Node000002" href="$gameplaycomponenthelpers_8c.html#a62c48c09baf2b875a8d2a08fa5f0d411" title="Calls the cleanup function and removes it." alt="" coords="190,5,373,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,50,208,34,209,39,143,55"/>
-<area shape="rect" id="Node000003" href="$gameplaycomponenthelpers_8c.html#a78436e44c52a9e401567346c2b737e36" title="Tries to remove the current action if it has finished." alt="" coords="197,56,366,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,67,181,67,181,72,142,72"/>
-<area shape="rect" id="Node000004" href="$gameplaycomponenthelpers_8c.html#a9acd9f4849c2e93c9e5f9d641db9d60c" title="When you want to put a new action as current action." alt="" coords="210,107,353,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,83,209,100,208,105,141,89"/>
-</map>

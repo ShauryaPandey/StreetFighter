@@ -1,9 +1,0 @@
-<map id="hadoukenNew" name="hadoukenNew">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,110,83"/>
-<area shape="rect" id="Node000002" href="$hadouken_8c.html#a4786a49394d5be47f5bf9ae8579c2b6b" title="Initialize the animation component of the hadouken when it is initialized." alt="" coords="158,5,381,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,53,157,41,191,33,192,39,158,47,111,59"/>
-<area shape="rect" id="Node000003" href="$impactinfo_8c.html#a54c9eef49b7f7f5b67e18b0d35bd2ebc" title="Initializes the impact info component. On all characters." alt="" coords="219,56,320,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,67,203,67,203,72,110,72"/>
-<area shape="rect" id="Node000004" href="$object_8c.html#af67e10c57aec1b3d4efc70f40af0a0b3" title="Initialize an object. Intended to be called from subclass constructors." alt="" coords="241,107,298,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="111,80,158,92,227,108,225,113,157,97,109,85"/>
-</map>
