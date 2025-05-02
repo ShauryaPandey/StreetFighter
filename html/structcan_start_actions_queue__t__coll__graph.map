@@ -1,0 +1,20 @@
+<map id="canStartActionsQueue_t" name="canStartActionsQueue_t">
+<area shape="rect" id="Node000001" title="Not used in current application but this looks like a possibility if I want to expand the game." alt="" coords="505,480,658,571"/>
+<area shape="rect" id="Node000002" href="$structaction__t.html" title="You can think of an action as a base behaviour or as the actual thing that runs the functionality...." alt="" coords="546,304,616,416"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="584,416,584,463,579,463,579,416"/>
+<area shape="rect" id="Node000003" href="$structobject__t.html" title=" " alt="" coords="191,5,263,160"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="263,89,303,101,350,120,396,146,435,182,448,208,450,231,451,254,462,278,495,311,533,335,530,339,491,315,457,282,446,255,444,232,443,209,431,186,393,151,347,124,301,106,262,94"/>
+<area shape="rect" id="Node000004" href="$structobject__vtable__t.html" title=" " alt="" coords="5,325,104,395"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="191,93,152,105,109,123,67,149,50,166,35,185,24,215,22,247,27,279,35,309,30,310,22,280,17,247,19,214,31,183,46,162,64,145,106,118,151,99,190,88"/>
+<area shape="rect" id="Node000006" href="$structcollision_info__t.html" title="The information about the other object which has collided with this collider." alt="" coords="145,325,236,395"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="200,160,195,184,189,249,190,308,184,308,184,249,190,184,195,159"/>
+<area shape="rect" id="Node000007" href="$structcollider__vtable__t.html" title="The collider vtable." alt="" coords="260,325,364,395"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="237,159,248,219,266,279,281,310,277,312,262,281,243,220,232,160"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="64,324,91,257,132,183,177,128,181,131,137,185,96,259,69,327"/>
+<area shape="rect" id="Node000005" href="$structcollider__t.html" title="An object that wants to participate in collisions must own a collider. It holds information about the..." alt="" coords="281,491,343,560"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="339,489,362,455,399,381,413,349,423,318,427,288,425,256,416,222,398,185,374,156,344,132,310,114,278,101,280,96,312,109,346,127,378,152,402,183,421,221,431,255,433,288,428,319,418,351,404,384,366,457,344,492"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="218,393,279,475,275,478,213,396"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="315,395,315,473,309,473,309,395"/>
+<area shape="rect" id="Node000008" href="$structpayload__t.html" title="Might need to recover to old state or store some variables between function calls for the controller ..." alt="" coords="598,37,666,128"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="630,128,605,280,604,288,598,287,600,280,624,127"/>
+</map>

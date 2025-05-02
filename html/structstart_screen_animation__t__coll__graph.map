@@ -1,0 +1,5 @@
+<map id="startScreenAnimation_t" name="startScreenAnimation_t">
+<area shape="rect" id="Node000001" title="Animations for the start screen." alt="" coords="5,181,152,251"/>
+<area shape="rect" id="Node000002" href="$structstart_screen_frame__t.html" title="In Street fighter, background moves to adjust the 2 players in the same screen space." alt="" coords="12,5,145,117"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,117,81,164,76,164,76,117"/>
+</map>

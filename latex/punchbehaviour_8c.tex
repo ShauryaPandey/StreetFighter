@@ -1,0 +1,160 @@
+\doxysection{Game/src/punchbehaviour.c File Reference}
+\hypertarget{punchbehaviour_8c}{}\label{punchbehaviour_8c}\index{Game/src/punchbehaviour.c@{Game/src/punchbehaviour.c}}
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}input.\+h\"{}}\newline
+{\ttfamily \#include \"{}keycodes.\+h\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for punchbehaviour.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{punchbehaviour_8c_a2dfab8647e29a1d909e566b41a7bdf82}{Punch\+Action\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{punchbehaviour_8c_a595296a12d584d8e4b41a81a04b7b0bb}{Punch\+Action\+\_\+\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{punchbehaviour_8c_abe188bd02635c2eb2366cb67ead05257}{Punch\+Action\+\_\+\+Gameplay\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{punchbehaviour_8c_afa11d9cf38aed518e7b7a2026ea3aa5d}{Punch\+Action\+\_\+\+Gameplay\+Cleanup}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{punchbehaviour_8c_a48cfbe17ea1e30f9e4ac583a9146fc54}{Punch\+Action\+\_\+\+Animation\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{punchbehaviour_8c_a178505defefc698a1747be4b1054a8e3}{Punch\+\_\+\+Anim\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{punchbehaviour_8c_a178505defefc698a1747be4b1054a8e3}\label{punchbehaviour_8c_a178505defefc698a1747be4b1054a8e3} 
+\index{punchbehaviour.c@{punchbehaviour.c}!Punch\_AnimOnStart@{Punch\_AnimOnStart}}
+\index{Punch\_AnimOnStart@{Punch\_AnimOnStart}!punchbehaviour.c@{punchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{Punch\_AnimOnStart()}{Punch\_AnimOnStart()}}
+{\footnotesize\ttfamily void Punch\+\_\+\+Anim\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c_a178505defefc698a1747be4b1054a8e3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c_a178505defefc698a1747be4b1054a8e3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{punchbehaviour_8c_a48cfbe17ea1e30f9e4ac583a9146fc54}\label{punchbehaviour_8c_a48cfbe17ea1e30f9e4ac583a9146fc54} 
+\index{punchbehaviour.c@{punchbehaviour.c}!PunchAction\_AnimationController@{PunchAction\_AnimationController}}
+\index{PunchAction\_AnimationController@{PunchAction\_AnimationController}!punchbehaviour.c@{punchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{PunchAction\_AnimationController()}{PunchAction\_AnimationController()}}
+{\footnotesize\ttfamily void Punch\+Action\+\_\+\+Animation\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c_a48cfbe17ea1e30f9e4ac583a9146fc54_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{punchbehaviour_8c_a2dfab8647e29a1d909e566b41a7bdf82}\label{punchbehaviour_8c_a2dfab8647e29a1d909e566b41a7bdf82} 
+\index{punchbehaviour.c@{punchbehaviour.c}!PunchAction\_CanStart@{PunchAction\_CanStart}}
+\index{PunchAction\_CanStart@{PunchAction\_CanStart}!punchbehaviour.c@{punchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{PunchAction\_CanStart()}{PunchAction\_CanStart()}}
+{\footnotesize\ttfamily bool Punch\+Action\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c_a2dfab8647e29a1d909e566b41a7bdf82_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c_a2dfab8647e29a1d909e566b41a7bdf82_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{punchbehaviour_8c_afa11d9cf38aed518e7b7a2026ea3aa5d}\label{punchbehaviour_8c_afa11d9cf38aed518e7b7a2026ea3aa5d} 
+\index{punchbehaviour.c@{punchbehaviour.c}!PunchAction\_GameplayCleanup@{PunchAction\_GameplayCleanup}}
+\index{PunchAction\_GameplayCleanup@{PunchAction\_GameplayCleanup}!punchbehaviour.c@{punchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{PunchAction\_GameplayCleanup()}{PunchAction\_GameplayCleanup()}}
+{\footnotesize\ttfamily void Punch\+Action\+\_\+\+Gameplay\+Cleanup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c_afa11d9cf38aed518e7b7a2026ea3aa5d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c_afa11d9cf38aed518e7b7a2026ea3aa5d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{punchbehaviour_8c_abe188bd02635c2eb2366cb67ead05257}\label{punchbehaviour_8c_abe188bd02635c2eb2366cb67ead05257} 
+\index{punchbehaviour.c@{punchbehaviour.c}!PunchAction\_GameplayController@{PunchAction\_GameplayController}}
+\index{PunchAction\_GameplayController@{PunchAction\_GameplayController}!punchbehaviour.c@{punchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{PunchAction\_GameplayController()}{PunchAction\_GameplayController()}}
+{\footnotesize\ttfamily void Punch\+Action\+\_\+\+Gameplay\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c_abe188bd02635c2eb2366cb67ead05257_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c_abe188bd02635c2eb2366cb67ead05257_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{punchbehaviour_8c_a595296a12d584d8e4b41a81a04b7b0bb}\label{punchbehaviour_8c_a595296a12d584d8e4b41a81a04b7b0bb} 
+\index{punchbehaviour.c@{punchbehaviour.c}!PunchAction\_OnStart@{PunchAction\_OnStart}}
+\index{PunchAction\_OnStart@{PunchAction\_OnStart}!punchbehaviour.c@{punchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{PunchAction\_OnStart()}{PunchAction\_OnStart()}}
+{\footnotesize\ttfamily void Punch\+Action\+\_\+\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c_a595296a12d584d8e4b41a81a04b7b0bb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{punchbehaviour_8c_a595296a12d584d8e4b41a81a04b7b0bb_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,141 @@
+\doxysection{Game/src/crouchbehaviour.c File Reference}
+\hypertarget{crouchbehaviour_8c}{}\label{crouchbehaviour_8c}\index{Game/src/crouchbehaviour.c@{Game/src/crouchbehaviour.c}}
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}input.\+h\"{}}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for crouchbehaviour.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchbehaviour_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{crouchbehaviour_8c_a48eb9aeb07018ca7cfb06f82c1999b1d}{Crouch\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Crouching basic behaviour. The character plays the crouch animation and its size also reduces accordingly Ken and Ryu can have separate can\+Start functions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{crouchbehaviour_8c_a0990281a9d208d8befd141390ace3cae}{Crouch\+\_\+\+Gameplay\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{crouchbehaviour_8c_ac2997780972f8ffe411fe37861924a16}{Crouch\+\_\+\+Gameplay\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{crouchbehaviour_8c_aa74b4d22cac12adba2221322fa128301}{Crouch\+\_\+\+Anim\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{crouchbehaviour_8c_aa5613988eeacbf39e71e1a5029aa177e}{Crouch\+\_\+\+Gameplay\+Cleanup}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{crouchbehaviour_8c_aa74b4d22cac12adba2221322fa128301}\label{crouchbehaviour_8c_aa74b4d22cac12adba2221322fa128301} 
+\index{crouchbehaviour.c@{crouchbehaviour.c}!Crouch\_AnimOnStart@{Crouch\_AnimOnStart}}
+\index{Crouch\_AnimOnStart@{Crouch\_AnimOnStart}!crouchbehaviour.c@{crouchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{Crouch\_AnimOnStart()}{Crouch\_AnimOnStart()}}
+{\footnotesize\ttfamily void Crouch\+\_\+\+Anim\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchbehaviour_8c_aa74b4d22cac12adba2221322fa128301_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchbehaviour_8c_aa74b4d22cac12adba2221322fa128301_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{crouchbehaviour_8c_a48eb9aeb07018ca7cfb06f82c1999b1d}\label{crouchbehaviour_8c_a48eb9aeb07018ca7cfb06f82c1999b1d} 
+\index{crouchbehaviour.c@{crouchbehaviour.c}!Crouch\_CanStart@{Crouch\_CanStart}}
+\index{Crouch\_CanStart@{Crouch\_CanStart}!crouchbehaviour.c@{crouchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{Crouch\_CanStart()}{Crouch\_CanStart()}}
+{\footnotesize\ttfamily bool Crouch\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Crouching basic behaviour. The character plays the crouch animation and its size also reduces accordingly Ken and Ryu can have separate can\+Start functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchbehaviour_8c_a48eb9aeb07018ca7cfb06f82c1999b1d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchbehaviour_8c_a48eb9aeb07018ca7cfb06f82c1999b1d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{crouchbehaviour_8c_aa5613988eeacbf39e71e1a5029aa177e}\label{crouchbehaviour_8c_aa5613988eeacbf39e71e1a5029aa177e} 
+\index{crouchbehaviour.c@{crouchbehaviour.c}!Crouch\_GameplayCleanup@{Crouch\_GameplayCleanup}}
+\index{Crouch\_GameplayCleanup@{Crouch\_GameplayCleanup}!crouchbehaviour.c@{crouchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{Crouch\_GameplayCleanup()}{Crouch\_GameplayCleanup()}}
+{\footnotesize\ttfamily void Crouch\+\_\+\+Gameplay\+Cleanup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchbehaviour_8c_aa5613988eeacbf39e71e1a5029aa177e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{crouchbehaviour_8c_ac2997780972f8ffe411fe37861924a16}\label{crouchbehaviour_8c_ac2997780972f8ffe411fe37861924a16} 
+\index{crouchbehaviour.c@{crouchbehaviour.c}!Crouch\_GameplayController@{Crouch\_GameplayController}}
+\index{Crouch\_GameplayController@{Crouch\_GameplayController}!crouchbehaviour.c@{crouchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{Crouch\_GameplayController()}{Crouch\_GameplayController()}}
+{\footnotesize\ttfamily void Crouch\+\_\+\+Gameplay\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchbehaviour_8c_ac2997780972f8ffe411fe37861924a16_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{crouchbehaviour_8c_a0990281a9d208d8befd141390ace3cae}\label{crouchbehaviour_8c_a0990281a9d208d8befd141390ace3cae} 
+\index{crouchbehaviour.c@{crouchbehaviour.c}!Crouch\_GameplayOnStart@{Crouch\_GameplayOnStart}}
+\index{Crouch\_GameplayOnStart@{Crouch\_GameplayOnStart}!crouchbehaviour.c@{crouchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{Crouch\_GameplayOnStart()}{Crouch\_GameplayOnStart()}}
+{\footnotesize\ttfamily void Crouch\+\_\+\+Gameplay\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchbehaviour_8c_a0990281a9d208d8befd141390ace3cae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchbehaviour_8c_a0990281a9d208d8befd141390ace3cae_icgraph}
+\end{center}
+\end{figure}

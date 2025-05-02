@@ -1,0 +1,5 @@
+<map id="hadoukenPayload_t" name="hadoukenPayload_t">
+<area shape="rect" id="Node000001" title="Payload for hadouken action." alt="" coords="5,160,130,229"/>
+<area shape="rect" id="Node000002" href="$structpayload__t.html" title="Might need to recover to old state or store some variables between function calls for the controller ..." alt="" coords="33,5,102,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,96,70,143,65,143,65,96"/>
+</map>

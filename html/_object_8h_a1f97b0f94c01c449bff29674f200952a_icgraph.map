@@ -1,0 +1,9 @@
+<map id="objDisableRegistration" name="objDisableRegistration">
+<area shape="rect" id="Node000001" title="Disable registration during ObjInit/Deinit." alt="" coords="458,5,611,32"/>
+<area shape="rect" id="Node000002" href="$objmgr_8c.html#ace0dfc7c1b1b970cf7dd3655a6b05075" title="Shutdown the object manager." alt="" coords="292,5,410,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="443,21,411,21,411,16,443,16"/>
+<area shape="rect" id="Node000003" href="$game_8c.html#a4d3157f85fc146303cabedf895a17df6" title="Cleanup the game and free up any allocated resources. Part of the base game framework." alt="" coords="126,5,244,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="277,21,244,21,244,16,277,16"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a661c2abc03926acfaeb93b4ae7db4943" title="Program Entry Point (WinMain). Part of the base game framework." alt="" coords="5,5,78,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="110,21,78,21,78,16,110,16"/>
+</map>

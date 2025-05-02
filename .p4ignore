@@ -1,0 +1,10 @@
+# Ignore everything by default
+*
+
+# Allow specific file types
+!*.h
+!*.c
+!*.proj
+!*.sln
+
+!*/

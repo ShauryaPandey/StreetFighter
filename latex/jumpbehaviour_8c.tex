@@ -1,0 +1,120 @@
+\doxysection{Game/src/jumpbehaviour.c File Reference}
+\hypertarget{jumpbehaviour_8c}{}\label{jumpbehaviour_8c}\index{Game/src/jumpbehaviour.c@{Game/src/jumpbehaviour.c}}
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}input.\+h\"{}}\newline
+{\ttfamily \#include \"{}keycodes.\+h\"{}}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for jumpbehaviour.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumpbehaviour_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{jumpbehaviour_8c_a4b1b1aa252e2d53c2d3ce348d4c83aaa}{Jump\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{jumpbehaviour_8c_a57b929ddb5906959b1f588c095f3dfa2}{Jump\+\_\+\+Gameplay\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{jumpbehaviour_8c_a7e99d23a3af7afefabf41205c7efca0c}{Jump\+\_\+\+Gameplay\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{jumpbehaviour_8c_a1593ae64fe98d0887ea740d4a32a85c2}{Jump\+\_\+\+Animation\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{jumpbehaviour_8c_a1593ae64fe98d0887ea740d4a32a85c2}\label{jumpbehaviour_8c_a1593ae64fe98d0887ea740d4a32a85c2} 
+\index{jumpbehaviour.c@{jumpbehaviour.c}!Jump\_AnimationOnStart@{Jump\_AnimationOnStart}}
+\index{Jump\_AnimationOnStart@{Jump\_AnimationOnStart}!jumpbehaviour.c@{jumpbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{Jump\_AnimationOnStart()}{Jump\_AnimationOnStart()}}
+{\footnotesize\ttfamily void Jump\+\_\+\+Animation\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumpbehaviour_8c_a1593ae64fe98d0887ea740d4a32a85c2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumpbehaviour_8c_a1593ae64fe98d0887ea740d4a32a85c2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jumpbehaviour_8c_a4b1b1aa252e2d53c2d3ce348d4c83aaa}\label{jumpbehaviour_8c_a4b1b1aa252e2d53c2d3ce348d4c83aaa} 
+\index{jumpbehaviour.c@{jumpbehaviour.c}!Jump\_CanStart@{Jump\_CanStart}}
+\index{Jump\_CanStart@{Jump\_CanStart}!jumpbehaviour.c@{jumpbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{Jump\_CanStart()}{Jump\_CanStart()}}
+{\footnotesize\ttfamily bool Jump\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumpbehaviour_8c_a4b1b1aa252e2d53c2d3ce348d4c83aaa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumpbehaviour_8c_a4b1b1aa252e2d53c2d3ce348d4c83aaa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jumpbehaviour_8c_a7e99d23a3af7afefabf41205c7efca0c}\label{jumpbehaviour_8c_a7e99d23a3af7afefabf41205c7efca0c} 
+\index{jumpbehaviour.c@{jumpbehaviour.c}!Jump\_GameplayController@{Jump\_GameplayController}}
+\index{Jump\_GameplayController@{Jump\_GameplayController}!jumpbehaviour.c@{jumpbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{Jump\_GameplayController()}{Jump\_GameplayController()}}
+{\footnotesize\ttfamily void Jump\+\_\+\+Gameplay\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumpbehaviour_8c_a7e99d23a3af7afefabf41205c7efca0c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumpbehaviour_8c_a7e99d23a3af7afefabf41205c7efca0c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jumpbehaviour_8c_a57b929ddb5906959b1f588c095f3dfa2}\label{jumpbehaviour_8c_a57b929ddb5906959b1f588c095f3dfa2} 
+\index{jumpbehaviour.c@{jumpbehaviour.c}!Jump\_GameplayOnStart@{Jump\_GameplayOnStart}}
+\index{Jump\_GameplayOnStart@{Jump\_GameplayOnStart}!jumpbehaviour.c@{jumpbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{Jump\_GameplayOnStart()}{Jump\_GameplayOnStart()}}
+{\footnotesize\ttfamily void Jump\+\_\+\+Gameplay\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumpbehaviour_8c_a57b929ddb5906959b1f588c095f3dfa2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumpbehaviour_8c_a57b929ddb5906959b1f588c095f3dfa2_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,69 @@
+\doxysection{levelmgr.\+h}
+\hypertarget{levelmgr_8h_source}{}\label{levelmgr_8h_source}\index{Game/include/levelmgr.h@{Game/include/levelmgr.h}}
+\mbox{\hyperlink{levelmgr_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}baseTypes.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{hadouken_8h}{hadouken.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ groundOffset\ 400}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ kenPosX\ 500}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ RyuPosX\ 200}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ TimerMaxTime\ 40}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ TimerSize\ 25}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structleveldef__t}{leveldef\_t}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ Bounds2D\ \mbox{\hyperlink{structleveldef__t_a3612880674d83d801945844cfec9a00d}{fieldBounds}};}
+\DoxyCodeLine{00016\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structleveldef__t_aa3ed796be231717c661fbd1409f1985c}{fieldColor}};}
+\DoxyCodeLine{00017\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structleveldef__t_a216c15834b4d17e40dd25650cd0a382b}{numBalls}};}
+\DoxyCodeLine{00018\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{structleveldef__t_a108cc2984de48fa6726be05bf7621389}{numFaces}};}
+\DoxyCodeLine{00019\ \}\ \mbox{\hyperlink{levelmgr_8h_a80b4380904719a9c446c64a71c22b85c}{LevelDef}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structhadouken__t}{hadouken\_t}}\ \mbox{\hyperlink{structhadouken__t}{Hadouken}};}
+\DoxyCodeLine{00022\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcharacter__t}{character\_t}}\ \mbox{\hyperlink{structcharacter__t}{Character}};}
+\DoxyCodeLine{00023\ \textcolor{keyword}{typedef}\ void\ (*\mbox{\hyperlink{levelmgr_8h_ac732bcc6df90c34d9c7bea211f7aef00}{PlayStartScreenSoundCB}})();}
+\DoxyCodeLine{00024\ \textcolor{keyword}{typedef}\ void\ (*\mbox{\hyperlink{levelmgr_8h_af23c536c1c1227ea5f6e3ded55968ca8}{StopStartScreenSoundCB}})();}
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ void\ (*\mbox{\hyperlink{levelmgr_8h_af0e066135155a53db11ecf262f4ca474}{PlayFightSoundCB}})();}
+\DoxyCodeLine{00026\ \textcolor{keyword}{typedef}\ void\ (*\mbox{\hyperlink{levelmgr_8h_afee124da4862f03ddb4f63de0e32ebcb}{PlayRoundSoundCB}})();}
+\DoxyCodeLine{00030\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structactive_hadouken__t}{activeHadouken\_t}}\ \textcolor{comment}{//Onl\ holds\ addresses\ not\ responsible\ for\ creating\ or\ freeing\ any\ memory}}
+\DoxyCodeLine{00031\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{structcharacter__t}{Character}}*\ \mbox{\hyperlink{structactive_hadouken__t_a27b30002df940259d79e183d958ed11a}{owner}};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{structhadouken__t}{Hadouken}}*\ \mbox{\hyperlink{structactive_hadouken__t_a7f08dfca837dfeefb9c7bea42f37fe9f}{hadouken}};}
+\DoxyCodeLine{00034\ \}\mbox{\hyperlink{levelmgr_8h_a26c22c77c1ed80a88322d03ae00af8d2}{ActiveHadouken}};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structlevel__t}{level\_t}}\ \mbox{\hyperlink{structlevel__t}{Level}};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_ab4f5749053d79a06bd2a8770f5726aef}{levelMgrInit}}();}
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_a30e91f13cc312dd1390228051d5b2c0f}{levelMgrShutdown}}();}
+\DoxyCodeLine{00040\ \mbox{\hyperlink{structlevel__t}{Level}}\ *\mbox{\hyperlink{levelmgr_8h_a5f61ddac5c680554f5ca9ad4af57d0fe}{levelMgrLoad}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structleveldef__t}{LevelDef}}*\ levelDef);}
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_acb6a2482af92cd421e3a66922ae99076}{levelMgrUnload}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ level);}
+\DoxyCodeLine{00042\ \mbox{\hyperlink{structactive_hadouken__t}{ActiveHadouken}}*\ \mbox{\hyperlink{levelmgr_8h_ad75917135ca2f2a7fbbb4987a8cedac3}{GetActiveHadoukens}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ lvl,\ uint8\_t*\ len);}
+\DoxyCodeLine{00043\ \mbox{\hyperlink{structhadouken__t}{Hadouken}}*\ \mbox{\hyperlink{levelmgr_8h_acbae5b164c935cc3a4274be9425eb8e2}{CreateActiveHadouken}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ lvl,\ \textcolor{keywordtype}{int}\ idx,\ \mbox{\hyperlink{structcharacter__t}{Character}}*\ \mbox{\hyperlink{structlevel__t_aa4e378f3148e178c482bf26202da0922}{character}},\ \mbox{\hyperlink{hadouken_8h_aed4eabff1c2d742d856aca47c680a670}{hadoukenNotifyOwnerFunc}}\ notifyOwnerFunc,\ Coord2D\ position,\ \textcolor{keywordtype}{float}\ velocityX);}
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{levelmgr_8h_a79022c62ce4500d0f75c4a8e36b09afd}{TryCompleteRound}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ lvl);}
+\DoxyCodeLine{00045\ uint8\_t\ \mbox{\hyperlink{levelmgr_8h_a1ca4f34f85db51a58aca89be9c5b0de4}{GetCurrentRound}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ lvl);}
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{levelmgr_8h_ad3472d44c7a3f817fe6ff0743e666416}{IsGameOver}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ lvl);}
+\DoxyCodeLine{00047\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_a635843bc73947069101385ad485c89c3}{resetLevel}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ level);}
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_a8f55f6f75815def1136f1046586bf24e}{resetGame}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ level);}
+\DoxyCodeLine{00049\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_a0d013301b0f620123463bc79bbb728de}{StartCurrentRound}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ lvl);}
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{levelmgr_8h_a0d67e055b277f42d892288e892380b7e}{IsRoundOver}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ lvl);}
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_a160af80086e2a1364141c01fe7d34e46}{PrintWord}}(\textcolor{keywordtype}{char}*\ str,\ \textcolor{keywordtype}{int}\ len,\ \textcolor{keywordtype}{float}\ startX,\ \textcolor{keywordtype}{float}\ startY,\ \textcolor{keywordtype}{float}\ letterSize);}
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{levelmgr_8h_a21bd7602e611af7b25b73b86014aa90a}{TryGetVictorName}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ lvl);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structround_timer__t}{roundTimer\_t}}\ \mbox{\hyperlink{structround_timer__t}{RoundTimer}};}
+\DoxyCodeLine{00055\ \mbox{\hyperlink{structround_timer__t}{RoundTimer}}*\ \mbox{\hyperlink{levelmgr_8h_a01243945097b852be2b045a1bfb85704}{GetRoundTimer}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ lvl);}
+\DoxyCodeLine{00056\ \mbox{\hyperlink{structround_timer__t}{RoundTimer}}*\ \mbox{\hyperlink{levelmgr_8h_aab0d174dc963ec0c1acbbe4fdba13160}{GetExitTimer}}(\mbox{\hyperlink{structlevel__t}{Level}}*\ lvl);}
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{levelmgr_8h_adcf527b803684542639e64585bc2f6e7}{isTimerOver}}(\mbox{\hyperlink{structround_timer__t}{RoundTimer}}*\ timer);}
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_af6196660decc7b20e3592f2af6e96c74}{drawTimer}}(\mbox{\hyperlink{structround_timer__t}{RoundTimer}}*\ timer);}
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_a866e8c11f01786fbfc36636fce2054cd}{updateTimer}}(\mbox{\hyperlink{structround_timer__t}{RoundTimer}}*\ timer,\ uint8\_t\ milliseconds);}
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_a7c0a7292d951b4445623a2a5a5736ba3}{resetTimer}}(\mbox{\hyperlink{structround_timer__t}{RoundTimer}}*\ timer);}
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_a9fa68fcb6bf90eece5c629f1029b7ecf}{InitRoundTimer}}(\mbox{\hyperlink{structround_timer__t}{RoundTimer}}*\ timer);}
+\DoxyCodeLine{00062\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_af875c9d42d369d78b5b44e1d5c1dadf8}{InitExitTimer}}(\mbox{\hyperlink{structround_timer__t}{RoundTimer}}*\ timer);}
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{levelmgr_8h_aa751f828c6874c5d8803cea17ed4c620}{resetExitTimer}}(\mbox{\hyperlink{structround_timer__t}{RoundTimer}}*\ timer);}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00065\ \}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

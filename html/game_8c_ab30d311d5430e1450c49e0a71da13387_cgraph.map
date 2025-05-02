@@ -1,0 +1,62 @@
+<map id="_gameInit" name="_gameInit">
+<area shape="rect" id="Node000001" title="Function declarations and typedefs and extern global var declarations." alt="" coords="5,975,84,1001"/>
+<area shape="rect" id="Node000002" href="$levelmgr_8c.html#ab4f5749053d79a06bd2a8770f5726aef" title="Initialize the level manager." alt="" coords="137,363,225,389"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,973,171,404,176,405,51,975"/>
+<area shape="rect" id="Node000016" href="$levelmgr_8c.html#a5f61ddac5c680554f5ca9ad4af57d0fe" title="Loads the level and all required objects/assets." alt="" coords="132,975,230,1001"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="84,985,116,985,116,991,84,991"/>
+<area shape="rect" id="Node000220" href="$objmgr_8c.html#ab526120d8da215d02f519edf8313b7b8" title="Initialize the object manager." alt="" coords="142,1177,220,1204"/>
+<area shape="poly" id="edge29_Node000001_Node000220" title=" " alt="" coords="57,1000,165,1163,160,1166,53,1003"/>
+<area shape="rect" id="Node000003" href="$levelmgr_8c.html#a8c416909d548c35451bfcddac91fee8e" title=" " alt="" coords="292,5,489,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,362,180,303,191,217,203,170,220,123,244,80,276,42,279,39,283,43,280,46,249,83,225,126,208,172,196,218,185,304,184,362"/>
+<area shape="rect" id="Node000004" href="$levelmgr_8c.html#ada8737bba54eba39a95944f70cbc1898" title=" " alt="" coords="306,56,475,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="180,362,184,311,197,239,209,199,226,160,248,124,276,93,290,83,293,87,280,97,252,127,231,163,214,201,202,240,189,312,185,363"/>
+<area shape="rect" id="Node000005" href="$levelmgr_8c.html#a21c46e59355cde461be6080133c0cb99" title=" " alt="" coords="290,107,490,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="181,362,188,319,204,260,232,197,252,168,276,143,282,139,285,143,280,147,256,172,237,200,209,261,193,320,186,362"/>
+<area shape="rect" id="Node000006" href="$levelmgr_8c.html#a6e32d76ba161f73ce3f264800eb0743a" title=" " alt="" coords="302,157,479,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="183,361,193,327,211,282,238,234,256,213,276,194,286,188,289,192,280,198,260,216,243,237,216,284,198,329,188,363"/>
+<area shape="rect" id="Node000007" href="$levelmgr_8c.html#ae3023bbe799282295ee89c26d729a7cf" title=" " alt="" coords="320,208,460,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="186,361,219,304,245,272,277,244,304,231,306,236,279,249,249,275,223,307,191,363"/>
+<area shape="rect" id="Node000008" href="$levelmgr_8c.html#ac16eb580148062549dc8e19d382b7e2d" title=" " alt="" coords="304,259,476,301"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="198,360,234,335,277,311,291,305,293,310,279,316,236,340,202,364"/>
+<area shape="rect" id="Node000009" href="$levelmgr_8c.html#adad1b529b15fb22cc2bdb493ff56e622" title=" " alt="" coords="304,325,477,368"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="225,367,287,358,288,364,226,372"/>
+<area shape="rect" id="Node000010" href="$backgroundmanager_8c.html#a61fbc0f6cd9c1584ae4897c03d18eeae" title="all textures relevant to background are loaded here." alt="" coords="316,392,465,419"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="226,380,300,390,300,395,225,385"/>
+<area shape="rect" id="Node000011" href="$ball_8c.html#a664dfc08640eb9b208ffc4a1f9088895" title="Sets the callback." alt="" coords="330,443,450,469"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="204,388,238,408,279,428,316,440,314,445,277,433,236,413,201,392"/>
+<area shape="rect" id="Node000012" href="$character_8c.html#aa9149de0e4b643454656321cde4d9989" title="one time initialization of textures" alt="" coords="318,493,462,520"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="193,388,227,434,251,458,279,479,305,491,303,495,277,484,248,462,223,437,188,391"/>
+<area shape="rect" id="Node000013" href="$face_8c.html#aa4f66cb5fb11f2195ae8aaf058b14c73" title="one time initialization of textures" alt="" coords="333,544,447,571"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="189,389,200,419,219,457,245,497,280,530,298,540,319,547,317,552,296,545,276,534,241,500,214,460,195,421,184,391"/>
+<area shape="rect" id="Node000014" href="$hadouken_8c.html#a036bc15cdc6ea65c2c127d0d50934f8c" title=" " alt="" coords="318,595,463,621"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="187,389,195,428,212,480,240,534,258,559,280,581,304,594,301,599,276,585,254,563,235,537,207,482,190,429,182,390"/>
+<area shape="rect" id="Node000015" href="$healthbar_8c.html#a6e2acb69efc3871717db0b82cd4a2633" title=" " alt="" coords="343,645,437,672"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="186,389,191,436,206,502,218,537,234,572,254,604,280,631,303,645,329,653,327,658,300,650,276,635,250,607,229,574,213,539,200,503,186,437,180,390"/>
+<area shape="rect" id="Node000017" href="$character_8c.html#a1707c81b8925e6c1df11c7f60a896077" title="Allocates &amp; initializes a character object Initializing a character object." alt="" coords="339,696,441,723"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="180,974,186,928,201,863,213,827,229,793,250,760,276,733,298,719,323,711,324,716,300,724,280,737,254,764,234,795,218,829,206,864,191,929,186,975"/>
+<area shape="rect" id="Node000022" href="$field_8c.html#a331e65e634c43df6475217fb08d04ab1" title="Instantiate and initialize a field object." alt="" coords="354,747,426,773"/>
+<area shape="poly" id="edge17_Node000016_Node000022" title=" " alt="" coords="182,974,191,935,208,884,236,830,254,805,276,783,306,767,338,759,339,765,308,772,280,787,258,808,240,832,213,886,196,937,187,975"/>
+<area shape="rect" id="Node000023" href="$game_8c.html#ae6d73d12ad93fab5cd7182bc91de0a0a" title="In the behaviour the character must check if there is an active hadouken in which case it can not spa..." alt="" coords="300,797,480,824"/>
+<area shape="poly" id="edge18_Node000016_Node000023" title=" " alt="" coords="184,973,196,944,215,906,242,867,276,834,285,828,288,833,280,838,246,870,220,909,201,946,189,975"/>
+<area shape="rect" id="Node000025" href="$game_8c.html#a9068323715d31a357bef377daa7e10be" title="This callback should be with the character object which it will use to spawn hadouken in the correpso..." alt="" coords="312,848,468,875"/>
+<area shape="poly" id="edge19_Node000016_Node000025" title=" " alt="" coords="189,972,224,929,248,905,277,884,297,875,299,880,279,889,252,909,228,932,193,976"/>
+<area shape="rect" id="Node000033" href="$character_8c.html#a5face3645f4816839bd787f4e396b975" title=" " alt="" coords="278,899,502,925"/>
+<area shape="poly" id="edge20_Node000016_Node000033" title=" " alt="" coords="203,972,237,953,277,935,300,927,301,933,279,940,239,958,206,977"/>
+<area shape="rect" id="Node000034" href="$animation_8c.html#a09b8252fc9c6fbf59da4819a5969545f" title="This function initializes all the anims for Ken." alt="" coords="326,949,454,976"/>
+<area shape="poly" id="edge21_Node000016_Node000034" title=" " alt="" coords="230,979,311,970,311,975,231,985"/>
+<area shape="rect" id="Node000056" href="$kenbehaviors_8c.html#aa7eed9873c801626159ce86ace2ee6e9" title=" " alt="" coords="550,1025,739,1052"/>
+<area shape="poly" id="edge22_Node000016_Node000056" title=" " alt="" coords="231,991,535,1024,534,1029,230,996"/>
+<area shape="rect" id="Node000174" href="$kenbehaviors_8c.html#af30189a88c73170c7520c31cbbb11a28" title=" " alt="" coords="294,1051,486,1077"/>
+<area shape="poly" id="edge23_Node000016_Node000174" title=" " alt="" coords="210,999,279,1030,321,1043,319,1048,277,1034,208,1004"/>
+<area shape="rect" id="Node000195" href="$levelmgr_8c.html#a9fa68fcb6bf90eece5c629f1029b7ecf" title="Initialized the timer we use to time the rounds." alt="" coords="335,1101,445,1128"/>
+<area shape="poly" id="edge25_Node000016_Node000195" title=" " alt="" coords="193,1000,228,1044,252,1067,279,1087,321,1103,319,1108,277,1092,248,1071,224,1047,189,1004"/>
+<area shape="rect" id="Node000196" href="$animation_8c.html#a7e2405e3bd28b2948686822452a439e4" title="This function initializes all the anims for Ryu." alt="" coords="326,1152,454,1179"/>
+<area shape="poly" id="edge26_Node000016_Node000196" title=" " alt="" coords="189,1001,201,1030,220,1067,246,1106,280,1138,312,1153,310,1158,276,1142,242,1109,215,1070,196,1032,184,1003"/>
+<area shape="rect" id="Node000218" href="$levelmgr_8c.html#aa751f828c6874c5d8803cea17ed4c620" title=" " alt="" coords="337,1203,443,1229"/>
+<area shape="poly" id="edge27_Node000016_Node000218" title=" " alt="" coords="187,1001,196,1039,213,1090,240,1144,258,1168,280,1189,300,1201,323,1208,321,1213,298,1205,276,1193,254,1171,236,1146,208,1092,191,1041,182,1002"/>
+<area shape="rect" id="Node000219" href="$levelmgr_8c.html#a7c0a7292d951b4445623a2a5a5736ba3" title="Resets it to the max time." alt="" coords="348,1253,432,1280"/>
+<area shape="poly" id="edge28_Node000016_Node000219" title=" " alt="" coords="188,1001,224,1126,251,1195,266,1222,280,1239,305,1254,334,1262,332,1267,303,1259,276,1243,261,1225,247,1198,219,1128,183,1002"/>
+<area shape="poly" id="edge24_Node000174_Node000056" title=" " alt="" coords="486,1052,535,1047,535,1052,487,1057"/>
+<area shape="rect" id="Node000221" href="$object_8c.html#aedfb2e22326e2d0d452931a37173cf37" title="Enable callback to a registrar on ObjInit/Deinit." alt="" coords="316,1304,464,1331"/>
+<area shape="poly" id="edge30_Node000220_Node000221" title=" " alt="" coords="193,1203,228,1246,252,1270,279,1290,302,1300,300,1305,277,1294,248,1274,224,1250,189,1206"/>
+</map>

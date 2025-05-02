@@ -1,0 +1,158 @@
+\doxysection{Game/src/blockhurtbehaviour.c File Reference}
+\hypertarget{blockhurtbehaviour_8c}{}\label{blockhurtbehaviour_8c}\index{Game/src/blockhurtbehaviour.c@{Game/src/blockhurtbehaviour.c}}
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}keycodes.\+h\"{}}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for blockhurtbehaviour.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blockhurtbehaviour_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{blockhurtbehaviour_8c_a2b50daa9a5629c45923e7037a1fff0ad}{Block\+Hurt\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em If the state is block hurt this behaviour can trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{blockhurtbehaviour_8c_a96d389d08012d718ccb0b03c6bd03769}{Block\+Hurt\+\_\+\+Gameplay\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Only affecting character health. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{blockhurtbehaviour_8c_a39e3ddd481859b5f928b524de7160bcb}{Block\+Hurt\+\_\+\+Gameplay\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Moves the character back when blocking an attack successfully. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{blockhurtbehaviour_8c_a89ce312ae531fb3ab1dea2db738588c6}{Block\+Hurt\+\_\+\+Gameplay\+Cleanup}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Like all cleanups of all behaviours this cleanup must also clear its payload. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{blockhurtbehaviour_8c_a2b50daa9a5629c45923e7037a1fff0ad}\label{blockhurtbehaviour_8c_a2b50daa9a5629c45923e7037a1fff0ad} 
+\index{blockhurtbehaviour.c@{blockhurtbehaviour.c}!BlockHurt\_CanStart@{BlockHurt\_CanStart}}
+\index{BlockHurt\_CanStart@{BlockHurt\_CanStart}!blockhurtbehaviour.c@{blockhurtbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{BlockHurt\_CanStart()}{BlockHurt\_CanStart()}}
+{\footnotesize\ttfamily bool Block\+Hurt\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+If the state is block hurt this behaviour can trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blockhurtbehaviour_8c_a2b50daa9a5629c45923e7037a1fff0ad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blockhurtbehaviour_8c_a2b50daa9a5629c45923e7037a1fff0ad_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{blockhurtbehaviour_8c_a89ce312ae531fb3ab1dea2db738588c6}\label{blockhurtbehaviour_8c_a89ce312ae531fb3ab1dea2db738588c6} 
+\index{blockhurtbehaviour.c@{blockhurtbehaviour.c}!BlockHurt\_GameplayCleanup@{BlockHurt\_GameplayCleanup}}
+\index{BlockHurt\_GameplayCleanup@{BlockHurt\_GameplayCleanup}!blockhurtbehaviour.c@{blockhurtbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{BlockHurt\_GameplayCleanup()}{BlockHurt\_GameplayCleanup()}}
+{\footnotesize\ttfamily void Block\+Hurt\+\_\+\+Gameplay\+Cleanup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Like all cleanups of all behaviours this cleanup must also clear its payload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blockhurtbehaviour_8c_a89ce312ae531fb3ab1dea2db738588c6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blockhurtbehaviour_8c_a89ce312ae531fb3ab1dea2db738588c6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{blockhurtbehaviour_8c_a39e3ddd481859b5f928b524de7160bcb}\label{blockhurtbehaviour_8c_a39e3ddd481859b5f928b524de7160bcb} 
+\index{blockhurtbehaviour.c@{blockhurtbehaviour.c}!BlockHurt\_GameplayController@{BlockHurt\_GameplayController}}
+\index{BlockHurt\_GameplayController@{BlockHurt\_GameplayController}!blockhurtbehaviour.c@{blockhurtbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{BlockHurt\_GameplayController()}{BlockHurt\_GameplayController()}}
+{\footnotesize\ttfamily void Block\+Hurt\+\_\+\+Gameplay\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Moves the character back when blocking an attack successfully. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blockhurtbehaviour_8c_a39e3ddd481859b5f928b524de7160bcb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blockhurtbehaviour_8c_a39e3ddd481859b5f928b524de7160bcb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{blockhurtbehaviour_8c_a96d389d08012d718ccb0b03c6bd03769}\label{blockhurtbehaviour_8c_a96d389d08012d718ccb0b03c6bd03769} 
+\index{blockhurtbehaviour.c@{blockhurtbehaviour.c}!BlockHurt\_GameplayOnStart@{BlockHurt\_GameplayOnStart}}
+\index{BlockHurt\_GameplayOnStart@{BlockHurt\_GameplayOnStart}!blockhurtbehaviour.c@{blockhurtbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{BlockHurt\_GameplayOnStart()}{BlockHurt\_GameplayOnStart()}}
+{\footnotesize\ttfamily void Block\+Hurt\+\_\+\+Gameplay\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Only affecting character health. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{blockhurtbehaviour_8c_a96d389d08012d718ccb0b03c6bd03769_cgraph}
+\end{center}
+\end{figure}

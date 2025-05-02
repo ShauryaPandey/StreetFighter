@@ -1,0 +1,536 @@
+\doxysection{Game/src/backgroundmanager.c File Reference}
+\hypertarget{backgroundmanager_8c}{}\label{backgroundmanager_8c}\index{Game/src/backgroundmanager.c@{Game/src/backgroundmanager.c}}
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$gl/\+GLU.\+h$>$}\newline
+{\ttfamily \#include \"{}SOIL.\+h\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \"{}Object.\+h\"{}}\newline
+Include dependency graph for backgroundmanager.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backgroundmanager_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstart_screen_frame__t}{start\+Screen\+Frame\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em In Street fighter, background moves to adjust the 2 players in the same screen space. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structstart_screen_animation__t}{start\+Screen\+Animation\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Animations for the start screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{backgroundmanager_8c_ac732bcc6df90c34d9c7bea211f7aef00}{Play\+Start\+Screen\+Sound\+CB}}) ()
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{backgroundmanager_8c_af23c536c1c1227ea5f6e3ded55968ca8}{Stop\+Start\+Screen\+Sound\+CB}}) ()
+\item 
+typedef struct \mbox{\hyperlink{structstart_screen_frame__t}{start\+Screen\+Frame\+\_\+t}} \mbox{\hyperlink{backgroundmanager_8c_a774f97499ef28f51c35ccb5d95b0cb57}{Start\+Screen\+Frame}}
+\begin{DoxyCompactList}\small\item\em In Street fighter, background moves to adjust the 2 players in the same screen space. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structstart_screen_animation__t}{start\+Screen\+Animation\+\_\+t}} \mbox{\hyperlink{backgroundmanager_8c_a563bcbd1fac58abf00769fdecf72afde}{Start\+Screen\+Animation}}
+\begin{DoxyCompactList}\small\item\em Animations for the start screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{backgroundmanager_8c_a61fbc0f6cd9c1584ae4897c03d18eeae}{background\+Init\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em all textures relevant to background are loaded here. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{backgroundmanager_8c_a36e194bdd58e8ecf436456b19ecae8f1}{background\+Draw}} ()
+\begin{DoxyCompactList}\small\item\em Render the background. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{backgroundmanager_8c_a1b7e392d1664f9d4c58eaa09e1598ff7}{Init\+Start\+Screen\+Animation}} ()
+\item 
+void \mbox{\hyperlink{backgroundmanager_8c_a160af80086e2a1364141c01fe7d34e46}{Print\+Word}} (char \texorpdfstring{$\ast$}{*}str, int len, float startX, float startY, float letter\+Size)
+\begin{DoxyCompactList}\small\item\em Puts a word on the screen using letters images from a sprite sheet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{backgroundmanager_8c_a7e02ecb19caa5a10703b86f7832200a3}{Start\+Screen\+Draw}} ()
+\begin{DoxyCompactList}\small\item\em draw function for the start screen. This is drawn as the game starts from where the user can press space bar to start game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{backgroundmanager_8c_a60ecba4ca153963b988c8d7b510c1cb9}{end\+Screen\+Show}} (char \texorpdfstring{$\ast$}{*}victor\+Name)
+\begin{DoxyCompactList}\small\item\em Displaying images at the end declaring who the winner is. So this displays 2 images and a text. The displayed images can vary based on if Ryu won or Ken won. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{backgroundmanager_8c_a758accc7d3ea0b0ad26b287c0b879961}{Round\+Display\+Draw}} (uint32\+\_\+t round\+Number)
+\begin{DoxyCompactList}\small\item\em The round number is rendered -\/ like round0, round1...round75...roundn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{backgroundmanager_8c_a1cc682619462a8da06a0023fcb391678}{print\+Letter}} (char letter, float x, float y, float size)
+\begin{DoxyCompactList}\small\item\em Using the sprite sheet that contains letters in a grid like fashion, we can extract out the coordinates of the requested letter and render that on screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{levelmgr_8h_ac732bcc6df90c34d9c7bea211f7aef00}{Play\+Start\+Screen\+Sound\+CB}} \mbox{\hyperlink{backgroundmanager_8c_a05ce34a1c1461710f5d44b515e8c7a9a}{g\+\_\+start\+Screen\+CB}}
+\item 
+\mbox{\hyperlink{levelmgr_8h_af23c536c1c1227ea5f6e3ded55968ca8}{Stop\+Start\+Screen\+Sound\+CB}} \mbox{\hyperlink{backgroundmanager_8c_a958c1a9597748440cd2e495630a7b3d4}{g\+\_\+stop\+Start\+Screen\+CB}}
+\item 
+static const char \mbox{\hyperlink{backgroundmanager_8c_a5f9eb072e8145b4a2b2ab3e94e520791}{BACKGROUND\+\_\+\+PAGE}} \mbox{[}$\,$\mbox{]} = \"{}asset/background.\+png\"{}
+\begin{DoxyCompactList}\small\item\em Static data for file. \end{DoxyCompactList}\item 
+static const char \mbox{\hyperlink{backgroundmanager_8c_a0d807a284800c9f31322c2ba3a2e648a}{PORTRAITS\+\_\+\+PAGE}} \mbox{[}$\,$\mbox{]} = \"{}asset/portraits.\+png\"{}
+\item 
+static const char \mbox{\hyperlink{backgroundmanager_8c_a94019207a0b327213cd9f4a6522cdac2}{STARTSCREEN\+\_\+\+PAGE}} \mbox{[}$\,$\mbox{]} = \"{}asset/streetfighterintro.\+png\"{}
+\item 
+static const char \mbox{\hyperlink{backgroundmanager_8c_a3a04fb63dbb005bb6e7eecab92f9f92b}{STARTBUTTON\+\_\+\+PAGE}} \mbox{[}$\,$\mbox{]} = \"{}asset/start\+Button.\+png\"{}
+\item 
+static const char \mbox{\hyperlink{backgroundmanager_8c_a74051ddb1a6883d8723ebb6a6c6ae509}{FONTS\+\_\+\+PAGE}} \mbox{[}$\,$\mbox{]} = \"{}asset/fonts2.\+png\"{}
+\item 
+static const char \mbox{\hyperlink{backgroundmanager_8c_abd053fc88c978bcd2f45a829421e7bae}{SHEN\+\_\+\+LONG\+\_\+\+PAGE}} \mbox{[}$\,$\mbox{]} = \"{}asset/Sheng\+Long.\+png\"{}
+\item 
+static GLuint \mbox{\hyperlink{backgroundmanager_8c_aff60cdcc0f6457eb541db54423a00a9e}{\+\_\+background\+Texture}} = 0
+\item 
+static GLuint \mbox{\hyperlink{backgroundmanager_8c_aef7b3c7c238dedd34a22fcd0bc40a3b0}{\+\_\+portraits\+Texture}} = 0
+\item 
+static GLuint \mbox{\hyperlink{backgroundmanager_8c_a5a658fa6ea2b743ae9c27b290a7528ff}{\+\_\+startscreen\+Texture}} = 0
+\item 
+static GLuint \mbox{\hyperlink{backgroundmanager_8c_acd7a32ab0bda21d649befca50091e772}{\+\_\+start\+Button\+Texture}} = 0
+\item 
+static GLuint \mbox{\hyperlink{backgroundmanager_8c_af238544cd954fec4f868f9ffbc89f56b}{\+\_\+fonts\+Texture}} = 0
+\item 
+static GLuint \mbox{\hyperlink{backgroundmanager_8c_a697752fecde32fffead0cd296943de04}{\+\_\+shen\+Texture}} = 0
+\item 
+static Bounds2D \mbox{\hyperlink{backgroundmanager_8c_ab46cadc0f4c1bd9e5cd71b6401682039}{background\+Dimension}} = \{ \{8,16\},\{775,240\} \}
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{backgroundmanager_8c_a9abc9bde0a2d34ff7d9387b8ef87df25}{background\+Img\+Width}} = 912
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{backgroundmanager_8c_a0973f172c9de24a70e5fe8c056d10990}{background\+Img\+Height}} = 440
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{backgroundmanager_8c_a6dcf94ac040276f8d7a5512d96fac9af}{portraits\+Img\+Width}} = 632
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{backgroundmanager_8c_aaa37314cde37f80fce9218fc18f3ed2c}{portraits\+Img\+Height}} = 512
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{backgroundmanager_8c_a00a1f4a060d46304ee877d07e1d06571}{start\+Screen\+Img\+Height}} = 689
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{backgroundmanager_8c_a5396b36bd465cd07cf0ba75b786ea26d}{start\+Screen\+Img\+Width}} = 1182
+\item 
+static Bounds2D \mbox{\hyperlink{backgroundmanager_8c_a2cf13e733f38d2999272cd5fb72941eb}{ken\+Imgpixs}} = \{ \{80,428\},\{143,451\} \}
+\item 
+static Bounds2D \mbox{\hyperlink{backgroundmanager_8c_a6663ab3a1b895ac7fd96e94d5cc1a2ef}{Ken\+Coords}} = \{ \{800,100\},\{900,150\} \}
+\item 
+static Bounds2D \mbox{\hyperlink{backgroundmanager_8c_ab67a3faf9f04a64eb7f64f8d884563d0}{ryu\+Img\+Pixs}} = \{ \{9,428\},\{71,451\} \}
+\item 
+static Bounds2D \mbox{\hyperlink{backgroundmanager_8c_aa4e961451e75fce06a66ab0325b5ed84}{Ryu\+Coords}} = \{ \{200,100\},\{300,150\} \}
+\item 
+static Bounds2D \mbox{\hyperlink{backgroundmanager_8c_a61138caffd8cdb62a5d4f80669463114}{title\+Pixs}} = \{ \{752,470\},\{1009,566\} \}
+\item 
+static Bounds2D \mbox{\hyperlink{backgroundmanager_8c_ae9c2a13b2e6ad4b2c2d9ef7b2276014d}{title\+Coords}} = \{ \{362,50\},\{662,350\} \}
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{backgroundmanager_8c_a3d7e921de0dd2e1329b74950be62bc0d}{start\+Button\+Img\+Height}} = 85
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{backgroundmanager_8c_a87c5c620bf1834b9351947e7b56f9df5}{start\+Button\+Img\+Width}} = 554
+\item 
+static Bounds2D \mbox{\hyperlink{backgroundmanager_8c_a92e6059d1f3277322eca4726d41c08df}{start\+Button\+Pixs}} = \{ \{0,0\},\{553,84\} \}
+\item 
+static Bounds2D \mbox{\hyperlink{backgroundmanager_8c_a2da900c7b95d175b98f3edaf8fe0dfd2}{start\+Button\+Coords}} = \{ \{300,350\},\{800,400\} \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{backgroundmanager_8c_ac732bcc6df90c34d9c7bea211f7aef00}\label{backgroundmanager_8c_ac732bcc6df90c34d9c7bea211f7aef00} 
+\index{backgroundmanager.c@{backgroundmanager.c}!PlayStartScreenSoundCB@{PlayStartScreenSoundCB}}
+\index{PlayStartScreenSoundCB@{PlayStartScreenSoundCB}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{PlayStartScreenSoundCB}{PlayStartScreenSoundCB}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} Play\+Start\+Screen\+Sound\+CB) ()}
+
+\Hypertarget{backgroundmanager_8c_a563bcbd1fac58abf00769fdecf72afde}\label{backgroundmanager_8c_a563bcbd1fac58abf00769fdecf72afde} 
+\index{backgroundmanager.c@{backgroundmanager.c}!StartScreenAnimation@{StartScreenAnimation}}
+\index{StartScreenAnimation@{StartScreenAnimation}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{StartScreenAnimation}{StartScreenAnimation}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structstart_screen_animation__t}{start\+Screen\+Animation\+\_\+t}} \mbox{\hyperlink{backgroundmanager_8c_a563bcbd1fac58abf00769fdecf72afde}{Start\+Screen\+Animation}}}
+
+
+
+Animations for the start screen. 
+
+\Hypertarget{backgroundmanager_8c_a774f97499ef28f51c35ccb5d95b0cb57}\label{backgroundmanager_8c_a774f97499ef28f51c35ccb5d95b0cb57} 
+\index{backgroundmanager.c@{backgroundmanager.c}!StartScreenFrame@{StartScreenFrame}}
+\index{StartScreenFrame@{StartScreenFrame}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{StartScreenFrame}{StartScreenFrame}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structstart_screen_frame__t}{start\+Screen\+Frame\+\_\+t}} \mbox{\hyperlink{backgroundmanager_8c_a774f97499ef28f51c35ccb5d95b0cb57}{Start\+Screen\+Frame}}}
+
+
+
+In Street fighter, background moves to adjust the 2 players in the same screen space. 
+
+\Hypertarget{backgroundmanager_8c_af23c536c1c1227ea5f6e3ded55968ca8}\label{backgroundmanager_8c_af23c536c1c1227ea5f6e3ded55968ca8} 
+\index{backgroundmanager.c@{backgroundmanager.c}!StopStartScreenSoundCB@{StopStartScreenSoundCB}}
+\index{StopStartScreenSoundCB@{StopStartScreenSoundCB}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{StopStartScreenSoundCB}{StopStartScreenSoundCB}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} Stop\+Start\+Screen\+Sound\+CB) ()}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{backgroundmanager_8c_a36e194bdd58e8ecf436456b19ecae8f1}\label{backgroundmanager_8c_a36e194bdd58e8ecf436456b19ecae8f1} 
+\index{backgroundmanager.c@{backgroundmanager.c}!backgroundDraw@{backgroundDraw}}
+\index{backgroundDraw@{backgroundDraw}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{backgroundDraw()}{backgroundDraw()}}
+{\footnotesize\ttfamily void background\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Render the background. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backgroundmanager_8c_a36e194bdd58e8ecf436456b19ecae8f1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{backgroundmanager_8c_a61fbc0f6cd9c1584ae4897c03d18eeae}\label{backgroundmanager_8c_a61fbc0f6cd9c1584ae4897c03d18eeae} 
+\index{backgroundmanager.c@{backgroundmanager.c}!backgroundInitTexture@{backgroundInitTexture}}
+\index{backgroundInitTexture@{backgroundInitTexture}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{backgroundInitTexture()}{backgroundInitTexture()}}
+{\footnotesize\ttfamily void background\+Init\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+all textures relevant to background are loaded here. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backgroundmanager_8c_a61fbc0f6cd9c1584ae4897c03d18eeae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{backgroundmanager_8c_a60ecba4ca153963b988c8d7b510c1cb9}\label{backgroundmanager_8c_a60ecba4ca153963b988c8d7b510c1cb9} 
+\index{backgroundmanager.c@{backgroundmanager.c}!endScreenShow@{endScreenShow}}
+\index{endScreenShow@{endScreenShow}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{endScreenShow()}{endScreenShow()}}
+{\footnotesize\ttfamily void end\+Screen\+Show (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{victor\+Name }\end{DoxyParamCaption})}
+
+
+
+Displaying images at the end declaring who the winner is. So this displays 2 images and a text. The displayed images can vary based on if Ryu won or Ken won. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em victor\+Name} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backgroundmanager_8c_a60ecba4ca153963b988c8d7b510c1cb9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{backgroundmanager_8c_a1b7e392d1664f9d4c58eaa09e1598ff7}\label{backgroundmanager_8c_a1b7e392d1664f9d4c58eaa09e1598ff7} 
+\index{backgroundmanager.c@{backgroundmanager.c}!InitStartScreenAnimation@{InitStartScreenAnimation}}
+\index{InitStartScreenAnimation@{InitStartScreenAnimation}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{InitStartScreenAnimation()}{InitStartScreenAnimation()}}
+{\footnotesize\ttfamily void Init\+Start\+Screen\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{backgroundmanager_8c_a1cc682619462a8da06a0023fcb391678}\label{backgroundmanager_8c_a1cc682619462a8da06a0023fcb391678} 
+\index{backgroundmanager.c@{backgroundmanager.c}!printLetter@{printLetter}}
+\index{printLetter@{printLetter}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{printLetter()}{printLetter()}}
+{\footnotesize\ttfamily void print\+Letter (\begin{DoxyParamCaption}\item[{char}]{letter,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{size }\end{DoxyParamCaption})}
+
+
+
+Using the sprite sheet that contains letters in a grid like fashion, we can extract out the coordinates of the requested letter and render that on screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backgroundmanager_8c_a1cc682619462a8da06a0023fcb391678_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{backgroundmanager_8c_a160af80086e2a1364141c01fe7d34e46}\label{backgroundmanager_8c_a160af80086e2a1364141c01fe7d34e46} 
+\index{backgroundmanager.c@{backgroundmanager.c}!PrintWord@{PrintWord}}
+\index{PrintWord@{PrintWord}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{PrintWord()}{PrintWord()}}
+{\footnotesize\ttfamily void Print\+Word (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str,  }\item[{int}]{len,  }\item[{float}]{startX,  }\item[{float}]{startY,  }\item[{float}]{letter\+Size }\end{DoxyParamCaption})}
+
+
+
+Puts a word on the screen using letters images from a sprite sheet. 
+
+Print a word using the sprite sheet This function can not print sentences, only words since the sprite sheet doesn\textquotesingle{}t have something for space. We would be requiring a different implementation for printing sentences.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & \\
+\hline
+{\em len} & \\
+\hline
+{\em startX} & \\
+\hline
+{\em startY} & \\
+\hline
+{\em letter\+Size} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{backgroundmanager_8c_a160af80086e2a1364141c01fe7d34e46_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backgroundmanager_8c_a160af80086e2a1364141c01fe7d34e46_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{backgroundmanager_8c_a758accc7d3ea0b0ad26b287c0b879961}\label{backgroundmanager_8c_a758accc7d3ea0b0ad26b287c0b879961} 
+\index{backgroundmanager.c@{backgroundmanager.c}!RoundDisplayDraw@{RoundDisplayDraw}}
+\index{RoundDisplayDraw@{RoundDisplayDraw}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{RoundDisplayDraw()}{RoundDisplayDraw()}}
+{\footnotesize\ttfamily void Round\+Display\+Draw (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{round\+Number }\end{DoxyParamCaption})}
+
+
+
+The round number is rendered -\/ like round0, round1...round75...roundn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em round\+Number} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backgroundmanager_8c_a758accc7d3ea0b0ad26b287c0b879961_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backgroundmanager_8c_a758accc7d3ea0b0ad26b287c0b879961_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{backgroundmanager_8c_a7e02ecb19caa5a10703b86f7832200a3}\label{backgroundmanager_8c_a7e02ecb19caa5a10703b86f7832200a3} 
+\index{backgroundmanager.c@{backgroundmanager.c}!StartScreenDraw@{StartScreenDraw}}
+\index{StartScreenDraw@{StartScreenDraw}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{StartScreenDraw()}{StartScreenDraw()}}
+{\footnotesize\ttfamily void Start\+Screen\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draw function for the start screen. This is drawn as the game starts from where the user can press space bar to start game 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{backgroundmanager_8c_a7e02ecb19caa5a10703b86f7832200a3_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{backgroundmanager_8c_aff60cdcc0f6457eb541db54423a00a9e}\label{backgroundmanager_8c_aff60cdcc0f6457eb541db54423a00a9e} 
+\index{backgroundmanager.c@{backgroundmanager.c}!\_backgroundTexture@{\_backgroundTexture}}
+\index{\_backgroundTexture@{\_backgroundTexture}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{\_backgroundTexture}{\_backgroundTexture}}
+{\footnotesize\ttfamily GLuint \+\_\+background\+Texture = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_af238544cd954fec4f868f9ffbc89f56b}\label{backgroundmanager_8c_af238544cd954fec4f868f9ffbc89f56b} 
+\index{backgroundmanager.c@{backgroundmanager.c}!\_fontsTexture@{\_fontsTexture}}
+\index{\_fontsTexture@{\_fontsTexture}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{\_fontsTexture}{\_fontsTexture}}
+{\footnotesize\ttfamily GLuint \+\_\+fonts\+Texture = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_aef7b3c7c238dedd34a22fcd0bc40a3b0}\label{backgroundmanager_8c_aef7b3c7c238dedd34a22fcd0bc40a3b0} 
+\index{backgroundmanager.c@{backgroundmanager.c}!\_portraitsTexture@{\_portraitsTexture}}
+\index{\_portraitsTexture@{\_portraitsTexture}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{\_portraitsTexture}{\_portraitsTexture}}
+{\footnotesize\ttfamily GLuint \+\_\+portraits\+Texture = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a697752fecde32fffead0cd296943de04}\label{backgroundmanager_8c_a697752fecde32fffead0cd296943de04} 
+\index{backgroundmanager.c@{backgroundmanager.c}!\_shenTexture@{\_shenTexture}}
+\index{\_shenTexture@{\_shenTexture}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{\_shenTexture}{\_shenTexture}}
+{\footnotesize\ttfamily GLuint \+\_\+shen\+Texture = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_acd7a32ab0bda21d649befca50091e772}\label{backgroundmanager_8c_acd7a32ab0bda21d649befca50091e772} 
+\index{backgroundmanager.c@{backgroundmanager.c}!\_startButtonTexture@{\_startButtonTexture}}
+\index{\_startButtonTexture@{\_startButtonTexture}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{\_startButtonTexture}{\_startButtonTexture}}
+{\footnotesize\ttfamily GLuint \+\_\+start\+Button\+Texture = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a5a658fa6ea2b743ae9c27b290a7528ff}\label{backgroundmanager_8c_a5a658fa6ea2b743ae9c27b290a7528ff} 
+\index{backgroundmanager.c@{backgroundmanager.c}!\_startscreenTexture@{\_startscreenTexture}}
+\index{\_startscreenTexture@{\_startscreenTexture}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{\_startscreenTexture}{\_startscreenTexture}}
+{\footnotesize\ttfamily GLuint \+\_\+startscreen\+Texture = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a5f9eb072e8145b4a2b2ab3e94e520791}\label{backgroundmanager_8c_a5f9eb072e8145b4a2b2ab3e94e520791} 
+\index{backgroundmanager.c@{backgroundmanager.c}!BACKGROUND\_PAGE@{BACKGROUND\_PAGE}}
+\index{BACKGROUND\_PAGE@{BACKGROUND\_PAGE}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{BACKGROUND\_PAGE}{BACKGROUND\_PAGE}}
+{\footnotesize\ttfamily const char BACKGROUND\+\_\+\+PAGE\mbox{[}$\,$\mbox{]} = \"{}asset/background.\+png\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Static data for file. 
+
+\Hypertarget{backgroundmanager_8c_ab46cadc0f4c1bd9e5cd71b6401682039}\label{backgroundmanager_8c_ab46cadc0f4c1bd9e5cd71b6401682039} 
+\index{backgroundmanager.c@{backgroundmanager.c}!backgroundDimension@{backgroundDimension}}
+\index{backgroundDimension@{backgroundDimension}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{backgroundDimension}{backgroundDimension}}
+{\footnotesize\ttfamily Bounds2D background\+Dimension = \{ \{8,16\},\{775,240\} \}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a0973f172c9de24a70e5fe8c056d10990}\label{backgroundmanager_8c_a0973f172c9de24a70e5fe8c056d10990} 
+\index{backgroundmanager.c@{backgroundmanager.c}!backgroundImgHeight@{backgroundImgHeight}}
+\index{backgroundImgHeight@{backgroundImgHeight}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{backgroundImgHeight}{backgroundImgHeight}}
+{\footnotesize\ttfamily uint32\+\_\+t background\+Img\+Height = 440\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a9abc9bde0a2d34ff7d9387b8ef87df25}\label{backgroundmanager_8c_a9abc9bde0a2d34ff7d9387b8ef87df25} 
+\index{backgroundmanager.c@{backgroundmanager.c}!backgroundImgWidth@{backgroundImgWidth}}
+\index{backgroundImgWidth@{backgroundImgWidth}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{backgroundImgWidth}{backgroundImgWidth}}
+{\footnotesize\ttfamily uint32\+\_\+t background\+Img\+Width = 912\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a74051ddb1a6883d8723ebb6a6c6ae509}\label{backgroundmanager_8c_a74051ddb1a6883d8723ebb6a6c6ae509} 
+\index{backgroundmanager.c@{backgroundmanager.c}!FONTS\_PAGE@{FONTS\_PAGE}}
+\index{FONTS\_PAGE@{FONTS\_PAGE}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{FONTS\_PAGE}{FONTS\_PAGE}}
+{\footnotesize\ttfamily const char FONTS\+\_\+\+PAGE\mbox{[}$\,$\mbox{]} = \"{}asset/fonts2.\+png\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a05ce34a1c1461710f5d44b515e8c7a9a}\label{backgroundmanager_8c_a05ce34a1c1461710f5d44b515e8c7a9a} 
+\index{backgroundmanager.c@{backgroundmanager.c}!g\_startScreenCB@{g\_startScreenCB}}
+\index{g\_startScreenCB@{g\_startScreenCB}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{g\_startScreenCB}{g\_startScreenCB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{levelmgr_8h_ac732bcc6df90c34d9c7bea211f7aef00}{Play\+Start\+Screen\+Sound\+CB}} g\+\_\+start\+Screen\+CB}
+
+\Hypertarget{backgroundmanager_8c_a958c1a9597748440cd2e495630a7b3d4}\label{backgroundmanager_8c_a958c1a9597748440cd2e495630a7b3d4} 
+\index{backgroundmanager.c@{backgroundmanager.c}!g\_stopStartScreenCB@{g\_stopStartScreenCB}}
+\index{g\_stopStartScreenCB@{g\_stopStartScreenCB}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{g\_stopStartScreenCB}{g\_stopStartScreenCB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{levelmgr_8h_af23c536c1c1227ea5f6e3ded55968ca8}{Stop\+Start\+Screen\+Sound\+CB}} g\+\_\+stop\+Start\+Screen\+CB}
+
+\Hypertarget{backgroundmanager_8c_a6663ab3a1b895ac7fd96e94d5cc1a2ef}\label{backgroundmanager_8c_a6663ab3a1b895ac7fd96e94d5cc1a2ef} 
+\index{backgroundmanager.c@{backgroundmanager.c}!KenCoords@{KenCoords}}
+\index{KenCoords@{KenCoords}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{KenCoords}{KenCoords}}
+{\footnotesize\ttfamily Bounds2D Ken\+Coords = \{ \{800,100\},\{900,150\} \}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a2cf13e733f38d2999272cd5fb72941eb}\label{backgroundmanager_8c_a2cf13e733f38d2999272cd5fb72941eb} 
+\index{backgroundmanager.c@{backgroundmanager.c}!kenImgpixs@{kenImgpixs}}
+\index{kenImgpixs@{kenImgpixs}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{kenImgpixs}{kenImgpixs}}
+{\footnotesize\ttfamily Bounds2D ken\+Imgpixs = \{ \{80,428\},\{143,451\} \}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a0d807a284800c9f31322c2ba3a2e648a}\label{backgroundmanager_8c_a0d807a284800c9f31322c2ba3a2e648a} 
+\index{backgroundmanager.c@{backgroundmanager.c}!PORTRAITS\_PAGE@{PORTRAITS\_PAGE}}
+\index{PORTRAITS\_PAGE@{PORTRAITS\_PAGE}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{PORTRAITS\_PAGE}{PORTRAITS\_PAGE}}
+{\footnotesize\ttfamily const char PORTRAITS\+\_\+\+PAGE\mbox{[}$\,$\mbox{]} = \"{}asset/portraits.\+png\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_aaa37314cde37f80fce9218fc18f3ed2c}\label{backgroundmanager_8c_aaa37314cde37f80fce9218fc18f3ed2c} 
+\index{backgroundmanager.c@{backgroundmanager.c}!portraitsImgHeight@{portraitsImgHeight}}
+\index{portraitsImgHeight@{portraitsImgHeight}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{portraitsImgHeight}{portraitsImgHeight}}
+{\footnotesize\ttfamily uint32\+\_\+t portraits\+Img\+Height = 512\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a6dcf94ac040276f8d7a5512d96fac9af}\label{backgroundmanager_8c_a6dcf94ac040276f8d7a5512d96fac9af} 
+\index{backgroundmanager.c@{backgroundmanager.c}!portraitsImgWidth@{portraitsImgWidth}}
+\index{portraitsImgWidth@{portraitsImgWidth}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{portraitsImgWidth}{portraitsImgWidth}}
+{\footnotesize\ttfamily uint32\+\_\+t portraits\+Img\+Width = 632\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_aa4e961451e75fce06a66ab0325b5ed84}\label{backgroundmanager_8c_aa4e961451e75fce06a66ab0325b5ed84} 
+\index{backgroundmanager.c@{backgroundmanager.c}!RyuCoords@{RyuCoords}}
+\index{RyuCoords@{RyuCoords}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{RyuCoords}{RyuCoords}}
+{\footnotesize\ttfamily Bounds2D Ryu\+Coords = \{ \{200,100\},\{300,150\} \}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_ab67a3faf9f04a64eb7f64f8d884563d0}\label{backgroundmanager_8c_ab67a3faf9f04a64eb7f64f8d884563d0} 
+\index{backgroundmanager.c@{backgroundmanager.c}!ryuImgPixs@{ryuImgPixs}}
+\index{ryuImgPixs@{ryuImgPixs}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{ryuImgPixs}{ryuImgPixs}}
+{\footnotesize\ttfamily Bounds2D ryu\+Img\+Pixs = \{ \{9,428\},\{71,451\} \}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_abd053fc88c978bcd2f45a829421e7bae}\label{backgroundmanager_8c_abd053fc88c978bcd2f45a829421e7bae} 
+\index{backgroundmanager.c@{backgroundmanager.c}!SHEN\_LONG\_PAGE@{SHEN\_LONG\_PAGE}}
+\index{SHEN\_LONG\_PAGE@{SHEN\_LONG\_PAGE}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{SHEN\_LONG\_PAGE}{SHEN\_LONG\_PAGE}}
+{\footnotesize\ttfamily const char SHEN\+\_\+\+LONG\+\_\+\+PAGE\mbox{[}$\,$\mbox{]} = \"{}asset/Sheng\+Long.\+png\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a3a04fb63dbb005bb6e7eecab92f9f92b}\label{backgroundmanager_8c_a3a04fb63dbb005bb6e7eecab92f9f92b} 
+\index{backgroundmanager.c@{backgroundmanager.c}!STARTBUTTON\_PAGE@{STARTBUTTON\_PAGE}}
+\index{STARTBUTTON\_PAGE@{STARTBUTTON\_PAGE}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{STARTBUTTON\_PAGE}{STARTBUTTON\_PAGE}}
+{\footnotesize\ttfamily const char STARTBUTTON\+\_\+\+PAGE\mbox{[}$\,$\mbox{]} = \"{}asset/start\+Button.\+png\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a2da900c7b95d175b98f3edaf8fe0dfd2}\label{backgroundmanager_8c_a2da900c7b95d175b98f3edaf8fe0dfd2} 
+\index{backgroundmanager.c@{backgroundmanager.c}!startButtonCoords@{startButtonCoords}}
+\index{startButtonCoords@{startButtonCoords}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{startButtonCoords}{startButtonCoords}}
+{\footnotesize\ttfamily Bounds2D start\+Button\+Coords = \{ \{300,350\},\{800,400\} \}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a3d7e921de0dd2e1329b74950be62bc0d}\label{backgroundmanager_8c_a3d7e921de0dd2e1329b74950be62bc0d} 
+\index{backgroundmanager.c@{backgroundmanager.c}!startButtonImgHeight@{startButtonImgHeight}}
+\index{startButtonImgHeight@{startButtonImgHeight}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{startButtonImgHeight}{startButtonImgHeight}}
+{\footnotesize\ttfamily uint32\+\_\+t start\+Button\+Img\+Height = 85\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a87c5c620bf1834b9351947e7b56f9df5}\label{backgroundmanager_8c_a87c5c620bf1834b9351947e7b56f9df5} 
+\index{backgroundmanager.c@{backgroundmanager.c}!startButtonImgWidth@{startButtonImgWidth}}
+\index{startButtonImgWidth@{startButtonImgWidth}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{startButtonImgWidth}{startButtonImgWidth}}
+{\footnotesize\ttfamily uint32\+\_\+t start\+Button\+Img\+Width = 554\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a92e6059d1f3277322eca4726d41c08df}\label{backgroundmanager_8c_a92e6059d1f3277322eca4726d41c08df} 
+\index{backgroundmanager.c@{backgroundmanager.c}!startButtonPixs@{startButtonPixs}}
+\index{startButtonPixs@{startButtonPixs}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{startButtonPixs}{startButtonPixs}}
+{\footnotesize\ttfamily Bounds2D start\+Button\+Pixs = \{ \{0,0\},\{553,84\} \}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a94019207a0b327213cd9f4a6522cdac2}\label{backgroundmanager_8c_a94019207a0b327213cd9f4a6522cdac2} 
+\index{backgroundmanager.c@{backgroundmanager.c}!STARTSCREEN\_PAGE@{STARTSCREEN\_PAGE}}
+\index{STARTSCREEN\_PAGE@{STARTSCREEN\_PAGE}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{STARTSCREEN\_PAGE}{STARTSCREEN\_PAGE}}
+{\footnotesize\ttfamily const char STARTSCREEN\+\_\+\+PAGE\mbox{[}$\,$\mbox{]} = \"{}asset/streetfighterintro.\+png\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a00a1f4a060d46304ee877d07e1d06571}\label{backgroundmanager_8c_a00a1f4a060d46304ee877d07e1d06571} 
+\index{backgroundmanager.c@{backgroundmanager.c}!startScreenImgHeight@{startScreenImgHeight}}
+\index{startScreenImgHeight@{startScreenImgHeight}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{startScreenImgHeight}{startScreenImgHeight}}
+{\footnotesize\ttfamily uint32\+\_\+t start\+Screen\+Img\+Height = 689\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a5396b36bd465cd07cf0ba75b786ea26d}\label{backgroundmanager_8c_a5396b36bd465cd07cf0ba75b786ea26d} 
+\index{backgroundmanager.c@{backgroundmanager.c}!startScreenImgWidth@{startScreenImgWidth}}
+\index{startScreenImgWidth@{startScreenImgWidth}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{startScreenImgWidth}{startScreenImgWidth}}
+{\footnotesize\ttfamily uint32\+\_\+t start\+Screen\+Img\+Width = 1182\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_ae9c2a13b2e6ad4b2c2d9ef7b2276014d}\label{backgroundmanager_8c_ae9c2a13b2e6ad4b2c2d9ef7b2276014d} 
+\index{backgroundmanager.c@{backgroundmanager.c}!titleCoords@{titleCoords}}
+\index{titleCoords@{titleCoords}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{titleCoords}{titleCoords}}
+{\footnotesize\ttfamily Bounds2D title\+Coords = \{ \{362,50\},\{662,350\} \}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{backgroundmanager_8c_a61138caffd8cdb62a5d4f80669463114}\label{backgroundmanager_8c_a61138caffd8cdb62a5d4f80669463114} 
+\index{backgroundmanager.c@{backgroundmanager.c}!titlePixs@{titlePixs}}
+\index{titlePixs@{titlePixs}!backgroundmanager.c@{backgroundmanager.c}}
+\doxysubsubsection{\texorpdfstring{titlePixs}{titlePixs}}
+{\footnotesize\ttfamily Bounds2D title\+Pixs = \{ \{752,470\},\{1009,566\} \}\hspace{0.3cm}{\ttfamily [static]}}
+

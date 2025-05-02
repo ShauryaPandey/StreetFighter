@@ -1,0 +1,107 @@
+\doxysection{Game/src/gameplaycomponenthelpers.c File Reference}
+\hypertarget{gameplaycomponenthelpers_8c}{}\label{gameplaycomponenthelpers_8c}\index{Game/src/gameplaycomponenthelpers.c@{Game/src/gameplaycomponenthelpers.c}}
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}base\+Types.\+h\"{}}\newline
+{\ttfamily \#include \"{}Object.\+h\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for gameplaycomponenthelpers.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameplaycomponenthelpers_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{gameplaycomponenthelpers_8c_a9acd9f4849c2e93c9e5f9d641db9d60c}{Update\+Current\+Action}} (\mbox{\hyperlink{gameplaycomponent_8h_a860f41fbe94e04098a6492a89a7a0924}{Gameplay\+Component}} \texorpdfstring{$\ast$}{*}component, \mbox{\hyperlink{gameplaycomponent_8h_a12b4dc1188d8e6ca67d4d60092f17b4d}{Action}} \texorpdfstring{$\ast$}{*}action)
+\begin{DoxyCompactList}\small\item\em When you want to put a new action as current action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gameplaycomponenthelpers_8c_a78436e44c52a9e401567346c2b737e36}{Try\+Remove\+Current\+Action}} (\mbox{\hyperlink{gameplaycomponent_8h_a860f41fbe94e04098a6492a89a7a0924}{Gameplay\+Component}} \texorpdfstring{$\ast$}{*}component, \mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}object, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Tries to remove the current action if it has finished. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gameplaycomponenthelpers_8c_a62c48c09baf2b875a8d2a08fa5f0d411}{Force\+Remove\+Current\+Action}} (\mbox{\hyperlink{gameplaycomponent_8h_a860f41fbe94e04098a6492a89a7a0924}{Gameplay\+Component}} \texorpdfstring{$\ast$}{*}component, \mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}object, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Calls the cleanup function and removes it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{gameplaycomponenthelpers_8c_a62c48c09baf2b875a8d2a08fa5f0d411}\label{gameplaycomponenthelpers_8c_a62c48c09baf2b875a8d2a08fa5f0d411} 
+\index{gameplaycomponenthelpers.c@{gameplaycomponenthelpers.c}!ForceRemoveCurrentAction@{ForceRemoveCurrentAction}}
+\index{ForceRemoveCurrentAction@{ForceRemoveCurrentAction}!gameplaycomponenthelpers.c@{gameplaycomponenthelpers.c}}
+\doxysubsubsection{\texorpdfstring{ForceRemoveCurrentAction()}{ForceRemoveCurrentAction()}}
+{\footnotesize\ttfamily void Force\+Remove\+Current\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{gameplaycomponent_8h_a860f41fbe94e04098a6492a89a7a0924}{Gameplay\+Component}} \texorpdfstring{$\ast$}{*}}]{component,  }\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{object,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Calls the cleanup function and removes it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+{\em object} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameplaycomponenthelpers_8c_a62c48c09baf2b875a8d2a08fa5f0d411_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameplaycomponenthelpers_8c_a78436e44c52a9e401567346c2b737e36}\label{gameplaycomponenthelpers_8c_a78436e44c52a9e401567346c2b737e36} 
+\index{gameplaycomponenthelpers.c@{gameplaycomponenthelpers.c}!TryRemoveCurrentAction@{TryRemoveCurrentAction}}
+\index{TryRemoveCurrentAction@{TryRemoveCurrentAction}!gameplaycomponenthelpers.c@{gameplaycomponenthelpers.c}}
+\doxysubsubsection{\texorpdfstring{TryRemoveCurrentAction()}{TryRemoveCurrentAction()}}
+{\footnotesize\ttfamily void Try\+Remove\+Current\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{gameplaycomponent_8h_a860f41fbe94e04098a6492a89a7a0924}{Gameplay\+Component}} \texorpdfstring{$\ast$}{*}}]{component,  }\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{object,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Tries to remove the current action if it has finished. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+{\em object} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameplaycomponenthelpers_8c_a78436e44c52a9e401567346c2b737e36_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gameplaycomponenthelpers_8c_a9acd9f4849c2e93c9e5f9d641db9d60c}\label{gameplaycomponenthelpers_8c_a9acd9f4849c2e93c9e5f9d641db9d60c} 
+\index{gameplaycomponenthelpers.c@{gameplaycomponenthelpers.c}!UpdateCurrentAction@{UpdateCurrentAction}}
+\index{UpdateCurrentAction@{UpdateCurrentAction}!gameplaycomponenthelpers.c@{gameplaycomponenthelpers.c}}
+\doxysubsubsection{\texorpdfstring{UpdateCurrentAction()}{UpdateCurrentAction()}}
+{\footnotesize\ttfamily void Update\+Current\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{gameplaycomponent_8h_a860f41fbe94e04098a6492a89a7a0924}{Gameplay\+Component}} \texorpdfstring{$\ast$}{*}}]{component,  }\item[{\mbox{\hyperlink{gameplaycomponent_8h_a12b4dc1188d8e6ca67d4d60092f17b4d}{Action}} \texorpdfstring{$\ast$}{*}}]{action }\end{DoxyParamCaption})}
+
+
+
+When you want to put a new action as current action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+{\em action} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameplaycomponenthelpers_8c_a9acd9f4849c2e93c9e5f9d641db9d60c_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{def02d04-d40c-4e0e-a64a-9532d902e7ac}</ProjectGuid>
+    <RootNamespace>Game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include/;../OpenGLFramework/include/</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../OpenGLFramework/lib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glut32.lib;soil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include/;../OpenGLFramework/include/</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../OpenGLFramework/lib/</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include/;../OpenGLFramework/include/</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glut32.lib;soil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../OpenGLFramework/lib/</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include/;../OpenGLFramework/include/</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glut32.lib;soil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../OpenGLFramework/lib/</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\animation.c" />
+    <ClCompile Include="src\backgroundmanager.c" />
+    <ClCompile Include="src\ball.c" />
+    <ClCompile Include="src\basichurtbehaviour.c" />
+    <ClCompile Include="src\blockhurtbehaviour.c" />
+    <ClCompile Include="src\character.c" />
+    <ClCompile Include="src\collider.c" />
+    <ClCompile Include="src\collisionmanager.c" />
+    <ClCompile Include="src\crouchbehaviour.c" />
+    <ClCompile Include="src\crouchblockbehaviour.c" />
+    <ClCompile Include="src\crouchkickbehaviour.c" />
+    <ClCompile Include="src\crouchpunchbehaviour.c" />
+    <ClCompile Include="src\directionaljumpbehaviour.c" />
+    <ClCompile Include="src\directionaljumpkickbehaviour.c" />
+    <ClCompile Include="src\directionaljumppunchbehaviour.c" />
+    <ClCompile Include="src\face.c" />
+    <ClCompile Include="src\field.c" />
+    <ClCompile Include="src\game.c" />
+    <ClCompile Include="src\gameplaycomponent.c" />
+    <ClCompile Include="src\gameplaycomponenthelpers.c" />
+    <ClCompile Include="src\gameplaycomponentmanager.c" />
+    <ClCompile Include="src\gameplaystatemanager.c" />
+    <ClCompile Include="src\hadouken.c" />
+    <ClCompile Include="src\hadoukenbehaviour.c" />
+    <ClCompile Include="src\healthbar.c" />
+    <ClCompile Include="src\idlebehaviour.c" />
+    <ClCompile Include="src\impactinfo.c" />
+    <ClCompile Include="src\jumpbehaviour.c" />
+    <ClCompile Include="src\jumpkickbehaviour.c" />
+    <ClCompile Include="src\jumppunchbehaviour.c" />
+    <ClCompile Include="src\kenanimations.c" />
+    <ClCompile Include="src\kenbehaviors.c" />
+    <ClCompile Include="src\kickbehaviour.c" />
+    <ClCompile Include="src\levelmgr.c" />
+    <ClCompile Include="src\object.c" />
+    <ClCompile Include="src\objmgr.c" />
+    <ClCompile Include="src\punchbehaviour.c" />
+    <ClCompile Include="src\random.c" />
+    <ClCompile Include="src\retractbehaviour.c" />
+    <ClCompile Include="src\shape.c" />
+    <ClCompile Include="src\standblockbehaviour.c" />
+    <ClCompile Include="src\standhurtbehaviour.c" />
+    <ClCompile Include="src\walkbehaviour.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\animation.h" />
+    <ClInclude Include="include\ball.h" />
+    <ClInclude Include="include\basichurtbehaviour.h" />
+    <ClInclude Include="include\blockhurtbehaviour.h" />
+    <ClInclude Include="include\character.h" />
+    <ClInclude Include="include\collider.h" />
+    <ClInclude Include="include\crouchbehaviour.h" />
+    <ClInclude Include="include\crouchblockbehaviour.h" />
+    <ClInclude Include="include\crouchkickbehaviour.h" />
+    <ClInclude Include="include\crouchpunchbehaviour.h" />
+    <ClInclude Include="include\directionaljumpbehaviour.h" />
+    <ClInclude Include="include\directionaljumpkickbehaviour.h" />
+    <ClInclude Include="include\directionaljumppunchbehaviour.h" />
+    <ClInclude Include="include\face.h" />
+    <ClInclude Include="include\field.h" />
+    <ClInclude Include="include\gameplaycomponent.h" />
+    <ClInclude Include="include\gameplaystatemanager.h" />
+    <ClInclude Include="include\hadouken.h" />
+    <ClInclude Include="include\hadoukenbehaviour.h" />
+    <ClInclude Include="include\healthbar.h" />
+    <ClInclude Include="include\idlebehaviour.h" />
+    <ClInclude Include="include\impactinfo.h" />
+    <ClInclude Include="include\jumpbehaviour.h" />
+    <ClInclude Include="include\jumpkickbehaviour.h" />
+    <ClInclude Include="include\jumppunchbehaviour.h" />
+    <ClInclude Include="include\kenanimations.h" />
+    <ClInclude Include="include\kenbehaviours.h" />
+    <ClInclude Include="include\keycodes.h" />
+    <ClInclude Include="include\kickbehaviour.h" />
+    <ClInclude Include="include\levelmgr.h" />
+    <ClInclude Include="include\object.h" />
+    <ClInclude Include="include\objmgr.h" />
+    <ClInclude Include="include\punchbehaviour.h" />
+    <ClInclude Include="include\random.h" />
+    <ClInclude Include="include\retractbehaviour.h" />
+    <ClInclude Include="include\shape.h" />
+    <ClInclude Include="include\standblockbehaviour.h" />
+    <ClInclude Include="include\standhurtbehaviour.h" />
+    <ClInclude Include="include\walkbehaviour.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="asset\connectionmap.xml" />
+    <Xml Include="asset\connections.xml" />
+    <Xml Include="asset\settings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="asset\snoods_default.png">
+      <DeploymentContent>true</DeploymentContent>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenGLFramework\OpenGLFramework.vcxproj">
+      <Project>{2a9655ec-29fb-4cec-b452-35da406f2a9e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="asset\beep.wav">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

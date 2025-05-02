@@ -1,0 +1,5 @@
+<map id="objMgrShutdown" name="objMgrShutdown">
+<area shape="rect" id="Node000001" title="Shutdown the object manager." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="Node000002" href="$object_8c.html#a1f97b0f94c01c449bff29674f200952a" title="Disable registration during ObjInit/Deinit." alt="" coords="172,5,324,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,16,156,16,156,21,124,21"/>
+</map>

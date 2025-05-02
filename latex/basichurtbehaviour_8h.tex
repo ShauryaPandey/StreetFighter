@@ -1,0 +1,171 @@
+\doxysection{Game/include/basichurtbehaviour.h File Reference}
+\hypertarget{basichurtbehaviour_8h}{}\label{basichurtbehaviour_8h}\index{Game/include/basichurtbehaviour.h@{Game/include/basichurtbehaviour.h}}
+{\ttfamily \#include \"{}object.\+h\"{}}\newline
+Include dependency graph for basichurtbehaviour.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{basichurtbehaviour_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{basichurtbehaviour_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{basichurtbehaviour_8h_a2906155f7dd543d233c78a8d52d9ea64}{Play\+Punch\+Sound\+CB}}) ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{basichurtbehaviour_8h_a6d7cfd6b694dc9511ddcadadbdb3b333}{Basic\+Hurt\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em It can start if the state has been set to hurt and is having substate crouch or stand. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{basichurtbehaviour_8h_aa79d1d828ce0b63bed83c65527131cfa}{Basic\+Hurt\+\_\+\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em As the behaviour starts, we set the payload and attach it to the action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{basichurtbehaviour_8h_a61afe8bf58d55256ab81b408ff43feb4}{Basic\+Hurt\+\_\+\+Anim\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Just play animation uniformly i.\+e divide action duration by number of frames and give that time to each frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{basichurtbehaviour_8h_a6ee78aa614e52ed73c79f3f2b0057483}{Basic\+Hurt\+\_\+\+Gameplay\+Cleanup}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{basichurtbehaviour_8h_a2906155f7dd543d233c78a8d52d9ea64}\label{basichurtbehaviour_8h_a2906155f7dd543d233c78a8d52d9ea64} 
+\index{basichurtbehaviour.h@{basichurtbehaviour.h}!PlayPunchSoundCB@{PlayPunchSoundCB}}
+\index{PlayPunchSoundCB@{PlayPunchSoundCB}!basichurtbehaviour.h@{basichurtbehaviour.h}}
+\doxysubsubsection{\texorpdfstring{PlayPunchSoundCB}{PlayPunchSoundCB}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} Play\+Punch\+Sound\+CB) ()}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{basichurtbehaviour_8h_a61afe8bf58d55256ab81b408ff43feb4}\label{basichurtbehaviour_8h_a61afe8bf58d55256ab81b408ff43feb4} 
+\index{basichurtbehaviour.h@{basichurtbehaviour.h}!BasicHurt\_AnimOnStart@{BasicHurt\_AnimOnStart}}
+\index{BasicHurt\_AnimOnStart@{BasicHurt\_AnimOnStart}!basichurtbehaviour.h@{basichurtbehaviour.h}}
+\doxysubsubsection{\texorpdfstring{BasicHurt\_AnimOnStart()}{BasicHurt\_AnimOnStart()}}
+{\footnotesize\ttfamily void Basic\+Hurt\+\_\+\+Anim\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Just play animation uniformly i.\+e divide action duration by number of frames and give that time to each frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{basichurtbehaviour_8h_a61afe8bf58d55256ab81b408ff43feb4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{basichurtbehaviour_8h_a61afe8bf58d55256ab81b408ff43feb4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{basichurtbehaviour_8h_a6d7cfd6b694dc9511ddcadadbdb3b333}\label{basichurtbehaviour_8h_a6d7cfd6b694dc9511ddcadadbdb3b333} 
+\index{basichurtbehaviour.h@{basichurtbehaviour.h}!BasicHurt\_CanStart@{BasicHurt\_CanStart}}
+\index{BasicHurt\_CanStart@{BasicHurt\_CanStart}!basichurtbehaviour.h@{basichurtbehaviour.h}}
+\doxysubsubsection{\texorpdfstring{BasicHurt\_CanStart()}{BasicHurt\_CanStart()}}
+{\footnotesize\ttfamily bool Basic\+Hurt\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+It can start if the state has been set to hurt and is having substate crouch or stand. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{basichurtbehaviour_8h_a6d7cfd6b694dc9511ddcadadbdb3b333_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{basichurtbehaviour_8h_a6d7cfd6b694dc9511ddcadadbdb3b333_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{basichurtbehaviour_8h_a6ee78aa614e52ed73c79f3f2b0057483}\label{basichurtbehaviour_8h_a6ee78aa614e52ed73c79f3f2b0057483} 
+\index{basichurtbehaviour.h@{basichurtbehaviour.h}!BasicHurt\_GameplayCleanup@{BasicHurt\_GameplayCleanup}}
+\index{BasicHurt\_GameplayCleanup@{BasicHurt\_GameplayCleanup}!basichurtbehaviour.h@{basichurtbehaviour.h}}
+\doxysubsubsection{\texorpdfstring{BasicHurt\_GameplayCleanup()}{BasicHurt\_GameplayCleanup()}}
+{\footnotesize\ttfamily void Basic\+Hurt\+\_\+\+Gameplay\+Cleanup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{basichurtbehaviour_8h_a6ee78aa614e52ed73c79f3f2b0057483_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{basichurtbehaviour_8h_a6ee78aa614e52ed73c79f3f2b0057483_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{basichurtbehaviour_8h_aa79d1d828ce0b63bed83c65527131cfa}\label{basichurtbehaviour_8h_aa79d1d828ce0b63bed83c65527131cfa} 
+\index{basichurtbehaviour.h@{basichurtbehaviour.h}!BasicHurt\_OnStart@{BasicHurt\_OnStart}}
+\index{BasicHurt\_OnStart@{BasicHurt\_OnStart}!basichurtbehaviour.h@{basichurtbehaviour.h}}
+\doxysubsubsection{\texorpdfstring{BasicHurt\_OnStart()}{BasicHurt\_OnStart()}}
+{\footnotesize\ttfamily void Basic\+Hurt\+\_\+\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+As the behaviour starts, we set the payload and attach it to the action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{basichurtbehaviour_8h_aa79d1d828ce0b63bed83c65527131cfa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{basichurtbehaviour_8h_aa79d1d828ce0b63bed83c65527131cfa_icgraph}
+\end{center}
+\end{figure}

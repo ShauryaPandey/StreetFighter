@@ -1,0 +1,8 @@
+<map id="Game/include/objmgr.h" name="Game/include/objmgr.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,161,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="35,155,131,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,33,75,80,75,111,79,139,74,140,70,111,70,80,78,32"/>
+<area shape="rect" id="Node000003" href="$_object_8h.html" title=" " alt="" coords="84,80,154,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="92,31,108,65,104,67,87,34"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="115,108,98,142,94,139,110,106"/>
+</map>

@@ -1,0 +1,96 @@
+\doxysection{Game/src/crouchblockbehaviour.c File Reference}
+\hypertarget{crouchblockbehaviour_8c}{}\label{crouchblockbehaviour_8c}\index{Game/src/crouchblockbehaviour.c@{Game/src/crouchblockbehaviour.c}}
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}input.\+h\"{}}\newline
+{\ttfamily \#include \"{}keycodes.\+h\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for crouchblockbehaviour.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchblockbehaviour_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{crouchblockbehaviour_8c_af5b6df3a90308dfbba23909cd6ef1708}{Crouch\+Block\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{crouchblockbehaviour_8c_a2f9b62d379fc677c0b2a44fbeb89624f}{Crouch\+Block\+\_\+\+Gameplay\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{crouchblockbehaviour_8c_af059d79e4e82630a8d9c9e284d8b454a}{Crouch\+Block\+\_\+\+Anim\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{crouchblockbehaviour_8c_af059d79e4e82630a8d9c9e284d8b454a}\label{crouchblockbehaviour_8c_af059d79e4e82630a8d9c9e284d8b454a} 
+\index{crouchblockbehaviour.c@{crouchblockbehaviour.c}!CrouchBlock\_AnimOnStart@{CrouchBlock\_AnimOnStart}}
+\index{CrouchBlock\_AnimOnStart@{CrouchBlock\_AnimOnStart}!crouchblockbehaviour.c@{crouchblockbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{CrouchBlock\_AnimOnStart()}{CrouchBlock\_AnimOnStart()}}
+{\footnotesize\ttfamily void Crouch\+Block\+\_\+\+Anim\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchblockbehaviour_8c_af059d79e4e82630a8d9c9e284d8b454a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchblockbehaviour_8c_af059d79e4e82630a8d9c9e284d8b454a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{crouchblockbehaviour_8c_af5b6df3a90308dfbba23909cd6ef1708}\label{crouchblockbehaviour_8c_af5b6df3a90308dfbba23909cd6ef1708} 
+\index{crouchblockbehaviour.c@{crouchblockbehaviour.c}!CrouchBlock\_CanStart@{CrouchBlock\_CanStart}}
+\index{CrouchBlock\_CanStart@{CrouchBlock\_CanStart}!crouchblockbehaviour.c@{crouchblockbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{CrouchBlock\_CanStart()}{CrouchBlock\_CanStart()}}
+{\footnotesize\ttfamily bool Crouch\+Block\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchblockbehaviour_8c_af5b6df3a90308dfbba23909cd6ef1708_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchblockbehaviour_8c_af5b6df3a90308dfbba23909cd6ef1708_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{crouchblockbehaviour_8c_a2f9b62d379fc677c0b2a44fbeb89624f}\label{crouchblockbehaviour_8c_a2f9b62d379fc677c0b2a44fbeb89624f} 
+\index{crouchblockbehaviour.c@{crouchblockbehaviour.c}!CrouchBlock\_GameplayOnStart@{CrouchBlock\_GameplayOnStart}}
+\index{CrouchBlock\_GameplayOnStart@{CrouchBlock\_GameplayOnStart}!crouchblockbehaviour.c@{crouchblockbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{CrouchBlock\_GameplayOnStart()}{CrouchBlock\_GameplayOnStart()}}
+{\footnotesize\ttfamily void Crouch\+Block\+\_\+\+Gameplay\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchblockbehaviour_8c_a2f9b62d379fc677c0b2a44fbeb89624f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchblockbehaviour_8c_a2f9b62d379fc677c0b2a44fbeb89624f_icgraph}
+\end{center}
+\end{figure}

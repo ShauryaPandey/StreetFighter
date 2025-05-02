@@ -1,0 +1,5 @@
+<map id="_faceUpdateMood" name="_faceUpdateMood">
+<area shape="rect" id="Node000001" title="Choose a random mood." alt="" coords="149,5,276,32"/>
+<area shape="rect" id="Node000002" href="$face_8c.html#a69f73c4a25573b0655d3df1b098ee346" title="Updates the character&#39;s mood every so often." alt="" coords="5,5,101,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,21,101,21,101,16,133,16"/>
+</map>

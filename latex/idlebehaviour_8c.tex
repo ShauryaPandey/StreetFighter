@@ -1,0 +1,100 @@
+\doxysection{Game/src/idlebehaviour.c File Reference}
+\hypertarget{idlebehaviour_8c}{}\label{idlebehaviour_8c}\index{Game/src/idlebehaviour.c@{Game/src/idlebehaviour.c}}
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for idlebehaviour.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{idlebehaviour_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{idlebehaviour_8c_ab66db6e8e453d4cc0a978b8d4f77cd6d}{Idle\+Action\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}object, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{idlebehaviour_8c_a96eba29080f04adc8a87cc6dd8c4240b}{Idle\+Action\+\_\+\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{idlebehaviour_8c_aac152bf014abd19fde418491b6e7d184}{Idle\+\_\+\+Gameplay\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{idlebehaviour_8c_a24b6a96783835cdff7fda4a89fca86ed}{Idle\+Action\+\_\+\+Animation\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{idlebehaviour_8c_aac152bf014abd19fde418491b6e7d184}\label{idlebehaviour_8c_aac152bf014abd19fde418491b6e7d184} 
+\index{idlebehaviour.c@{idlebehaviour.c}!Idle\_GameplayController@{Idle\_GameplayController}}
+\index{Idle\_GameplayController@{Idle\_GameplayController}!idlebehaviour.c@{idlebehaviour.c}}
+\doxysubsubsection{\texorpdfstring{Idle\_GameplayController()}{Idle\_GameplayController()}}
+{\footnotesize\ttfamily void Idle\+\_\+\+Gameplay\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{idlebehaviour_8c_aac152bf014abd19fde418491b6e7d184_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{idlebehaviour_8c_a24b6a96783835cdff7fda4a89fca86ed}\label{idlebehaviour_8c_a24b6a96783835cdff7fda4a89fca86ed} 
+\index{idlebehaviour.c@{idlebehaviour.c}!IdleAction\_AnimationController@{IdleAction\_AnimationController}}
+\index{IdleAction\_AnimationController@{IdleAction\_AnimationController}!idlebehaviour.c@{idlebehaviour.c}}
+\doxysubsubsection{\texorpdfstring{IdleAction\_AnimationController()}{IdleAction\_AnimationController()}}
+{\footnotesize\ttfamily void Idle\+Action\+\_\+\+Animation\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{idlebehaviour_8c_a24b6a96783835cdff7fda4a89fca86ed_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{idlebehaviour_8c_a24b6a96783835cdff7fda4a89fca86ed_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{idlebehaviour_8c_ab66db6e8e453d4cc0a978b8d4f77cd6d}\label{idlebehaviour_8c_ab66db6e8e453d4cc0a978b8d4f77cd6d} 
+\index{idlebehaviour.c@{idlebehaviour.c}!IdleAction\_CanStart@{IdleAction\_CanStart}}
+\index{IdleAction\_CanStart@{IdleAction\_CanStart}!idlebehaviour.c@{idlebehaviour.c}}
+\doxysubsubsection{\texorpdfstring{IdleAction\_CanStart()}{IdleAction\_CanStart()}}
+{\footnotesize\ttfamily bool Idle\+Action\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{object,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{idlebehaviour_8c_ab66db6e8e453d4cc0a978b8d4f77cd6d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{idlebehaviour_8c_a96eba29080f04adc8a87cc6dd8c4240b}\label{idlebehaviour_8c_a96eba29080f04adc8a87cc6dd8c4240b} 
+\index{idlebehaviour.c@{idlebehaviour.c}!IdleAction\_OnStart@{IdleAction\_OnStart}}
+\index{IdleAction\_OnStart@{IdleAction\_OnStart}!idlebehaviour.c@{idlebehaviour.c}}
+\doxysubsubsection{\texorpdfstring{IdleAction\_OnStart()}{IdleAction\_OnStart()}}
+{\footnotesize\ttfamily void Idle\+Action\+\_\+\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{idlebehaviour_8c_a96eba29080f04adc8a87cc6dd8c4240b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{idlebehaviour_8c_a96eba29080f04adc8a87cc6dd8c4240b_icgraph}
+\end{center}
+\end{figure}

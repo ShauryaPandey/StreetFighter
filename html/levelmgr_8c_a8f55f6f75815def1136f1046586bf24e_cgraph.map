@@ -1,0 +1,11 @@
+<map id="resetGame" name="resetGame">
+<area shape="rect" id="Node000001" title="When the game ends we do this to restart the game." alt="" coords="5,56,91,83"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#af1dba1af578a1daf4dd42dde12cf39dd" title=" " alt="" coords="139,5,249,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,53,138,35,140,40,90,58"/>
+<area shape="rect" id="Node000004" href="$levelmgr_8c.html#aa751f828c6874c5d8803cea17ed4c620" title=" " alt="" coords="141,56,247,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="91,67,125,67,125,72,91,72"/>
+<area shape="rect" id="Node000005" href="$healthbar_8c.html#a521d0bfc896d818fb3ba1bd32b50a91a" title="Resetting or setting back to max value." alt="" coords="140,107,248,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="90,81,140,99,138,104,88,86"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a5face3645f4816839bd787f4e396b975" title=" " alt="" coords="297,5,521,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="249,16,281,16,281,21,249,21"/>
+</map>

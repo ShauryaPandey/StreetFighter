@@ -1,0 +1,134 @@
+\doxysection{Game/src/directionaljumpkickbehaviour.c File Reference}
+\hypertarget{directionaljumpkickbehaviour_8c}{}\label{directionaljumpkickbehaviour_8c}\index{Game/src/directionaljumpkickbehaviour.c@{Game/src/directionaljumpkickbehaviour.c}}
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}input.\+h\"{}}\newline
+{\ttfamily \#include \"{}keycodes.\+h\"{}}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for directionaljumpkickbehaviour.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{directionaljumpkickbehaviour_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{directionaljumpkickbehaviour_8c_af2121ce4e176fa4c6b8a7be9e1930cc1}{Directional\+Jump\+Kick\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em The character can jump and kick in a direction so like press right, up and kick then character does this action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{directionaljumpkickbehaviour_8c_a26ef4b87238968d49eafd07d5a779352}{Directional\+Jump\+Kick\+\_\+\+Gameplay\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{directionaljumpkickbehaviour_8c_ade466d9b55bd29d17bb763e14f91e3bd}{Directional\+Jump\+Kick\+\_\+\+Gameplay\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{directionaljumpkickbehaviour_8c_aca1dcf2a46d008dcd1d42d69dbe6efba}{Directional\+Jump\+Kick\+\_\+\+Animation\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{directionaljumpkickbehaviour_8c_aca1dcf2a46d008dcd1d42d69dbe6efba}\label{directionaljumpkickbehaviour_8c_aca1dcf2a46d008dcd1d42d69dbe6efba} 
+\index{directionaljumpkickbehaviour.c@{directionaljumpkickbehaviour.c}!DirectionalJumpKick\_AnimationOnStart@{DirectionalJumpKick\_AnimationOnStart}}
+\index{DirectionalJumpKick\_AnimationOnStart@{DirectionalJumpKick\_AnimationOnStart}!directionaljumpkickbehaviour.c@{directionaljumpkickbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{DirectionalJumpKick\_AnimationOnStart()}{DirectionalJumpKick\_AnimationOnStart()}}
+{\footnotesize\ttfamily void Directional\+Jump\+Kick\+\_\+\+Animation\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{directionaljumpkickbehaviour_8c_aca1dcf2a46d008dcd1d42d69dbe6efba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{directionaljumpkickbehaviour_8c_aca1dcf2a46d008dcd1d42d69dbe6efba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{directionaljumpkickbehaviour_8c_af2121ce4e176fa4c6b8a7be9e1930cc1}\label{directionaljumpkickbehaviour_8c_af2121ce4e176fa4c6b8a7be9e1930cc1} 
+\index{directionaljumpkickbehaviour.c@{directionaljumpkickbehaviour.c}!DirectionalJumpKick\_CanStart@{DirectionalJumpKick\_CanStart}}
+\index{DirectionalJumpKick\_CanStart@{DirectionalJumpKick\_CanStart}!directionaljumpkickbehaviour.c@{directionaljumpkickbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{DirectionalJumpKick\_CanStart()}{DirectionalJumpKick\_CanStart()}}
+{\footnotesize\ttfamily bool Directional\+Jump\+Kick\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+The character can jump and kick in a direction so like press right, up and kick then character does this action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{directionaljumpkickbehaviour_8c_af2121ce4e176fa4c6b8a7be9e1930cc1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{directionaljumpkickbehaviour_8c_af2121ce4e176fa4c6b8a7be9e1930cc1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{directionaljumpkickbehaviour_8c_ade466d9b55bd29d17bb763e14f91e3bd}\label{directionaljumpkickbehaviour_8c_ade466d9b55bd29d17bb763e14f91e3bd} 
+\index{directionaljumpkickbehaviour.c@{directionaljumpkickbehaviour.c}!DirectionalJumpKick\_GameplayController@{DirectionalJumpKick\_GameplayController}}
+\index{DirectionalJumpKick\_GameplayController@{DirectionalJumpKick\_GameplayController}!directionaljumpkickbehaviour.c@{directionaljumpkickbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{DirectionalJumpKick\_GameplayController()}{DirectionalJumpKick\_GameplayController()}}
+{\footnotesize\ttfamily void Directional\+Jump\+Kick\+\_\+\+Gameplay\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{directionaljumpkickbehaviour_8c_ade466d9b55bd29d17bb763e14f91e3bd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{directionaljumpkickbehaviour_8c_ade466d9b55bd29d17bb763e14f91e3bd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{directionaljumpkickbehaviour_8c_a26ef4b87238968d49eafd07d5a779352}\label{directionaljumpkickbehaviour_8c_a26ef4b87238968d49eafd07d5a779352} 
+\index{directionaljumpkickbehaviour.c@{directionaljumpkickbehaviour.c}!DirectionalJumpKick\_GameplayOnStart@{DirectionalJumpKick\_GameplayOnStart}}
+\index{DirectionalJumpKick\_GameplayOnStart@{DirectionalJumpKick\_GameplayOnStart}!directionaljumpkickbehaviour.c@{directionaljumpkickbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{DirectionalJumpKick\_GameplayOnStart()}{DirectionalJumpKick\_GameplayOnStart()}}
+{\footnotesize\ttfamily void Directional\+Jump\+Kick\+\_\+\+Gameplay\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{directionaljumpkickbehaviour_8c_a26ef4b87238968d49eafd07d5a779352_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{directionaljumpkickbehaviour_8c_a26ef4b87238968d49eafd07d5a779352_icgraph}
+\end{center}
+\end{figure}

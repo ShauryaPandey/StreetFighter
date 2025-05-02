@@ -1,0 +1,202 @@
+\doxysection{Game/include/objmgr.h File Reference}
+\hypertarget{objmgr_8h}{}\label{objmgr_8h}\index{Game/include/objmgr.h@{Game/include/objmgr.h}}
+{\ttfamily \#include \"{}base\+Types.\+h\"{}}\newline
+{\ttfamily \#include \"{}Object.\+h\"{}}\newline
+Include dependency graph for objmgr.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{objmgr_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{objmgr_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{objmgr_8h_ab526120d8da215d02f519edf8313b7b8}{obj\+Mgr\+Init}} (uint32\+\_\+t max\+Objects)
+\begin{DoxyCompactList}\small\item\em Initialize the object manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{objmgr_8h_ace0dfc7c1b1b970cf7dd3655a6b05075}{obj\+Mgr\+Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shutdown the object manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{objmgr_8h_a621786e10695206cc43da15ec9fad703}{obj\+Mgr\+Add}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj)
+\begin{DoxyCompactList}\small\item\em Add an object to be tracked by the manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{objmgr_8h_a50f6e451e7e4694458d8c1b01df750a7}{obj\+Mgr\+Remove}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj)
+\begin{DoxyCompactList}\small\item\em Remove an object from the manager\textquotesingle{}s tracking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{objmgr_8h_aa80d7aa4f928bcd719a22f487fa546b5}{obj\+Mgr\+Draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws all registered objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{objmgr_8h_af18796cc452cca16e78dc6549cc93ffd}{obj\+Mgr\+Update}} (uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Updates all registered objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{objmgr_8h_a621786e10695206cc43da15ec9fad703}\label{objmgr_8h_a621786e10695206cc43da15ec9fad703} 
+\index{objmgr.h@{objmgr.h}!objMgrAdd@{objMgrAdd}}
+\index{objMgrAdd@{objMgrAdd}!objmgr.h@{objmgr.h}}
+\doxysubsubsection{\texorpdfstring{objMgrAdd()}{objMgrAdd()}}
+{\footnotesize\ttfamily void obj\+Mgr\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj }\end{DoxyParamCaption})}
+
+
+
+Add an object to be tracked by the manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{objmgr_8h_a621786e10695206cc43da15ec9fad703_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{objmgr_8h_aa80d7aa4f928bcd719a22f487fa546b5}\label{objmgr_8h_aa80d7aa4f928bcd719a22f487fa546b5} 
+\index{objmgr.h@{objmgr.h}!objMgrDraw@{objMgrDraw}}
+\index{objMgrDraw@{objMgrDraw}!objmgr.h@{objmgr.h}}
+\doxysubsubsection{\texorpdfstring{objMgrDraw()}{objMgrDraw()}}
+{\footnotesize\ttfamily void obj\+Mgr\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws all registered objects. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{objmgr_8h_aa80d7aa4f928bcd719a22f487fa546b5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{objmgr_8h_aa80d7aa4f928bcd719a22f487fa546b5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{objmgr_8h_ab526120d8da215d02f519edf8313b7b8}\label{objmgr_8h_ab526120d8da215d02f519edf8313b7b8} 
+\index{objmgr.h@{objmgr.h}!objMgrInit@{objMgrInit}}
+\index{objMgrInit@{objMgrInit}!objmgr.h@{objmgr.h}}
+\doxysubsubsection{\texorpdfstring{objMgrInit()}{objMgrInit()}}
+{\footnotesize\ttfamily void obj\+Mgr\+Init (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{max\+Objects }\end{DoxyParamCaption})}
+
+
+
+Initialize the object manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Objects} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{objmgr_8h_ab526120d8da215d02f519edf8313b7b8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{objmgr_8h_ab526120d8da215d02f519edf8313b7b8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{objmgr_8h_a50f6e451e7e4694458d8c1b01df750a7}\label{objmgr_8h_a50f6e451e7e4694458d8c1b01df750a7} 
+\index{objmgr.h@{objmgr.h}!objMgrRemove@{objMgrRemove}}
+\index{objMgrRemove@{objMgrRemove}!objmgr.h@{objmgr.h}}
+\doxysubsubsection{\texorpdfstring{objMgrRemove()}{objMgrRemove()}}
+{\footnotesize\ttfamily void obj\+Mgr\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj }\end{DoxyParamCaption})}
+
+
+
+Remove an object from the manager\textquotesingle{}s tracking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{objmgr_8h_a50f6e451e7e4694458d8c1b01df750a7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{objmgr_8h_ace0dfc7c1b1b970cf7dd3655a6b05075}\label{objmgr_8h_ace0dfc7c1b1b970cf7dd3655a6b05075} 
+\index{objmgr.h@{objmgr.h}!objMgrShutdown@{objMgrShutdown}}
+\index{objMgrShutdown@{objMgrShutdown}!objmgr.h@{objmgr.h}}
+\doxysubsubsection{\texorpdfstring{objMgrShutdown()}{objMgrShutdown()}}
+{\footnotesize\ttfamily void obj\+Mgr\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shutdown the object manager. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{objmgr_8h_ace0dfc7c1b1b970cf7dd3655a6b05075_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{objmgr_8h_ace0dfc7c1b1b970cf7dd3655a6b05075_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{objmgr_8h_af18796cc452cca16e78dc6549cc93ffd}\label{objmgr_8h_af18796cc452cca16e78dc6549cc93ffd} 
+\index{objmgr.h@{objmgr.h}!objMgrUpdate@{objMgrUpdate}}
+\index{objMgrUpdate@{objMgrUpdate}!objmgr.h@{objmgr.h}}
+\doxysubsubsection{\texorpdfstring{objMgrUpdate()}{objMgrUpdate()}}
+{\footnotesize\ttfamily void obj\+Mgr\+Update (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Updates all registered objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em milliseconds} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{objmgr_8h_af18796cc452cca16e78dc6549cc93ffd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{objmgr_8h_af18796cc452cca16e78dc6549cc93ffd_icgraph}
+\end{center}
+\end{figure}

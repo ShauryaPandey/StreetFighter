@@ -1,0 +1,155 @@
+\doxysection{Game/src/crouchkickbehaviour.c File Reference}
+\hypertarget{crouchkickbehaviour_8c}{}\label{crouchkickbehaviour_8c}\index{Game/src/crouchkickbehaviour.c@{Game/src/crouchkickbehaviour.c}}
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}input.\+h\"{}}\newline
+{\ttfamily \#include \"{}keycodes.\+h\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for crouchkickbehaviour.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchkickbehaviour_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{crouchkickbehaviour_8c_addc6de22875a678a55989b4d3eb5e9c0}{Crouch\+Kick\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{crouchkickbehaviour_8c_a3c765bbfce3f2f22c34d6a5377a8762f}{Crouch\+Kick\+\_\+\+Gameplay\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{crouchkickbehaviour_8c_aa511c2c8008d079e67c60d85833bb898}{Crouch\+Kick\+\_\+\+Gameplay\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{crouchkickbehaviour_8c_ac80897962108f8993a23946381994c3e}{Crouch\+Kick\+\_\+\+Anim\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Set animation uniformly of same duration to each frame. You get it by diving total behaviour duration by num animation frames. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{crouchkickbehaviour_8c_a03027f313d4e1e816ac42ea6acca1cf1}{Crouch\+Kick\+\_\+\+Gameplay\+Cleanup}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{crouchkickbehaviour_8c_ac80897962108f8993a23946381994c3e}\label{crouchkickbehaviour_8c_ac80897962108f8993a23946381994c3e} 
+\index{crouchkickbehaviour.c@{crouchkickbehaviour.c}!CrouchKick\_AnimOnStart@{CrouchKick\_AnimOnStart}}
+\index{CrouchKick\_AnimOnStart@{CrouchKick\_AnimOnStart}!crouchkickbehaviour.c@{crouchkickbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{CrouchKick\_AnimOnStart()}{CrouchKick\_AnimOnStart()}}
+{\footnotesize\ttfamily void Crouch\+Kick\+\_\+\+Anim\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Set animation uniformly of same duration to each frame. You get it by diving total behaviour duration by num animation frames. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchkickbehaviour_8c_ac80897962108f8993a23946381994c3e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchkickbehaviour_8c_ac80897962108f8993a23946381994c3e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{crouchkickbehaviour_8c_addc6de22875a678a55989b4d3eb5e9c0}\label{crouchkickbehaviour_8c_addc6de22875a678a55989b4d3eb5e9c0} 
+\index{crouchkickbehaviour.c@{crouchkickbehaviour.c}!CrouchKick\_CanStart@{CrouchKick\_CanStart}}
+\index{CrouchKick\_CanStart@{CrouchKick\_CanStart}!crouchkickbehaviour.c@{crouchkickbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{CrouchKick\_CanStart()}{CrouchKick\_CanStart()}}
+{\footnotesize\ttfamily bool Crouch\+Kick\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchkickbehaviour_8c_addc6de22875a678a55989b4d3eb5e9c0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchkickbehaviour_8c_addc6de22875a678a55989b4d3eb5e9c0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{crouchkickbehaviour_8c_a03027f313d4e1e816ac42ea6acca1cf1}\label{crouchkickbehaviour_8c_a03027f313d4e1e816ac42ea6acca1cf1} 
+\index{crouchkickbehaviour.c@{crouchkickbehaviour.c}!CrouchKick\_GameplayCleanup@{CrouchKick\_GameplayCleanup}}
+\index{CrouchKick\_GameplayCleanup@{CrouchKick\_GameplayCleanup}!crouchkickbehaviour.c@{crouchkickbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{CrouchKick\_GameplayCleanup()}{CrouchKick\_GameplayCleanup()}}
+{\footnotesize\ttfamily void Crouch\+Kick\+\_\+\+Gameplay\+Cleanup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchkickbehaviour_8c_a03027f313d4e1e816ac42ea6acca1cf1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchkickbehaviour_8c_a03027f313d4e1e816ac42ea6acca1cf1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{crouchkickbehaviour_8c_aa511c2c8008d079e67c60d85833bb898}\label{crouchkickbehaviour_8c_aa511c2c8008d079e67c60d85833bb898} 
+\index{crouchkickbehaviour.c@{crouchkickbehaviour.c}!CrouchKick\_GameplayController@{CrouchKick\_GameplayController}}
+\index{CrouchKick\_GameplayController@{CrouchKick\_GameplayController}!crouchkickbehaviour.c@{crouchkickbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{CrouchKick\_GameplayController()}{CrouchKick\_GameplayController()}}
+{\footnotesize\ttfamily void Crouch\+Kick\+\_\+\+Gameplay\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchkickbehaviour_8c_aa511c2c8008d079e67c60d85833bb898_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchkickbehaviour_8c_aa511c2c8008d079e67c60d85833bb898_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{crouchkickbehaviour_8c_a3c765bbfce3f2f22c34d6a5377a8762f}\label{crouchkickbehaviour_8c_a3c765bbfce3f2f22c34d6a5377a8762f} 
+\index{crouchkickbehaviour.c@{crouchkickbehaviour.c}!CrouchKick\_GameplayOnStart@{CrouchKick\_GameplayOnStart}}
+\index{CrouchKick\_GameplayOnStart@{CrouchKick\_GameplayOnStart}!crouchkickbehaviour.c@{crouchkickbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{CrouchKick\_GameplayOnStart()}{CrouchKick\_GameplayOnStart()}}
+{\footnotesize\ttfamily void Crouch\+Kick\+\_\+\+Gameplay\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchkickbehaviour_8c_a3c765bbfce3f2f22c34d6a5377a8762f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{crouchkickbehaviour_8c_a3c765bbfce3f2f22c34d6a5377a8762f_icgraph}
+\end{center}
+\end{figure}

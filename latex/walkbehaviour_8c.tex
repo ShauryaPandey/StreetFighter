@@ -1,0 +1,119 @@
+\doxysection{Game/src/walkbehaviour.c File Reference}
+\hypertarget{walkbehaviour_8c}{}\label{walkbehaviour_8c}\index{Game/src/walkbehaviour.c@{Game/src/walkbehaviour.c}}
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}input.\+h\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for walkbehaviour.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{walkbehaviour_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{walkbehaviour_8c_a578ed6e728e9052e98731906dd0ef21e}{Walk\+Action\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{walkbehaviour_8c_a055d7bb4daf0a82ec24c24c01ee33f11}{Walk\+Action\+\_\+\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{walkbehaviour_8c_aff23554fccda7d8734d70ec87f107147}{Walk\+Action\+\_\+\+Gameplay\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{walkbehaviour_8c_abfaeee672f295ac36b986991420b24d1}{Walk\+Action\+\_\+\+Animation\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{walkbehaviour_8c_abfaeee672f295ac36b986991420b24d1}\label{walkbehaviour_8c_abfaeee672f295ac36b986991420b24d1} 
+\index{walkbehaviour.c@{walkbehaviour.c}!WalkAction\_AnimationController@{WalkAction\_AnimationController}}
+\index{WalkAction\_AnimationController@{WalkAction\_AnimationController}!walkbehaviour.c@{walkbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{WalkAction\_AnimationController()}{WalkAction\_AnimationController()}}
+{\footnotesize\ttfamily void Walk\+Action\+\_\+\+Animation\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{walkbehaviour_8c_abfaeee672f295ac36b986991420b24d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{walkbehaviour_8c_abfaeee672f295ac36b986991420b24d1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{walkbehaviour_8c_a578ed6e728e9052e98731906dd0ef21e}\label{walkbehaviour_8c_a578ed6e728e9052e98731906dd0ef21e} 
+\index{walkbehaviour.c@{walkbehaviour.c}!WalkAction\_CanStart@{WalkAction\_CanStart}}
+\index{WalkAction\_CanStart@{WalkAction\_CanStart}!walkbehaviour.c@{walkbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{WalkAction\_CanStart()}{WalkAction\_CanStart()}}
+{\footnotesize\ttfamily bool Walk\+Action\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{walkbehaviour_8c_a578ed6e728e9052e98731906dd0ef21e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{walkbehaviour_8c_a578ed6e728e9052e98731906dd0ef21e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{walkbehaviour_8c_aff23554fccda7d8734d70ec87f107147}\label{walkbehaviour_8c_aff23554fccda7d8734d70ec87f107147} 
+\index{walkbehaviour.c@{walkbehaviour.c}!WalkAction\_GameplayController@{WalkAction\_GameplayController}}
+\index{WalkAction\_GameplayController@{WalkAction\_GameplayController}!walkbehaviour.c@{walkbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{WalkAction\_GameplayController()}{WalkAction\_GameplayController()}}
+{\footnotesize\ttfamily void Walk\+Action\+\_\+\+Gameplay\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{walkbehaviour_8c_aff23554fccda7d8734d70ec87f107147_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{walkbehaviour_8c_aff23554fccda7d8734d70ec87f107147_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{walkbehaviour_8c_a055d7bb4daf0a82ec24c24c01ee33f11}\label{walkbehaviour_8c_a055d7bb4daf0a82ec24c24c01ee33f11} 
+\index{walkbehaviour.c@{walkbehaviour.c}!WalkAction\_OnStart@{WalkAction\_OnStart}}
+\index{WalkAction\_OnStart@{WalkAction\_OnStart}!walkbehaviour.c@{walkbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{WalkAction\_OnStart()}{WalkAction\_OnStart()}}
+{\footnotesize\ttfamily void Walk\+Action\+\_\+\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{walkbehaviour_8c_a055d7bb4daf0a82ec24c24c01ee33f11_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{walkbehaviour_8c_a055d7bb4daf0a82ec24c24c01ee33f11_icgraph}
+\end{center}
+\end{figure}

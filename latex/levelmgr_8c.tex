@@ -1,0 +1,1108 @@
+\doxysection{Game/src/levelmgr.c File Reference}
+\hypertarget{levelmgr_8c}{}\label{levelmgr_8c}\index{Game/src/levelmgr.c@{Game/src/levelmgr.c}}
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$gl/\+GLU.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include \"{}base\+Types.\+h\"{}}\newline
+{\ttfamily \#include \"{}levelmgr.\+h\"{}}\newline
+{\ttfamily \#include \"{}field.\+h\"{}}\newline
+{\ttfamily \#include \"{}ball.\+h\"{}}\newline
+{\ttfamily \#include \"{}face.\+h\"{}}\newline
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}hadouken.\+h\"{}}\newline
+{\ttfamily \#include \"{}objmgr.\+h\"{}}\newline
+{\ttfamily \#include \"{}SOIL.\+h\"{}}\newline
+{\ttfamily \#include \"{}sound.\+h\"{}}\newline
+{\ttfamily \#include \"{}animation.\+h\"{}}\newline
+{\ttfamily \#include \"{}basichurtbehaviour.\+h\"{}}\newline
+{\ttfamily \#include \"{}standhurtbehaviour.\+h\"{}}\newline
+{\ttfamily \#include \"{}kenbehaviours.\+h\"{}}\newline
+{\ttfamily \#include \"{}healthbar.\+h\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \"{}stdio.\+h\"{}}\newline
+Include dependency graph for levelmgr.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structround_timer__t}{round\+Timer\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Timer for the round. Updated every frame -\/ based on this the round gets over. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structlevel__t}{level\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structround_timer__t}{round\+Timer\+\_\+t}} \mbox{\hyperlink{levelmgr_8c_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}}
+\begin{DoxyCompactList}\small\item\em Timer for the round. Updated every frame -\/ based on this the round gets over. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structlevel__t}{level\+\_\+t}} \mbox{\hyperlink{levelmgr_8c_a7dbe7d010c660af716deba063f405608}{Level}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{levelmgr_8c_a9068323715d31a357bef377daa7e10be}{Game\+Spawn\+Hadouken}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character, Coord2D position, float velocityX)
+\begin{DoxyCompactList}\small\item\em This callback should be with the character object which it will use to spawn hadouken in the correpsonding behaviour. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{levelmgr_8c_ae6d73d12ad93fab5cd7182bc91de0a0a}{Game\+Can\+Spawn\+Hadouken}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\begin{DoxyCompactList}\small\item\em In the behaviour the character must check if there is an active hadouken in which case it can not spawn one more. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{levelmgr_8c_a131391e902d5933b94eab97f5d6d7640}{\+\_\+level\+Mgr\+Timer\+Start\+Sound}} ()
+\item 
+void \mbox{\hyperlink{levelmgr_8c_a9fa68fcb6bf90eece5c629f1029b7ecf}{Init\+Round\+Timer}} (\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}timer)
+\begin{DoxyCompactList}\small\item\em Initialized the timer we use to time the rounds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{levelmgr_8c_af875c9d42d369d78b5b44e1d5c1dadf8}{Init\+Exit\+Timer}} (\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}timer)
+\begin{DoxyCompactList}\small\item\em The exit timer is played when the match(set of rounds like tennis) is over and we need to go back to the main screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{levelmgr_8c_a7c0a7292d951b4445623a2a5a5736ba3}{reset\+Timer}} (\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}timer)
+\begin{DoxyCompactList}\small\item\em Resets it to the max time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{levelmgr_8c_aa751f828c6874c5d8803cea17ed4c620}{reset\+Exit\+Timer}} (\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}timer)
+\item 
+void \mbox{\hyperlink{levelmgr_8c_a866e8c11f01786fbfc36636fce2054cd}{update\+Timer}} (\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}timer, uint8\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Updates every frame the timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{levelmgr_8c_af6196660decc7b20e3592f2af6e96c74}{draw\+Timer}} (\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}timer)
+\begin{DoxyCompactList}\small\item\em Draw timer on screen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{levelmgr_8c_adcf527b803684542639e64585bc2f6e7}{is\+Timer\+Over}} (\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}timer)
+\item 
+\mbox{\hyperlink{levelmgr_8h_a26c22c77c1ed80a88322d03ae00af8d2}{Active\+Hadouken}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{levelmgr_8c_ad75917135ca2f2a7fbbb4987a8cedac3}{Get\+Active\+Hadoukens}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}lvl, uint8\+\_\+t \texorpdfstring{$\ast$}{*}len)
+\item 
+\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{levelmgr_8c_a01243945097b852be2b045a1bfb85704}{Get\+Round\+Timer}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}lvl)
+\item 
+\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{levelmgr_8c_aab0d174dc963ec0c1acbbe4fdba13160}{Get\+Exit\+Timer}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}lvl)
+\begin{DoxyCompactList}\small\item\em Timer for the game exit after which game loads again from start screen. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{levelmgr_8c_ae3023bbe799282295ee89c26d729a7cf}{\+\_\+level\+Mgr\+Play\+Sound}} (\mbox{\hyperlink{ball_8h_abe79029b6b27eb4bd57e96be3e7778eb}{Ball}} \texorpdfstring{$\ast$}{*}ball)
+\item 
+static void \mbox{\hyperlink{levelmgr_8c_a21c46e59355cde461be6080133c0cb99}{\+\_\+level\+Mgr\+Play\+Hadouken\+Sound}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+static void \mbox{\hyperlink{levelmgr_8c_ac16eb580148062549dc8e19d382b7e2d}{\+\_\+level\+Mgr\+Play\+Start\+Screen\+Sound}} ()
+\item 
+static void \mbox{\hyperlink{levelmgr_8c_adad1b529b15fb22cc2bdb493ff56e622}{\+\_\+level\+Mgr\+Stop\+Start\+Screen\+Sound}} ()
+\item 
+static void \mbox{\hyperlink{levelmgr_8c_ada8737bba54eba39a95944f70cbc1898}{\+\_\+level\+Mgr\+Play\+Fight\+Sound}} ()
+\item 
+static void \mbox{\hyperlink{levelmgr_8c_ae17091f51a458ad53181c5150fd3a6e2}{\+\_\+level\+Mgr\+Start\+Round\+Sound}} ()
+\item 
+static void \mbox{\hyperlink{levelmgr_8c_a406bbd52e940f148b22844becff74521}{\+\_\+level\+Mgr\+Stop\+Round\+Sound}} ()
+\item 
+static void \mbox{\hyperlink{levelmgr_8c_a6e32d76ba161f73ce3f264800eb0743a}{\+\_\+level\+Mgr\+Play\+Punch\+Sound}} ()
+\item 
+static void \mbox{\hyperlink{levelmgr_8c_a8c416909d548c35451bfcddac91fee8e}{\+\_\+level\+Mgr\+Play\+Big\+Attack\+Sound}} ()
+\item 
+void \mbox{\hyperlink{levelmgr_8c_a61fbc0f6cd9c1584ae4897c03d18eeae}{background\+Init\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em all textures relevant to background are loaded here. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{levelmgr_8c_ab4f5749053d79a06bd2a8770f5726aef}{level\+Mgr\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the level manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{levelmgr_8c_a30e91f13cc312dd1390228051d5b2c0f}{level\+Mgr\+Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shutdown the level manager. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{levelmgr_8c_a5f61ddac5c680554f5ca9ad4af57d0fe}{level\+Mgr\+Load}} (const \mbox{\hyperlink{levelmgr_8h_a80b4380904719a9c446c64a71c22b85c}{Level\+Def}} \texorpdfstring{$\ast$}{*}level\+Def)
+\begin{DoxyCompactList}\small\item\em Loads the level and all required objects/assets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{levelmgr_8c_acb6a2482af92cd421e3a66922ae99076}{level\+Mgr\+Unload}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}level)
+\begin{DoxyCompactList}\small\item\em Unloads the level and frees up any assets associated. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{levelmgr_8c_a21bd7602e611af7b25b73b86014aa90a}{Try\+Get\+Victor\+Name}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}lvl)
+\begin{DoxyCompactList}\small\item\em Who won whats their name? \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{levelmgr_8c_a635843bc73947069101385ad485c89c3}{reset\+Level}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}level)
+\begin{DoxyCompactList}\small\item\em When starting new round we want to reinitialize some of the components such as in the characters. This function is called then. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{levelmgr_8c_a8f55f6f75815def1136f1046586bf24e}{reset\+Game}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}level)
+\begin{DoxyCompactList}\small\item\em When the game ends we do this to restart the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{hadouken_8h_ada87a71235a63eabf93d6164a43422d7}{Hadouken}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{levelmgr_8c_acbae5b164c935cc3a4274be9425eb8e2}{Create\+Active\+Hadouken}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}lvl, int idx, \mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character, \mbox{\hyperlink{hadouken_8h_aed4eabff1c2d742d856aca47c680a670}{hadouken\+Notify\+Owner\+Func}} notify\+Owner\+Func, Coord2D position, float velocityX)
+\begin{DoxyCompactList}\small\item\em Character holds reference to this as func pointer, they create a new hadouken in their hadouken behaviour. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{levelmgr_8c_a79022c62ce4500d0f75c4a8e36b09afd}{Try\+Complete\+Round}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}lvl)
+\begin{DoxyCompactList}\small\item\em This function checks if the round is completed -\/ either a character won or if the timer got over. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{levelmgr_8c_ad3472d44c7a3f817fe6ff0743e666416}{Is\+Game\+Over}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}lvl)
+\begin{DoxyCompactList}\small\item\em Checking after each round if we have a victor. We are doing whoever wins 2 first. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{levelmgr_8c_a1ca4f34f85db51a58aca89be9c5b0de4}{Get\+Current\+Round}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}lvl)
+\item 
+void \mbox{\hyperlink{levelmgr_8c_a0d013301b0f620123463bc79bbb728de}{Start\+Current\+Round}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}lvl)
+\begin{DoxyCompactList}\small\item\em When we want to start the next round. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{levelmgr_8c_a0d67e055b277f42d892288e892380b7e}{Is\+Round\+Over}} (\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}lvl)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{character_8h_af7e8ee682d134bbdd3f1496773ca990f}{Health\+Bar}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{levelmgr_8c_ab36ad7a5ff305c637210f8c93fc57cb0}{g\+Health1}}
+\begin{DoxyCompactList}\small\item\em Extern and static global data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{character_8h_af7e8ee682d134bbdd3f1496773ca990f}{Health\+Bar}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{levelmgr_8c_a1467a7b1f0df382d001493bc30310082}{g\+Health2}}
+\item 
+\mbox{\hyperlink{standhurtbehaviour_8h_afcf77be39726e44920aed058d0638275}{Play\+Big\+Damage\+Sound\+CB}} \mbox{\hyperlink{levelmgr_8c_ab08367f0eb191e83bf4928eef9a0b17e}{g\+\_\+\+Big\+Damage\+Sound\+CB}}
+\item 
+\mbox{\hyperlink{basichurtbehaviour_8h_a2906155f7dd543d233c78a8d52d9ea64}{Play\+Punch\+Sound\+CB}} \mbox{\hyperlink{levelmgr_8c_a28d90c891822717ade3341aed7ae7f73}{g\+\_\+punch\+Sound\+CB}}
+\item 
+\mbox{\hyperlink{character_8h_a4f4bb87c289ed15bff0beab6e419b3cc}{Play\+Hadouken\+Sound}} \mbox{\hyperlink{levelmgr_8c_a85d0e6bd2b3b29a85d9c3f65a4789bc0}{\+\_\+hadouken\+Sound\+CB}}
+\item 
+\mbox{\hyperlink{levelmgr_8h_ac732bcc6df90c34d9c7bea211f7aef00}{Play\+Start\+Screen\+Sound\+CB}} \mbox{\hyperlink{levelmgr_8c_a05ce34a1c1461710f5d44b515e8c7a9a}{g\+\_\+start\+Screen\+CB}}
+\item 
+\mbox{\hyperlink{levelmgr_8h_af23c536c1c1227ea5f6e3ded55968ca8}{Stop\+Start\+Screen\+Sound\+CB}} \mbox{\hyperlink{levelmgr_8c_a958c1a9597748440cd2e495630a7b3d4}{g\+\_\+stop\+Start\+Screen\+CB}}
+\item 
+\mbox{\hyperlink{levelmgr_8h_af0e066135155a53db11ecf262f4ca474}{Play\+Fight\+Sound\+CB}} \mbox{\hyperlink{levelmgr_8c_a7d27295e706544f3cf7bf6ad2aff8188}{g\+\_\+fight\+Sound\+CB}}
+\item 
+\mbox{\hyperlink{levelmgr_8h_afee124da4862f03ddb4f63de0e32ebcb}{Play\+Round\+Sound\+CB}} \mbox{\hyperlink{levelmgr_8c_af530971076f11ae6790fed95087fade2}{g\+\_\+round\+Sound\+CB}}
+\item 
+float \mbox{\hyperlink{levelmgr_8c_a958396225450d731f9932617e4580ef5}{g\+\_\+ground\+Level}}
+\item 
+static bool \mbox{\hyperlink{levelmgr_8c_aa211a4b16a4cc7447c1362f46de0fe43}{is\+Round\+Sound\+Playing}} = false
+\item 
+static bool \mbox{\hyperlink{levelmgr_8c_a014292a5c58d7dfa96aa372a5967298a}{is\+Timer\+Down\+Sound\+Playing}} = false
+\item 
+static bool \mbox{\hyperlink{levelmgr_8c_a74189be7eb13a9ef2a05f93ff6f6f436}{start\+Screen\+Sound\+Playing}} = false
+\item 
+static int32\+\_\+t \mbox{\hyperlink{levelmgr_8c_aece0bfcf73b944d16f1c586080413982}{\+\_\+hadouken\+Sound\+ID}} = SOUND\+\_\+\+NOSOUND
+\item 
+static int32\+\_\+t \mbox{\hyperlink{levelmgr_8c_aa8a46a6106e373a47b2103b78d9625f4}{\+\_\+background\+Sound\+ID}} = SOUND\+\_\+\+NOSOUND
+\item 
+static int32\+\_\+t \mbox{\hyperlink{levelmgr_8c_a8ad07ef4af1f1ea7a94970f4f4efcc3d}{\+\_\+fight\+Sound\+ID}} = SOUND\+\_\+\+NOSOUND
+\item 
+static int32\+\_\+t \mbox{\hyperlink{levelmgr_8c_a9f921af91bd9f9b24fca16c1c2da368a}{\+\_\+round\+Sound\+ID}} = SOUND\+\_\+\+NOSOUND
+\item 
+static int32\+\_\+t \mbox{\hyperlink{levelmgr_8c_a837b1b703cfc0989559183db83dda13e}{\+\_\+timer\+Down\+Sound\+ID}} = SOUND\+\_\+\+NOSOUND
+\item 
+static int32\+\_\+t \mbox{\hyperlink{levelmgr_8c_a9d05fa6ed2a2e8a2f35619a76bc86a86}{\+\_\+punch\+Sound\+ID}} = SOUND\+\_\+\+NOSOUND
+\item 
+static int32\+\_\+t \mbox{\hyperlink{levelmgr_8c_ac0b04becaa63c09bea45eeea0233f0f5}{\+\_\+big\+Attack\+Sound\+ID}} = SOUND\+\_\+\+NOSOUND
+\item 
+static int32\+\_\+t \mbox{\hyperlink{levelmgr_8c_ac34d46e22b0ec6d37c90660949069829}{\+\_\+sound\+Id}} = SOUND\+\_\+\+NOSOUND
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{levelmgr_8c_a7dbe7d010c660af716deba063f405608}\label{levelmgr_8c_a7dbe7d010c660af716deba063f405608} 
+\index{levelmgr.c@{levelmgr.c}!Level@{Level}}
+\index{Level@{Level}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{Level}{Level}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structlevel__t}{level\+\_\+t}} \mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}}}
+
+\Hypertarget{levelmgr_8c_a44985c726393385ef35e6dc724b6bc7b}\label{levelmgr_8c_a44985c726393385ef35e6dc724b6bc7b} 
+\index{levelmgr.c@{levelmgr.c}!RoundTimer@{RoundTimer}}
+\index{RoundTimer@{RoundTimer}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{RoundTimer}{RoundTimer}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structround_timer__t}{round\+Timer\+\_\+t}} \mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}}}
+
+
+
+Timer for the round. Updated every frame -\/ based on this the round gets over. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{levelmgr_8c_a8c416909d548c35451bfcddac91fee8e}\label{levelmgr_8c_a8c416909d548c35451bfcddac91fee8e} 
+\index{levelmgr.c@{levelmgr.c}!\_levelMgrPlayBigAttackSound@{\_levelMgrPlayBigAttackSound}}
+\index{\_levelMgrPlayBigAttackSound@{\_levelMgrPlayBigAttackSound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_levelMgrPlayBigAttackSound()}{\_levelMgrPlayBigAttackSound()}}
+{\footnotesize\ttfamily static void \+\_\+level\+Mgr\+Play\+Big\+Attack\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a8c416909d548c35451bfcddac91fee8e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_ada8737bba54eba39a95944f70cbc1898}\label{levelmgr_8c_ada8737bba54eba39a95944f70cbc1898} 
+\index{levelmgr.c@{levelmgr.c}!\_levelMgrPlayFightSound@{\_levelMgrPlayFightSound}}
+\index{\_levelMgrPlayFightSound@{\_levelMgrPlayFightSound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_levelMgrPlayFightSound()}{\_levelMgrPlayFightSound()}}
+{\footnotesize\ttfamily static void \+\_\+level\+Mgr\+Play\+Fight\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_ada8737bba54eba39a95944f70cbc1898_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a21c46e59355cde461be6080133c0cb99}\label{levelmgr_8c_a21c46e59355cde461be6080133c0cb99} 
+\index{levelmgr.c@{levelmgr.c}!\_levelMgrPlayHadoukenSound@{\_levelMgrPlayHadoukenSound}}
+\index{\_levelMgrPlayHadoukenSound@{\_levelMgrPlayHadoukenSound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_levelMgrPlayHadoukenSound()}{\_levelMgrPlayHadoukenSound()}}
+{\footnotesize\ttfamily static void \+\_\+level\+Mgr\+Play\+Hadouken\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a21c46e59355cde461be6080133c0cb99_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a6e32d76ba161f73ce3f264800eb0743a}\label{levelmgr_8c_a6e32d76ba161f73ce3f264800eb0743a} 
+\index{levelmgr.c@{levelmgr.c}!\_levelMgrPlayPunchSound@{\_levelMgrPlayPunchSound}}
+\index{\_levelMgrPlayPunchSound@{\_levelMgrPlayPunchSound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_levelMgrPlayPunchSound()}{\_levelMgrPlayPunchSound()}}
+{\footnotesize\ttfamily static void \+\_\+level\+Mgr\+Play\+Punch\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a6e32d76ba161f73ce3f264800eb0743a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_ae3023bbe799282295ee89c26d729a7cf}\label{levelmgr_8c_ae3023bbe799282295ee89c26d729a7cf} 
+\index{levelmgr.c@{levelmgr.c}!\_levelMgrPlaySound@{\_levelMgrPlaySound}}
+\index{\_levelMgrPlaySound@{\_levelMgrPlaySound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_levelMgrPlaySound()}{\_levelMgrPlaySound()}}
+{\footnotesize\ttfamily static void \+\_\+level\+Mgr\+Play\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ball_8h_abe79029b6b27eb4bd57e96be3e7778eb}{Ball}} \texorpdfstring{$\ast$}{*}}]{ball }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_ae3023bbe799282295ee89c26d729a7cf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_ac16eb580148062549dc8e19d382b7e2d}\label{levelmgr_8c_ac16eb580148062549dc8e19d382b7e2d} 
+\index{levelmgr.c@{levelmgr.c}!\_levelMgrPlayStartScreenSound@{\_levelMgrPlayStartScreenSound}}
+\index{\_levelMgrPlayStartScreenSound@{\_levelMgrPlayStartScreenSound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_levelMgrPlayStartScreenSound()}{\_levelMgrPlayStartScreenSound()}}
+{\footnotesize\ttfamily static void \+\_\+level\+Mgr\+Play\+Start\+Screen\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_ac16eb580148062549dc8e19d382b7e2d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_ae17091f51a458ad53181c5150fd3a6e2}\label{levelmgr_8c_ae17091f51a458ad53181c5150fd3a6e2} 
+\index{levelmgr.c@{levelmgr.c}!\_levelMgrStartRoundSound@{\_levelMgrStartRoundSound}}
+\index{\_levelMgrStartRoundSound@{\_levelMgrStartRoundSound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_levelMgrStartRoundSound()}{\_levelMgrStartRoundSound()}}
+{\footnotesize\ttfamily static void \+\_\+level\+Mgr\+Start\+Round\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_ae17091f51a458ad53181c5150fd3a6e2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a406bbd52e940f148b22844becff74521}\label{levelmgr_8c_a406bbd52e940f148b22844becff74521} 
+\index{levelmgr.c@{levelmgr.c}!\_levelMgrStopRoundSound@{\_levelMgrStopRoundSound}}
+\index{\_levelMgrStopRoundSound@{\_levelMgrStopRoundSound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_levelMgrStopRoundSound()}{\_levelMgrStopRoundSound()}}
+{\footnotesize\ttfamily static void \+\_\+level\+Mgr\+Stop\+Round\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a406bbd52e940f148b22844becff74521_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_adad1b529b15fb22cc2bdb493ff56e622}\label{levelmgr_8c_adad1b529b15fb22cc2bdb493ff56e622} 
+\index{levelmgr.c@{levelmgr.c}!\_levelMgrStopStartScreenSound@{\_levelMgrStopStartScreenSound}}
+\index{\_levelMgrStopStartScreenSound@{\_levelMgrStopStartScreenSound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_levelMgrStopStartScreenSound()}{\_levelMgrStopStartScreenSound()}}
+{\footnotesize\ttfamily static void \+\_\+level\+Mgr\+Stop\+Start\+Screen\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_adad1b529b15fb22cc2bdb493ff56e622_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a131391e902d5933b94eab97f5d6d7640}\label{levelmgr_8c_a131391e902d5933b94eab97f5d6d7640} 
+\index{levelmgr.c@{levelmgr.c}!\_levelMgrTimerStartSound@{\_levelMgrTimerStartSound}}
+\index{\_levelMgrTimerStartSound@{\_levelMgrTimerStartSound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_levelMgrTimerStartSound()}{\_levelMgrTimerStartSound()}}
+{\footnotesize\ttfamily static void \+\_\+level\+Mgr\+Timer\+Start\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{levelmgr_8c_a61fbc0f6cd9c1584ae4897c03d18eeae}\label{levelmgr_8c_a61fbc0f6cd9c1584ae4897c03d18eeae} 
+\index{levelmgr.c@{levelmgr.c}!backgroundInitTexture@{backgroundInitTexture}}
+\index{backgroundInitTexture@{backgroundInitTexture}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{backgroundInitTexture()}{backgroundInitTexture()}}
+{\footnotesize\ttfamily void background\+Init\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+all textures relevant to background are loaded here. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a61fbc0f6cd9c1584ae4897c03d18eeae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_acbae5b164c935cc3a4274be9425eb8e2}\label{levelmgr_8c_acbae5b164c935cc3a4274be9425eb8e2} 
+\index{levelmgr.c@{levelmgr.c}!CreateActiveHadouken@{CreateActiveHadouken}}
+\index{CreateActiveHadouken@{CreateActiveHadouken}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{CreateActiveHadouken()}{CreateActiveHadouken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{hadouken_8h_ada87a71235a63eabf93d6164a43422d7}{Hadouken}} \texorpdfstring{$\ast$}{*} Create\+Active\+Hadouken (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl,  }\item[{int}]{idx,  }\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character,  }\item[{\mbox{\hyperlink{hadouken_8h_aed4eabff1c2d742d856aca47c680a670}{hadouken\+Notify\+Owner\+Func}}}]{notify\+Owner\+Func,  }\item[{Coord2D}]{position,  }\item[{float}]{velocityX }\end{DoxyParamCaption})}
+
+
+
+Character holds reference to this as func pointer, they create a new hadouken in their hadouken behaviour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lvl} & \\
+\hline
+{\em idx} & \\
+\hline
+{\em character} & \\
+\hline
+{\em notify\+Owner\+Func} & \\
+\hline
+{\em position} & \\
+\hline
+{\em velocityX} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_acbae5b164c935cc3a4274be9425eb8e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_acbae5b164c935cc3a4274be9425eb8e2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_af6196660decc7b20e3592f2af6e96c74}\label{levelmgr_8c_af6196660decc7b20e3592f2af6e96c74} 
+\index{levelmgr.c@{levelmgr.c}!drawTimer@{drawTimer}}
+\index{drawTimer@{drawTimer}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{drawTimer()}{drawTimer()}}
+{\footnotesize\ttfamily void draw\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}}]{timer }\end{DoxyParamCaption})}
+
+
+
+Draw timer on screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{levelmgr_8c_af6196660decc7b20e3592f2af6e96c74_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{levelmgr_8c_af6196660decc7b20e3592f2af6e96c74_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_ae6d73d12ad93fab5cd7182bc91de0a0a}\label{levelmgr_8c_ae6d73d12ad93fab5cd7182bc91de0a0a} 
+\index{levelmgr.c@{levelmgr.c}!GameCanSpawnHadouken@{GameCanSpawnHadouken}}
+\index{GameCanSpawnHadouken@{GameCanSpawnHadouken}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{GameCanSpawnHadouken()}{GameCanSpawnHadouken()}}
+{\footnotesize\ttfamily bool Game\+Can\+Spawn\+Hadouken (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+
+
+In the behaviour the character must check if there is an active hadouken in which case it can not spawn one more. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_ae6d73d12ad93fab5cd7182bc91de0a0a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_ae6d73d12ad93fab5cd7182bc91de0a0a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a9068323715d31a357bef377daa7e10be}\label{levelmgr_8c_a9068323715d31a357bef377daa7e10be} 
+\index{levelmgr.c@{levelmgr.c}!GameSpawnHadouken@{GameSpawnHadouken}}
+\index{GameSpawnHadouken@{GameSpawnHadouken}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{GameSpawnHadouken()}{GameSpawnHadouken()}}
+{\footnotesize\ttfamily void Game\+Spawn\+Hadouken (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character,  }\item[{Coord2D}]{position,  }\item[{float}]{velocityX }\end{DoxyParamCaption})}
+
+
+
+This callback should be with the character object which it will use to spawn hadouken in the correpsonding behaviour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & \\
+\hline
+{\em position} & \\
+\hline
+{\em velocityX} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a9068323715d31a357bef377daa7e10be_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a9068323715d31a357bef377daa7e10be_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_ad75917135ca2f2a7fbbb4987a8cedac3}\label{levelmgr_8c_ad75917135ca2f2a7fbbb4987a8cedac3} 
+\index{levelmgr.c@{levelmgr.c}!GetActiveHadoukens@{GetActiveHadoukens}}
+\index{GetActiveHadoukens@{GetActiveHadoukens}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{GetActiveHadoukens()}{GetActiveHadoukens()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{levelmgr_8h_a26c22c77c1ed80a88322d03ae00af8d2}{Active\+Hadouken}} \texorpdfstring{$\ast$}{*} Get\+Active\+Hadoukens (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{len }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_ad75917135ca2f2a7fbbb4987a8cedac3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a1ca4f34f85db51a58aca89be9c5b0de4}\label{levelmgr_8c_a1ca4f34f85db51a58aca89be9c5b0de4} 
+\index{levelmgr.c@{levelmgr.c}!GetCurrentRound@{GetCurrentRound}}
+\index{GetCurrentRound@{GetCurrentRound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{GetCurrentRound()}{GetCurrentRound()}}
+{\footnotesize\ttfamily uint8\+\_\+t Get\+Current\+Round (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a1ca4f34f85db51a58aca89be9c5b0de4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_aab0d174dc963ec0c1acbbe4fdba13160}\label{levelmgr_8c_aab0d174dc963ec0c1acbbe4fdba13160} 
+\index{levelmgr.c@{levelmgr.c}!GetExitTimer@{GetExitTimer}}
+\index{GetExitTimer@{GetExitTimer}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{GetExitTimer()}{GetExitTimer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*} Get\+Exit\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl }\end{DoxyParamCaption})}
+
+
+
+Timer for the game exit after which game loads again from start screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lvl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_aab0d174dc963ec0c1acbbe4fdba13160_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a01243945097b852be2b045a1bfb85704}\label{levelmgr_8c_a01243945097b852be2b045a1bfb85704} 
+\index{levelmgr.c@{levelmgr.c}!GetRoundTimer@{GetRoundTimer}}
+\index{GetRoundTimer@{GetRoundTimer}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{GetRoundTimer()}{GetRoundTimer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*} Get\+Round\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a01243945097b852be2b045a1bfb85704_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_af875c9d42d369d78b5b44e1d5c1dadf8}\label{levelmgr_8c_af875c9d42d369d78b5b44e1d5c1dadf8} 
+\index{levelmgr.c@{levelmgr.c}!InitExitTimer@{InitExitTimer}}
+\index{InitExitTimer@{InitExitTimer}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{InitExitTimer()}{InitExitTimer()}}
+{\footnotesize\ttfamily void Init\+Exit\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}}]{timer }\end{DoxyParamCaption})}
+
+
+
+The exit timer is played when the match(set of rounds like tennis) is over and we need to go back to the main screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{levelmgr_8c_a9fa68fcb6bf90eece5c629f1029b7ecf}\label{levelmgr_8c_a9fa68fcb6bf90eece5c629f1029b7ecf} 
+\index{levelmgr.c@{levelmgr.c}!InitRoundTimer@{InitRoundTimer}}
+\index{InitRoundTimer@{InitRoundTimer}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{InitRoundTimer()}{InitRoundTimer()}}
+{\footnotesize\ttfamily void Init\+Round\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}}]{timer }\end{DoxyParamCaption})}
+
+
+
+Initialized the timer we use to time the rounds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a9fa68fcb6bf90eece5c629f1029b7ecf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_ad3472d44c7a3f817fe6ff0743e666416}\label{levelmgr_8c_ad3472d44c7a3f817fe6ff0743e666416} 
+\index{levelmgr.c@{levelmgr.c}!IsGameOver@{IsGameOver}}
+\index{IsGameOver@{IsGameOver}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{IsGameOver()}{IsGameOver()}}
+{\footnotesize\ttfamily bool Is\+Game\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl }\end{DoxyParamCaption})}
+
+
+
+Checking after each round if we have a victor. We are doing whoever wins 2 first. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lvl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_ad3472d44c7a3f817fe6ff0743e666416_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a0d67e055b277f42d892288e892380b7e}\label{levelmgr_8c_a0d67e055b277f42d892288e892380b7e} 
+\index{levelmgr.c@{levelmgr.c}!IsRoundOver@{IsRoundOver}}
+\index{IsRoundOver@{IsRoundOver}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{IsRoundOver()}{IsRoundOver()}}
+{\footnotesize\ttfamily bool Is\+Round\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a0d67e055b277f42d892288e892380b7e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_adcf527b803684542639e64585bc2f6e7}\label{levelmgr_8c_adcf527b803684542639e64585bc2f6e7} 
+\index{levelmgr.c@{levelmgr.c}!isTimerOver@{isTimerOver}}
+\index{isTimerOver@{isTimerOver}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{isTimerOver()}{isTimerOver()}}
+{\footnotesize\ttfamily bool is\+Timer\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}}]{timer }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_adcf527b803684542639e64585bc2f6e7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_ab4f5749053d79a06bd2a8770f5726aef}\label{levelmgr_8c_ab4f5749053d79a06bd2a8770f5726aef} 
+\index{levelmgr.c@{levelmgr.c}!levelMgrInit@{levelMgrInit}}
+\index{levelMgrInit@{levelMgrInit}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{levelMgrInit()}{levelMgrInit()}}
+{\footnotesize\ttfamily void level\+Mgr\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the level manager. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{levelmgr_8c_ab4f5749053d79a06bd2a8770f5726aef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{levelmgr_8c_ab4f5749053d79a06bd2a8770f5726aef_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a5f61ddac5c680554f5ca9ad4af57d0fe}\label{levelmgr_8c_a5f61ddac5c680554f5ca9ad4af57d0fe} 
+\index{levelmgr.c@{levelmgr.c}!levelMgrLoad@{levelMgrLoad}}
+\index{levelMgrLoad@{levelMgrLoad}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{levelMgrLoad()}{levelMgrLoad()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*} level\+Mgr\+Load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{levelmgr_8h_a80b4380904719a9c446c64a71c22b85c}{Level\+Def}} \texorpdfstring{$\ast$}{*}}]{level\+Def }\end{DoxyParamCaption})}
+
+
+
+Loads the level and all required objects/assets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level\+Def} & Inits all the components in the level such as the 2 characters, health bars, timer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+~\newline
+ 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a5f61ddac5c680554f5ca9ad4af57d0fe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{levelmgr_8c_a5f61ddac5c680554f5ca9ad4af57d0fe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a30e91f13cc312dd1390228051d5b2c0f}\label{levelmgr_8c_a30e91f13cc312dd1390228051d5b2c0f} 
+\index{levelmgr.c@{levelmgr.c}!levelMgrShutdown@{levelMgrShutdown}}
+\index{levelMgrShutdown@{levelMgrShutdown}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{levelMgrShutdown()}{levelMgrShutdown()}}
+{\footnotesize\ttfamily void level\+Mgr\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shutdown the level manager. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a30e91f13cc312dd1390228051d5b2c0f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_acb6a2482af92cd421e3a66922ae99076}\label{levelmgr_8c_acb6a2482af92cd421e3a66922ae99076} 
+\index{levelmgr.c@{levelmgr.c}!levelMgrUnload@{levelMgrUnload}}
+\index{levelMgrUnload@{levelMgrUnload}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{levelMgrUnload()}{levelMgrUnload()}}
+{\footnotesize\ttfamily void level\+Mgr\+Unload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{level }\end{DoxyParamCaption})}
+
+
+
+Unloads the level and frees up any assets associated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_acb6a2482af92cd421e3a66922ae99076_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_acb6a2482af92cd421e3a66922ae99076_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_aa751f828c6874c5d8803cea17ed4c620}\label{levelmgr_8c_aa751f828c6874c5d8803cea17ed4c620} 
+\index{levelmgr.c@{levelmgr.c}!resetExitTimer@{resetExitTimer}}
+\index{resetExitTimer@{resetExitTimer}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{resetExitTimer()}{resetExitTimer()}}
+{\footnotesize\ttfamily void reset\+Exit\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}}]{timer }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_aa751f828c6874c5d8803cea17ed4c620_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a8f55f6f75815def1136f1046586bf24e}\label{levelmgr_8c_a8f55f6f75815def1136f1046586bf24e} 
+\index{levelmgr.c@{levelmgr.c}!resetGame@{resetGame}}
+\index{resetGame@{resetGame}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{resetGame()}{resetGame()}}
+{\footnotesize\ttfamily void reset\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{level }\end{DoxyParamCaption})}
+
+
+
+When the game ends we do this to restart the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a8f55f6f75815def1136f1046586bf24e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{levelmgr_8c_a8f55f6f75815def1136f1046586bf24e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a635843bc73947069101385ad485c89c3}\label{levelmgr_8c_a635843bc73947069101385ad485c89c3} 
+\index{levelmgr.c@{levelmgr.c}!resetLevel@{resetLevel}}
+\index{resetLevel@{resetLevel}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{resetLevel()}{resetLevel()}}
+{\footnotesize\ttfamily void reset\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{level }\end{DoxyParamCaption})}
+
+
+
+When starting new round we want to reinitialize some of the components such as in the characters. This function is called then. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a635843bc73947069101385ad485c89c3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{levelmgr_8c_a635843bc73947069101385ad485c89c3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a7c0a7292d951b4445623a2a5a5736ba3}\label{levelmgr_8c_a7c0a7292d951b4445623a2a5a5736ba3} 
+\index{levelmgr.c@{levelmgr.c}!resetTimer@{resetTimer}}
+\index{resetTimer@{resetTimer}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{resetTimer()}{resetTimer()}}
+{\footnotesize\ttfamily void reset\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}}]{timer }\end{DoxyParamCaption})}
+
+
+
+Resets it to the max time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a7c0a7292d951b4445623a2a5a5736ba3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a0d013301b0f620123463bc79bbb728de}\label{levelmgr_8c_a0d013301b0f620123463bc79bbb728de} 
+\index{levelmgr.c@{levelmgr.c}!StartCurrentRound@{StartCurrentRound}}
+\index{StartCurrentRound@{StartCurrentRound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{StartCurrentRound()}{StartCurrentRound()}}
+{\footnotesize\ttfamily void Start\+Current\+Round (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl }\end{DoxyParamCaption})}
+
+
+
+When we want to start the next round. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lvl} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{levelmgr_8c_a0d013301b0f620123463bc79bbb728de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a0d013301b0f620123463bc79bbb728de_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a79022c62ce4500d0f75c4a8e36b09afd}\label{levelmgr_8c_a79022c62ce4500d0f75c4a8e36b09afd} 
+\index{levelmgr.c@{levelmgr.c}!TryCompleteRound@{TryCompleteRound}}
+\index{TryCompleteRound@{TryCompleteRound}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{TryCompleteRound()}{TryCompleteRound()}}
+{\footnotesize\ttfamily bool Try\+Complete\+Round (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl }\end{DoxyParamCaption})}
+
+
+
+This function checks if the round is completed -\/ either a character won or if the timer got over. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lvl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a79022c62ce4500d0f75c4a8e36b09afd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a79022c62ce4500d0f75c4a8e36b09afd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a21bd7602e611af7b25b73b86014aa90a}\label{levelmgr_8c_a21bd7602e611af7b25b73b86014aa90a} 
+\index{levelmgr.c@{levelmgr.c}!TryGetVictorName@{TryGetVictorName}}
+\index{TryGetVictorName@{TryGetVictorName}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{TryGetVictorName()}{TryGetVictorName()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Try\+Get\+Victor\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a7dbe7d010c660af716deba063f405608}{Level}} \texorpdfstring{$\ast$}{*}}]{lvl }\end{DoxyParamCaption})}
+
+
+
+Who won whats their name? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lvl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{levelmgr_8c_a21bd7602e611af7b25b73b86014aa90a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a21bd7602e611af7b25b73b86014aa90a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{levelmgr_8c_a866e8c11f01786fbfc36636fce2054cd}\label{levelmgr_8c_a866e8c11f01786fbfc36636fce2054cd} 
+\index{levelmgr.c@{levelmgr.c}!updateTimer@{updateTimer}}
+\index{updateTimer@{updateTimer}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{updateTimer()}{updateTimer()}}
+{\footnotesize\ttfamily void update\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{levelmgr_8h_a44985c726393385ef35e6dc724b6bc7b}{Round\+Timer}} \texorpdfstring{$\ast$}{*}}]{timer,  }\item[{uint8\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Updates every frame the timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & \\
+\hline
+{\em milliseconds} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{levelmgr_8c_a866e8c11f01786fbfc36636fce2054cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{levelmgr_8c_aa8a46a6106e373a47b2103b78d9625f4}\label{levelmgr_8c_aa8a46a6106e373a47b2103b78d9625f4} 
+\index{levelmgr.c@{levelmgr.c}!\_backgroundSoundID@{\_backgroundSoundID}}
+\index{\_backgroundSoundID@{\_backgroundSoundID}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_backgroundSoundID}{\_backgroundSoundID}}
+{\footnotesize\ttfamily int32\+\_\+t \+\_\+background\+Sound\+ID = SOUND\+\_\+\+NOSOUND\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{levelmgr_8c_ac0b04becaa63c09bea45eeea0233f0f5}\label{levelmgr_8c_ac0b04becaa63c09bea45eeea0233f0f5} 
+\index{levelmgr.c@{levelmgr.c}!\_bigAttackSoundID@{\_bigAttackSoundID}}
+\index{\_bigAttackSoundID@{\_bigAttackSoundID}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_bigAttackSoundID}{\_bigAttackSoundID}}
+{\footnotesize\ttfamily int32\+\_\+t \+\_\+big\+Attack\+Sound\+ID = SOUND\+\_\+\+NOSOUND\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{levelmgr_8c_a8ad07ef4af1f1ea7a94970f4f4efcc3d}\label{levelmgr_8c_a8ad07ef4af1f1ea7a94970f4f4efcc3d} 
+\index{levelmgr.c@{levelmgr.c}!\_fightSoundID@{\_fightSoundID}}
+\index{\_fightSoundID@{\_fightSoundID}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_fightSoundID}{\_fightSoundID}}
+{\footnotesize\ttfamily int32\+\_\+t \+\_\+fight\+Sound\+ID = SOUND\+\_\+\+NOSOUND\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{levelmgr_8c_a85d0e6bd2b3b29a85d9c3f65a4789bc0}\label{levelmgr_8c_a85d0e6bd2b3b29a85d9c3f65a4789bc0} 
+\index{levelmgr.c@{levelmgr.c}!\_hadoukenSoundCB@{\_hadoukenSoundCB}}
+\index{\_hadoukenSoundCB@{\_hadoukenSoundCB}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_hadoukenSoundCB}{\_hadoukenSoundCB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{character_8h_a4f4bb87c289ed15bff0beab6e419b3cc}{Play\+Hadouken\+Sound}} \+\_\+hadouken\+Sound\+CB\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{levelmgr_8c_aece0bfcf73b944d16f1c586080413982}\label{levelmgr_8c_aece0bfcf73b944d16f1c586080413982} 
+\index{levelmgr.c@{levelmgr.c}!\_hadoukenSoundID@{\_hadoukenSoundID}}
+\index{\_hadoukenSoundID@{\_hadoukenSoundID}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_hadoukenSoundID}{\_hadoukenSoundID}}
+{\footnotesize\ttfamily int32\+\_\+t \+\_\+hadouken\+Sound\+ID = SOUND\+\_\+\+NOSOUND\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{levelmgr_8c_a9d05fa6ed2a2e8a2f35619a76bc86a86}\label{levelmgr_8c_a9d05fa6ed2a2e8a2f35619a76bc86a86} 
+\index{levelmgr.c@{levelmgr.c}!\_punchSoundID@{\_punchSoundID}}
+\index{\_punchSoundID@{\_punchSoundID}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_punchSoundID}{\_punchSoundID}}
+{\footnotesize\ttfamily int32\+\_\+t \+\_\+punch\+Sound\+ID = SOUND\+\_\+\+NOSOUND\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{levelmgr_8c_a9f921af91bd9f9b24fca16c1c2da368a}\label{levelmgr_8c_a9f921af91bd9f9b24fca16c1c2da368a} 
+\index{levelmgr.c@{levelmgr.c}!\_roundSoundID@{\_roundSoundID}}
+\index{\_roundSoundID@{\_roundSoundID}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_roundSoundID}{\_roundSoundID}}
+{\footnotesize\ttfamily int32\+\_\+t \+\_\+round\+Sound\+ID = SOUND\+\_\+\+NOSOUND\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{levelmgr_8c_ac34d46e22b0ec6d37c90660949069829}\label{levelmgr_8c_ac34d46e22b0ec6d37c90660949069829} 
+\index{levelmgr.c@{levelmgr.c}!\_soundId@{\_soundId}}
+\index{\_soundId@{\_soundId}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_soundId}{\_soundId}}
+{\footnotesize\ttfamily int32\+\_\+t \+\_\+sound\+Id = SOUND\+\_\+\+NOSOUND\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{levelmgr_8c_a837b1b703cfc0989559183db83dda13e}\label{levelmgr_8c_a837b1b703cfc0989559183db83dda13e} 
+\index{levelmgr.c@{levelmgr.c}!\_timerDownSoundID@{\_timerDownSoundID}}
+\index{\_timerDownSoundID@{\_timerDownSoundID}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{\_timerDownSoundID}{\_timerDownSoundID}}
+{\footnotesize\ttfamily int32\+\_\+t \+\_\+timer\+Down\+Sound\+ID = SOUND\+\_\+\+NOSOUND\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{levelmgr_8c_ab08367f0eb191e83bf4928eef9a0b17e}\label{levelmgr_8c_ab08367f0eb191e83bf4928eef9a0b17e} 
+\index{levelmgr.c@{levelmgr.c}!g\_BigDamageSoundCB@{g\_BigDamageSoundCB}}
+\index{g\_BigDamageSoundCB@{g\_BigDamageSoundCB}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{g\_BigDamageSoundCB}{g\_BigDamageSoundCB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{standhurtbehaviour_8h_afcf77be39726e44920aed058d0638275}{Play\+Big\+Damage\+Sound\+CB}} g\+\_\+\+Big\+Damage\+Sound\+CB\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{levelmgr_8c_a7d27295e706544f3cf7bf6ad2aff8188}\label{levelmgr_8c_a7d27295e706544f3cf7bf6ad2aff8188} 
+\index{levelmgr.c@{levelmgr.c}!g\_fightSoundCB@{g\_fightSoundCB}}
+\index{g\_fightSoundCB@{g\_fightSoundCB}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{g\_fightSoundCB}{g\_fightSoundCB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{levelmgr_8h_af0e066135155a53db11ecf262f4ca474}{Play\+Fight\+Sound\+CB}} g\+\_\+fight\+Sound\+CB}
+
+\Hypertarget{levelmgr_8c_a958396225450d731f9932617e4580ef5}\label{levelmgr_8c_a958396225450d731f9932617e4580ef5} 
+\index{levelmgr.c@{levelmgr.c}!g\_groundLevel@{g\_groundLevel}}
+\index{g\_groundLevel@{g\_groundLevel}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{g\_groundLevel}{g\_groundLevel}}
+{\footnotesize\ttfamily float g\+\_\+ground\+Level}
+
+\Hypertarget{levelmgr_8c_a28d90c891822717ade3341aed7ae7f73}\label{levelmgr_8c_a28d90c891822717ade3341aed7ae7f73} 
+\index{levelmgr.c@{levelmgr.c}!g\_punchSoundCB@{g\_punchSoundCB}}
+\index{g\_punchSoundCB@{g\_punchSoundCB}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{g\_punchSoundCB}{g\_punchSoundCB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{basichurtbehaviour_8h_a2906155f7dd543d233c78a8d52d9ea64}{Play\+Punch\+Sound\+CB}} g\+\_\+punch\+Sound\+CB\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{levelmgr_8c_af530971076f11ae6790fed95087fade2}\label{levelmgr_8c_af530971076f11ae6790fed95087fade2} 
+\index{levelmgr.c@{levelmgr.c}!g\_roundSoundCB@{g\_roundSoundCB}}
+\index{g\_roundSoundCB@{g\_roundSoundCB}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{g\_roundSoundCB}{g\_roundSoundCB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{levelmgr_8h_afee124da4862f03ddb4f63de0e32ebcb}{Play\+Round\+Sound\+CB}} g\+\_\+round\+Sound\+CB}
+
+\Hypertarget{levelmgr_8c_a05ce34a1c1461710f5d44b515e8c7a9a}\label{levelmgr_8c_a05ce34a1c1461710f5d44b515e8c7a9a} 
+\index{levelmgr.c@{levelmgr.c}!g\_startScreenCB@{g\_startScreenCB}}
+\index{g\_startScreenCB@{g\_startScreenCB}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{g\_startScreenCB}{g\_startScreenCB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{levelmgr_8h_ac732bcc6df90c34d9c7bea211f7aef00}{Play\+Start\+Screen\+Sound\+CB}} g\+\_\+start\+Screen\+CB\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{levelmgr_8c_a958c1a9597748440cd2e495630a7b3d4}\label{levelmgr_8c_a958c1a9597748440cd2e495630a7b3d4} 
+\index{levelmgr.c@{levelmgr.c}!g\_stopStartScreenCB@{g\_stopStartScreenCB}}
+\index{g\_stopStartScreenCB@{g\_stopStartScreenCB}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{g\_stopStartScreenCB}{g\_stopStartScreenCB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{levelmgr_8h_af23c536c1c1227ea5f6e3ded55968ca8}{Stop\+Start\+Screen\+Sound\+CB}} g\+\_\+stop\+Start\+Screen\+CB\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{levelmgr_8c_ab36ad7a5ff305c637210f8c93fc57cb0}\label{levelmgr_8c_ab36ad7a5ff305c637210f8c93fc57cb0} 
+\index{levelmgr.c@{levelmgr.c}!gHealth1@{gHealth1}}
+\index{gHealth1@{gHealth1}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{gHealth1}{gHealth1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{character_8h_af7e8ee682d134bbdd3f1496773ca990f}{Health\+Bar}}\texorpdfstring{$\ast$}{*} g\+Health1}
+
+
+
+Extern and static global data. 
+
+\Hypertarget{levelmgr_8c_a1467a7b1f0df382d001493bc30310082}\label{levelmgr_8c_a1467a7b1f0df382d001493bc30310082} 
+\index{levelmgr.c@{levelmgr.c}!gHealth2@{gHealth2}}
+\index{gHealth2@{gHealth2}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{gHealth2}{gHealth2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{character_8h_af7e8ee682d134bbdd3f1496773ca990f}{Health\+Bar}}\texorpdfstring{$\ast$}{*} g\+Health2}
+
+\Hypertarget{levelmgr_8c_aa211a4b16a4cc7447c1362f46de0fe43}\label{levelmgr_8c_aa211a4b16a4cc7447c1362f46de0fe43} 
+\index{levelmgr.c@{levelmgr.c}!isRoundSoundPlaying@{isRoundSoundPlaying}}
+\index{isRoundSoundPlaying@{isRoundSoundPlaying}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{isRoundSoundPlaying}{isRoundSoundPlaying}}
+{\footnotesize\ttfamily bool is\+Round\+Sound\+Playing = false\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{levelmgr_8c_a014292a5c58d7dfa96aa372a5967298a}\label{levelmgr_8c_a014292a5c58d7dfa96aa372a5967298a} 
+\index{levelmgr.c@{levelmgr.c}!isTimerDownSoundPlaying@{isTimerDownSoundPlaying}}
+\index{isTimerDownSoundPlaying@{isTimerDownSoundPlaying}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{isTimerDownSoundPlaying}{isTimerDownSoundPlaying}}
+{\footnotesize\ttfamily bool is\+Timer\+Down\+Sound\+Playing = false\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{levelmgr_8c_a74189be7eb13a9ef2a05f93ff6f6f436}\label{levelmgr_8c_a74189be7eb13a9ef2a05f93ff6f6f436} 
+\index{levelmgr.c@{levelmgr.c}!startScreenSoundPlaying@{startScreenSoundPlaying}}
+\index{startScreenSoundPlaying@{startScreenSoundPlaying}!levelmgr.c@{levelmgr.c}}
+\doxysubsubsection{\texorpdfstring{startScreenSoundPlaying}{startScreenSoundPlaying}}
+{\footnotesize\ttfamily bool start\+Screen\+Sound\+Playing = false\hspace{0.3cm}{\ttfamily [static]}}
+

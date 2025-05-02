@@ -1,0 +1,328 @@
+\doxysection{Game/src/face.c File Reference}
+\hypertarget{face_8c}{}\label{face_8c}\index{Game/src/face.c@{Game/src/face.c}}
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$gl/\+GLU.\+h$>$}\newline
+{\ttfamily \#include \"{}SOIL.\+h\"{}}\newline
+{\ttfamily \#include \"{}base\+Types.\+h\"{}}\newline
+{\ttfamily \#include \"{}face.\+h\"{}}\newline
+{\ttfamily \#include \"{}Object.\+h\"{}}\newline
+{\ttfamily \#include \"{}random.\+h\"{}}\newline
+Include dependency graph for face.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{face_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structface__t}{face\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{face_8c_a3096c973ab779dde41ffea6cf498f525}{mood\+\_\+t}} \mbox{\hyperlink{face_8c_a4e6fca258467d0c4fd65a07759402d50}{Mood}}
+\item 
+typedef struct \mbox{\hyperlink{structface__t}{face\+\_\+t}} \mbox{\hyperlink{face_8c_a2812b5de79edaec53f26b80d1ae31a63}{Face}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{face_8c_a3096c973ab779dde41ffea6cf498f525}{mood\+\_\+t}} \{ \newline
+\mbox{\hyperlink{face_8c_a3096c973ab779dde41ffea6cf498f525a86a1ac6a5a721ae9c76410c81bdb9287}{MOOD\+\_\+\+NORMAL}}
+, \mbox{\hyperlink{face_8c_a3096c973ab779dde41ffea6cf498f525a174c489582e0f5e2da1a5fc5fc75c68a}{MOOD\+\_\+\+HAPPY}}
+, \mbox{\hyperlink{face_8c_a3096c973ab779dde41ffea6cf498f525a63004ea5135bfbdc4d1f8b686a37de60}{MOOD\+\_\+\+SAD}}
+, \mbox{\hyperlink{face_8c_a3096c973ab779dde41ffea6cf498f525afcc2fbef0bec512fc9681ee254f5a5cb}{MOOD\+\_\+\+ANGRY}}
+, \newline
+\mbox{\hyperlink{face_8c_a3096c973ab779dde41ffea6cf498f525a7ee4f98b76c450b665206230ee405534}{MOOD\+\_\+\+COUNT}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{face_8c_a69f73c4a25573b0655d3df1b098ee346}{\+\_\+face\+Update}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Updates the character\textquotesingle{}s mood every so often. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{face_8c_ad20d5843d4e10e52a807e9cf732db0cb}{\+\_\+face\+Draw}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj)
+\begin{DoxyCompactList}\small\item\em Object draw handler. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{face_8c_a7aba87faacc30bee837378f9101137d1}{\+\_\+face\+Update\+Mood}} (\mbox{\hyperlink{face_8h_a2812b5de79edaec53f26b80d1ae31a63}{Face}} \texorpdfstring{$\ast$}{*}face)
+\begin{DoxyCompactList}\small\item\em Choose a random mood. \end{DoxyCompactList}\item 
+static uint32\+\_\+t \mbox{\hyperlink{face_8c_afa179fd0a1052ed119a0f22ce8552761}{\+\_\+get\+Update\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Tuning method for how frequently updates will occur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{face_8c_aa4f66cb5fb11f2195ae8aaf058b14c73}{face\+Init\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em one time initialization of textures \end{DoxyCompactList}\item 
+\mbox{\hyperlink{face_8h_a2812b5de79edaec53f26b80d1ae31a63}{Face}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{face_8c_ab80628df2bf72b7bc206b3662369883c}{face\+New}} (Bounds2D box)
+\begin{DoxyCompactList}\small\item\em Allocates \& initializes a face object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{face_8c_a820519243e919bc9f67fbf0df327d0b1}{face\+Delete}} (\mbox{\hyperlink{face_8h_a2812b5de79edaec53f26b80d1ae31a63}{Face}} \texorpdfstring{$\ast$}{*}face)
+\begin{DoxyCompactList}\small\item\em Frees up resources from a face object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const char \mbox{\hyperlink{face_8c_a8d405c64f541aab6923a30d53a6141cb}{CHARACTER\+\_\+\+PAGE}} \mbox{[}$\,$\mbox{]} = \"{}asset/snoods\+\_\+default.\+png\"{}
+\item 
+static const int32\+\_\+t \mbox{\hyperlink{face_8c_a33bfc2be138be4ae080cc771d948359c}{CHARACTER\+\_\+\+COUNT}} = 8
+\item 
+static GLuint \mbox{\hyperlink{face_8c_a3dd6cd05d6328de25152bd7440ca08fb}{\+\_\+face\+Texture}} = 0
+\item 
+static \mbox{\hyperlink{_object_8h_a3f625389d0dcf3c137b19f132ec28f45}{Obj\+Vtable}} \mbox{\hyperlink{face_8c_a605fec4c018eb1989130bea55fa9fe28}{\+\_\+face\+Vtable}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{face_8c_a2812b5de79edaec53f26b80d1ae31a63}\label{face_8c_a2812b5de79edaec53f26b80d1ae31a63} 
+\index{face.c@{face.c}!Face@{Face}}
+\index{Face@{Face}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{Face}{Face}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structface__t}{face\+\_\+t}} \mbox{\hyperlink{face_8h_a2812b5de79edaec53f26b80d1ae31a63}{Face}}}
+
+\Hypertarget{face_8c_a4e6fca258467d0c4fd65a07759402d50}\label{face_8c_a4e6fca258467d0c4fd65a07759402d50} 
+\index{face.c@{face.c}!Mood@{Mood}}
+\index{Mood@{Mood}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{Mood}{Mood}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{face_8c_a3096c973ab779dde41ffea6cf498f525}{mood\+\_\+t}} \mbox{\hyperlink{face_8c_a4e6fca258467d0c4fd65a07759402d50}{Mood}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{face_8c_a3096c973ab779dde41ffea6cf498f525}\label{face_8c_a3096c973ab779dde41ffea6cf498f525} 
+\index{face.c@{face.c}!mood\_t@{mood\_t}}
+\index{mood\_t@{mood\_t}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{mood\_t}{mood\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{face_8c_a3096c973ab779dde41ffea6cf498f525}{mood\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOOD\_NORMAL@{MOOD\_NORMAL}!face.c@{face.c}}\index{face.c@{face.c}!MOOD\_NORMAL@{MOOD\_NORMAL}}}\Hypertarget{face_8c_a3096c973ab779dde41ffea6cf498f525a86a1ac6a5a721ae9c76410c81bdb9287}\label{face_8c_a3096c973ab779dde41ffea6cf498f525a86a1ac6a5a721ae9c76410c81bdb9287} 
+MOOD\+\_\+\+NORMAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOOD\_HAPPY@{MOOD\_HAPPY}!face.c@{face.c}}\index{face.c@{face.c}!MOOD\_HAPPY@{MOOD\_HAPPY}}}\Hypertarget{face_8c_a3096c973ab779dde41ffea6cf498f525a174c489582e0f5e2da1a5fc5fc75c68a}\label{face_8c_a3096c973ab779dde41ffea6cf498f525a174c489582e0f5e2da1a5fc5fc75c68a} 
+MOOD\+\_\+\+HAPPY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOOD\_SAD@{MOOD\_SAD}!face.c@{face.c}}\index{face.c@{face.c}!MOOD\_SAD@{MOOD\_SAD}}}\Hypertarget{face_8c_a3096c973ab779dde41ffea6cf498f525a63004ea5135bfbdc4d1f8b686a37de60}\label{face_8c_a3096c973ab779dde41ffea6cf498f525a63004ea5135bfbdc4d1f8b686a37de60} 
+MOOD\+\_\+\+SAD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOOD\_ANGRY@{MOOD\_ANGRY}!face.c@{face.c}}\index{face.c@{face.c}!MOOD\_ANGRY@{MOOD\_ANGRY}}}\Hypertarget{face_8c_a3096c973ab779dde41ffea6cf498f525afcc2fbef0bec512fc9681ee254f5a5cb}\label{face_8c_a3096c973ab779dde41ffea6cf498f525afcc2fbef0bec512fc9681ee254f5a5cb} 
+MOOD\+\_\+\+ANGRY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOOD\_COUNT@{MOOD\_COUNT}!face.c@{face.c}}\index{face.c@{face.c}!MOOD\_COUNT@{MOOD\_COUNT}}}\Hypertarget{face_8c_a3096c973ab779dde41ffea6cf498f525a7ee4f98b76c450b665206230ee405534}\label{face_8c_a3096c973ab779dde41ffea6cf498f525a7ee4f98b76c450b665206230ee405534} 
+MOOD\+\_\+\+COUNT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{face_8c_ad20d5843d4e10e52a807e9cf732db0cb}\label{face_8c_ad20d5843d4e10e52a807e9cf732db0cb} 
+\index{face.c@{face.c}!\_faceDraw@{\_faceDraw}}
+\index{\_faceDraw@{\_faceDraw}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{\_faceDraw()}{\_faceDraw()}}
+{\footnotesize\ttfamily static void \+\_\+face\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Object draw handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{face_8c_a69f73c4a25573b0655d3df1b098ee346}\label{face_8c_a69f73c4a25573b0655d3df1b098ee346} 
+\index{face.c@{face.c}!\_faceUpdate@{\_faceUpdate}}
+\index{\_faceUpdate@{\_faceUpdate}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{\_faceUpdate()}{\_faceUpdate()}}
+{\footnotesize\ttfamily static void \+\_\+face\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the character\textquotesingle{}s mood every so often. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{face_8c_a69f73c4a25573b0655d3df1b098ee346_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{face_8c_a7aba87faacc30bee837378f9101137d1}\label{face_8c_a7aba87faacc30bee837378f9101137d1} 
+\index{face.c@{face.c}!\_faceUpdateMood@{\_faceUpdateMood}}
+\index{\_faceUpdateMood@{\_faceUpdateMood}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{\_faceUpdateMood()}{\_faceUpdateMood()}}
+{\footnotesize\ttfamily static void \+\_\+face\+Update\+Mood (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{face_8h_a2812b5de79edaec53f26b80d1ae31a63}{Face}} \texorpdfstring{$\ast$}{*}}]{face }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Choose a random mood. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em face} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{face_8c_a7aba87faacc30bee837378f9101137d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{face_8c_a7aba87faacc30bee837378f9101137d1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{face_8c_afa179fd0a1052ed119a0f22ce8552761}\label{face_8c_afa179fd0a1052ed119a0f22ce8552761} 
+\index{face.c@{face.c}!\_getUpdateTime@{\_getUpdateTime}}
+\index{\_getUpdateTime@{\_getUpdateTime}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{\_getUpdateTime()}{\_getUpdateTime()}}
+{\footnotesize\ttfamily static uint32\+\_\+t \+\_\+get\+Update\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tuning method for how frequently updates will occur. 
+
+\begin{DoxyReturn}{Returns}
+~\newline
+ 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{face_8c_afa179fd0a1052ed119a0f22ce8552761_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{face_8c_afa179fd0a1052ed119a0f22ce8552761_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{face_8c_a820519243e919bc9f67fbf0df327d0b1}\label{face_8c_a820519243e919bc9f67fbf0df327d0b1} 
+\index{face.c@{face.c}!faceDelete@{faceDelete}}
+\index{faceDelete@{faceDelete}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{faceDelete()}{faceDelete()}}
+{\footnotesize\ttfamily void face\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{face_8h_a2812b5de79edaec53f26b80d1ae31a63}{Face}} \texorpdfstring{$\ast$}{*}}]{face }\end{DoxyParamCaption})}
+
+
+
+Frees up resources from a face object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em face} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{face_8c_a820519243e919bc9f67fbf0df327d0b1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{face_8c_aa4f66cb5fb11f2195ae8aaf058b14c73}\label{face_8c_aa4f66cb5fb11f2195ae8aaf058b14c73} 
+\index{face.c@{face.c}!faceInitTextures@{faceInitTextures}}
+\index{faceInitTextures@{faceInitTextures}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{faceInitTextures()}{faceInitTextures()}}
+{\footnotesize\ttfamily void face\+Init\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+one time initialization of textures 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{face_8c_aa4f66cb5fb11f2195ae8aaf058b14c73_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{face_8c_ab80628df2bf72b7bc206b3662369883c}\label{face_8c_ab80628df2bf72b7bc206b3662369883c} 
+\index{face.c@{face.c}!faceNew@{faceNew}}
+\index{faceNew@{faceNew}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{faceNew()}{faceNew()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{face_8h_a2812b5de79edaec53f26b80d1ae31a63}{Face}} \texorpdfstring{$\ast$}{*} face\+New (\begin{DoxyParamCaption}\item[{Bounds2D}]{box }\end{DoxyParamCaption})}
+
+
+
+Allocates \& initializes a face object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+~\newline
+ 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{face_8c_ab80628df2bf72b7bc206b3662369883c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{face_8c_a3dd6cd05d6328de25152bd7440ca08fb}\label{face_8c_a3dd6cd05d6328de25152bd7440ca08fb} 
+\index{face.c@{face.c}!\_faceTexture@{\_faceTexture}}
+\index{\_faceTexture@{\_faceTexture}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{\_faceTexture}{\_faceTexture}}
+{\footnotesize\ttfamily GLuint \+\_\+face\+Texture = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{face_8c_a605fec4c018eb1989130bea55fa9fe28}\label{face_8c_a605fec4c018eb1989130bea55fa9fe28} 
+\index{face.c@{face.c}!\_faceVtable@{\_faceVtable}}
+\index{\_faceVtable@{\_faceVtable}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{\_faceVtable}{\_faceVtable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_object_8h_a3f625389d0dcf3c137b19f132ec28f45}{Obj\+Vtable}} \+\_\+face\+Vtable\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{face_8c_ad20d5843d4e10e52a807e9cf732db0cb}{\_faceDraw}},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{face_8c_a69f73c4a25573b0655d3df1b098ee346}{\_faceUpdate}}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{face_8c_a33bfc2be138be4ae080cc771d948359c}\label{face_8c_a33bfc2be138be4ae080cc771d948359c} 
+\index{face.c@{face.c}!CHARACTER\_COUNT@{CHARACTER\_COUNT}}
+\index{CHARACTER\_COUNT@{CHARACTER\_COUNT}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{CHARACTER\_COUNT}{CHARACTER\_COUNT}}
+{\footnotesize\ttfamily const int32\+\_\+t CHARACTER\+\_\+\+COUNT = 8\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{face_8c_a8d405c64f541aab6923a30d53a6141cb}\label{face_8c_a8d405c64f541aab6923a30d53a6141cb} 
+\index{face.c@{face.c}!CHARACTER\_PAGE@{CHARACTER\_PAGE}}
+\index{CHARACTER\_PAGE@{CHARACTER\_PAGE}!face.c@{face.c}}
+\doxysubsubsection{\texorpdfstring{CHARACTER\_PAGE}{CHARACTER\_PAGE}}
+{\footnotesize\ttfamily const char CHARACTER\+\_\+\+PAGE\mbox{[}$\,$\mbox{]} = \"{}asset/snoods\+\_\+default.\+png\"{}\hspace{0.3cm}{\ttfamily [static]}}
+

@@ -1,0 +1,13 @@
+<map id="Collider_OnCollisionEnterDefault" name="Collider_OnCollisionEnterDefault">
+<area shape="rect" id="Node000001" title="DO we even need this? Maybe not. I don&#39;t think there is a default reaction to collision in my applica..." alt="" coords="824,5,994,48"/>
+<area shape="rect" id="Node000002" href="$collider_8c.html#a784aadf6e46335589e73b09a8d305af1" title="When 2 objects collide, this function runs and calls onCOllisionEnter overriden logic in the objects." alt="" coords="606,13,776,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="809,29,777,29,777,24,809,24"/>
+<area shape="rect" id="Node000003" href="$collisionmanager_8c.html#aadfd800ed11c05e1e05cb2576fc69820" title="This global function is called in the objectMgr and iterates on all objects checking collisions on th..." alt="" coords="426,13,558,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="590,29,558,29,558,24,590,24"/>
+<area shape="rect" id="Node000004" href="$objmgr_8c.html#af18796cc452cca16e78dc6549cc93ffd" title="Updates all registered objects." alt="" coords="276,13,378,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="411,29,379,29,379,24,411,24"/>
+<area shape="rect" id="Node000005" href="$game_8c.html#a4c776f564425d03bdd1026bef085f589" title="Perform updates for all game objects, for the elapsed duration." alt="" coords="126,13,228,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="260,29,228,29,228,24,260,24"/>
+<area shape="rect" id="Node000006" href="$game_8c.html#a661c2abc03926acfaeb93b4ae7db4943" title="Program Entry Point (WinMain). Part of the base game framework." alt="" coords="5,13,78,40"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="110,29,78,29,78,24,110,24"/>
+</map>

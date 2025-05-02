@@ -1,0 +1,451 @@
+\doxysection{Game/include/\+Object.h File Reference}
+\hypertarget{_object_8h}{}\label{_object_8h}\index{Game/include/Object.h@{Game/include/Object.h}}
+{\ttfamily \#include \"{}base\+Types.\+h\"{}}\newline
+Include dependency graph for Object.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{_object_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structobject__vtable__t}{object\+\_\+vtable\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structobject__t}{object\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeab}{object\+Type\+\_\+t}} \mbox{\hyperlink{_object_8h_a1123a0bb64a8fe9748927c0484cd0b05}{Object\+Type}}
+\item 
+typedef struct \mbox{\hyperlink{structobject__t}{object\+\_\+t}} \mbox{\hyperlink{_object_8h_a8d704199338300abfe20c088c1c4433e}{Object}}
+\item 
+typedef struct \mbox{\hyperlink{structcollider__t}{collider\+\_\+t}} \mbox{\hyperlink{_object_8h_a5ff3ec92937ae806d30a2431cda64990}{Collider}}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_object_8h_a14adb2d36ad5f9087899aba911d6fe0f}{Obj\+Draw\+Func}}) (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*})
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_object_8h_a0e007592338fd86d38a5f036c7784000}{Obj\+Update\+Func}}) (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}, uint32\+\_\+t)
+\item 
+typedef struct \mbox{\hyperlink{structobject__vtable__t}{object\+\_\+vtable\+\_\+t}} \mbox{\hyperlink{_object_8h_a3f625389d0dcf3c137b19f132ec28f45}{Obj\+Vtable}}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_object_8h_ac94c13397756d9f60541c26df7d67483}{Obj\+Registration\+Func}}) (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeab}{object\+Type\+\_\+t}} \{ \mbox{\hyperlink{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba96278309a00bb09cd0249f3e62a67333}{Type\+\_\+\+Character}}
+, \mbox{\hyperlink{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba114de4edd43ae9f7aded588677cd7747}{Type\+\_\+\+Hadouken}}
+, \mbox{\hyperlink{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba6b0c6825780dfb053e3238cdba76c742}{Type\+\_\+\+Count}}
+, \mbox{\hyperlink{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba5d134dbdd51280b3904e816488b54769}{Type\+\_\+\+Invalid}} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_object_8h_aedfb2e22326e2d0d452931a37173cf37}{obj\+Enable\+Registration}} (\mbox{\hyperlink{_object_8h_ac94c13397756d9f60541c26df7d67483}{Obj\+Registration\+Func}} register\+Func, \mbox{\hyperlink{_object_8h_ac94c13397756d9f60541c26df7d67483}{Obj\+Registration\+Func}} deregister\+Func)
+\begin{DoxyCompactList}\small\item\em Enable callback to a registrar on Obj\+Init/\+Deinit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_object_8h_a1f97b0f94c01c449bff29674f200952a}{obj\+Disable\+Registration}} ()
+\begin{DoxyCompactList}\small\item\em Disable registration during Obj\+Init/\+Deinit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_object_8h_af67e10c57aec1b3d4efc70f40af0a0b3}{obj\+Init}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, \mbox{\hyperlink{_object_8h_a3f625389d0dcf3c137b19f132ec28f45}{Obj\+Vtable}} \texorpdfstring{$\ast$}{*}vtable, \mbox{\hyperlink{collider_8h_a5ff3ec92937ae806d30a2431cda64990}{Collider}} \texorpdfstring{$\ast$}{*}collider, Bounds2D level\+Def, Coord2D pos, Coord2D vel)
+\begin{DoxyCompactList}\small\item\em Initialize an object. Intended to be called from subclass constructors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_object_8h_a1990d7344bbf3ef06205a6671cf38ffe}{obj\+Deinit}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj)
+\begin{DoxyCompactList}\small\item\em Deinitialize an object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_object_8h_a79a9905dd7abb56548c99cca9d49f890}{obj\+Draw}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj)
+\begin{DoxyCompactList}\small\item\em Draw this object, using it\textquotesingle{}s vtable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_object_8h_a4cde7f3e57f2a0202e1a90712d26f797}{obj\+Update}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\begin{DoxyCompactList}\small\item\em Update this object, using it\textquotesingle{}s vtable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_object_8h_ae384a9525446e8aecc2b6eeef316b6a6}{Obj\+Change\+Size\+Ratio}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, float xratio, float yratio)
+\item 
+void \mbox{\hyperlink{_object_8h_a78dca0d7c7a63298139246387397c01c}{Obj\+Change\+Size\+Abs}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, float newX, float newY)
+\item 
+void \mbox{\hyperlink{_object_8h_a01e09388666a70c05cebd36f3248ae4e}{Set\+Object\+Transform}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, float newX, float newY)
+\item 
+void \mbox{\hyperlink{_object_8h_acae5aeff7fda52f6bf3b706b50215399}{Move\+Object\+Transform}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, float deltaX, float deltaY)
+\item 
+void \mbox{\hyperlink{_object_8h_ad90b7e2e541b8d3c14ce2d90308b9023}{Move\+Object\+To\+Ground}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj)
+\item 
+bool \mbox{\hyperlink{_object_8h_ac8774f7f8e0a12def940e068ac4b7929}{Is\+Object\+On\+Ground}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj)
+\item 
+void \mbox{\hyperlink{_object_8h_a6cfd4d4463c407fbd17d53b791470002}{obj\+Default\+Update}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{_object_8h_aadfd800ed11c05e1e05cb2576fc69820}{Check\+All\+Collisions}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}list, int max)
+\begin{DoxyCompactList}\small\item\em This global function is called in the object\+Mgr and iterates on all objects checking collisions on them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{_object_8h_a958396225450d731f9932617e4580ef5}{g\+\_\+ground\+Level}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_object_8h_a5ff3ec92937ae806d30a2431cda64990}\label{_object_8h_a5ff3ec92937ae806d30a2431cda64990} 
+\index{Object.h@{Object.h}!Collider@{Collider}}
+\index{Collider@{Collider}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{Collider}{Collider}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structcollider__t}{collider\+\_\+t}} \mbox{\hyperlink{collider_8h_a5ff3ec92937ae806d30a2431cda64990}{Collider}}}
+
+\Hypertarget{_object_8h_a14adb2d36ad5f9087899aba911d6fe0f}\label{_object_8h_a14adb2d36ad5f9087899aba911d6fe0f} 
+\index{Object.h@{Object.h}!ObjDrawFunc@{ObjDrawFunc}}
+\index{ObjDrawFunc@{ObjDrawFunc}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{ObjDrawFunc}{ObjDrawFunc}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} Obj\+Draw\+Func) (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*})}
+
+\Hypertarget{_object_8h_a8d704199338300abfe20c088c1c4433e}\label{_object_8h_a8d704199338300abfe20c088c1c4433e} 
+\index{Object.h@{Object.h}!Object@{Object}}
+\index{Object@{Object}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{Object}{Object}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structobject__t}{object\+\_\+t}} \mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}}}
+
+\Hypertarget{_object_8h_a1123a0bb64a8fe9748927c0484cd0b05}\label{_object_8h_a1123a0bb64a8fe9748927c0484cd0b05} 
+\index{Object.h@{Object.h}!ObjectType@{ObjectType}}
+\index{ObjectType@{ObjectType}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{ObjectType}{ObjectType}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeab}{object\+Type\+\_\+t}} \mbox{\hyperlink{_object_8h_a1123a0bb64a8fe9748927c0484cd0b05}{Object\+Type}}}
+
+\Hypertarget{_object_8h_ac94c13397756d9f60541c26df7d67483}\label{_object_8h_ac94c13397756d9f60541c26df7d67483} 
+\index{Object.h@{Object.h}!ObjRegistrationFunc@{ObjRegistrationFunc}}
+\index{ObjRegistrationFunc@{ObjRegistrationFunc}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{ObjRegistrationFunc}{ObjRegistrationFunc}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} Obj\+Registration\+Func) (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*})}
+
+\Hypertarget{_object_8h_a0e007592338fd86d38a5f036c7784000}\label{_object_8h_a0e007592338fd86d38a5f036c7784000} 
+\index{Object.h@{Object.h}!ObjUpdateFunc@{ObjUpdateFunc}}
+\index{ObjUpdateFunc@{ObjUpdateFunc}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{ObjUpdateFunc}{ObjUpdateFunc}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} Obj\+Update\+Func) (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}, uint32\+\_\+t)}
+
+\Hypertarget{_object_8h_a3f625389d0dcf3c137b19f132ec28f45}\label{_object_8h_a3f625389d0dcf3c137b19f132ec28f45} 
+\index{Object.h@{Object.h}!ObjVtable@{ObjVtable}}
+\index{ObjVtable@{ObjVtable}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{ObjVtable}{ObjVtable}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structobject__vtable__t}{object\+\_\+vtable\+\_\+t}} \mbox{\hyperlink{_object_8h_a3f625389d0dcf3c137b19f132ec28f45}{Obj\+Vtable}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeab}\label{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeab} 
+\index{Object.h@{Object.h}!objectType\_t@{objectType\_t}}
+\index{objectType\_t@{objectType\_t}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{objectType\_t}{objectType\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeab}{object\+Type\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Type\_Character@{Type\_Character}!Object.h@{Object.h}}\index{Object.h@{Object.h}!Type\_Character@{Type\_Character}}}\Hypertarget{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba96278309a00bb09cd0249f3e62a67333}\label{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba96278309a00bb09cd0249f3e62a67333} 
+Type\+\_\+\+Character&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Type\_Hadouken@{Type\_Hadouken}!Object.h@{Object.h}}\index{Object.h@{Object.h}!Type\_Hadouken@{Type\_Hadouken}}}\Hypertarget{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba114de4edd43ae9f7aded588677cd7747}\label{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba114de4edd43ae9f7aded588677cd7747} 
+Type\+\_\+\+Hadouken&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Type\_Count@{Type\_Count}!Object.h@{Object.h}}\index{Object.h@{Object.h}!Type\_Count@{Type\_Count}}}\Hypertarget{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba6b0c6825780dfb053e3238cdba76c742}\label{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba6b0c6825780dfb053e3238cdba76c742} 
+Type\+\_\+\+Count&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Type\_Invalid@{Type\_Invalid}!Object.h@{Object.h}}\index{Object.h@{Object.h}!Type\_Invalid@{Type\_Invalid}}}\Hypertarget{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba5d134dbdd51280b3904e816488b54769}\label{_object_8h_a4877d5c6a14ba8a4b665cf8e019dfeaba5d134dbdd51280b3904e816488b54769} 
+Type\+\_\+\+Invalid&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_object_8h_aadfd800ed11c05e1e05cb2576fc69820}\label{_object_8h_aadfd800ed11c05e1e05cb2576fc69820} 
+\index{Object.h@{Object.h}!CheckAllCollisions@{CheckAllCollisions}}
+\index{CheckAllCollisions@{CheckAllCollisions}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{CheckAllCollisions()}{CheckAllCollisions()}}
+{\footnotesize\ttfamily void Check\+All\+Collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{list,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+This global function is called in the object\+Mgr and iterates on all objects checking collisions on them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_aadfd800ed11c05e1e05cb2576fc69820_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_aadfd800ed11c05e1e05cb2576fc69820_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_ac8774f7f8e0a12def940e068ac4b7929}\label{_object_8h_ac8774f7f8e0a12def940e068ac4b7929} 
+\index{Object.h@{Object.h}!IsObjectOnGround@{IsObjectOnGround}}
+\index{IsObjectOnGround@{IsObjectOnGround}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{IsObjectOnGround()}{IsObjectOnGround()}}
+{\footnotesize\ttfamily bool Is\+Object\+On\+Ground (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_ac8774f7f8e0a12def940e068ac4b7929_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_ad90b7e2e541b8d3c14ce2d90308b9023}\label{_object_8h_ad90b7e2e541b8d3c14ce2d90308b9023} 
+\index{Object.h@{Object.h}!MoveObjectToGround@{MoveObjectToGround}}
+\index{MoveObjectToGround@{MoveObjectToGround}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{MoveObjectToGround()}{MoveObjectToGround()}}
+{\footnotesize\ttfamily void Move\+Object\+To\+Ground (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_ad90b7e2e541b8d3c14ce2d90308b9023_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_acae5aeff7fda52f6bf3b706b50215399}\label{_object_8h_acae5aeff7fda52f6bf3b706b50215399} 
+\index{Object.h@{Object.h}!MoveObjectTransform@{MoveObjectTransform}}
+\index{MoveObjectTransform@{MoveObjectTransform}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{MoveObjectTransform()}{MoveObjectTransform()}}
+{\footnotesize\ttfamily void Move\+Object\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{float}]{deltaX,  }\item[{float}]{deltaY }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{_object_8h_acae5aeff7fda52f6bf3b706b50215399_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_acae5aeff7fda52f6bf3b706b50215399_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_a78dca0d7c7a63298139246387397c01c}\label{_object_8h_a78dca0d7c7a63298139246387397c01c} 
+\index{Object.h@{Object.h}!ObjChangeSizeAbs@{ObjChangeSizeAbs}}
+\index{ObjChangeSizeAbs@{ObjChangeSizeAbs}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{ObjChangeSizeAbs()}{ObjChangeSizeAbs()}}
+{\footnotesize\ttfamily void Obj\+Change\+Size\+Abs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{float}]{newX,  }\item[{float}]{newY }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_a78dca0d7c7a63298139246387397c01c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_ae384a9525446e8aecc2b6eeef316b6a6}\label{_object_8h_ae384a9525446e8aecc2b6eeef316b6a6} 
+\index{Object.h@{Object.h}!ObjChangeSizeRatio@{ObjChangeSizeRatio}}
+\index{ObjChangeSizeRatio@{ObjChangeSizeRatio}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{ObjChangeSizeRatio()}{ObjChangeSizeRatio()}}
+{\footnotesize\ttfamily void Obj\+Change\+Size\+Ratio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{float}]{xratio,  }\item[{float}]{yratio }\end{DoxyParamCaption})}
+
+\Hypertarget{_object_8h_a6cfd4d4463c407fbd17d53b791470002}\label{_object_8h_a6cfd4d4463c407fbd17d53b791470002} 
+\index{Object.h@{Object.h}!objDefaultUpdate@{objDefaultUpdate}}
+\index{objDefaultUpdate@{objDefaultUpdate}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{objDefaultUpdate()}{objDefaultUpdate()}}
+{\footnotesize\ttfamily void obj\+Default\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_a6cfd4d4463c407fbd17d53b791470002_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_a1990d7344bbf3ef06205a6671cf38ffe}\label{_object_8h_a1990d7344bbf3ef06205a6671cf38ffe} 
+\index{Object.h@{Object.h}!objDeinit@{objDeinit}}
+\index{objDeinit@{objDeinit}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{objDeinit()}{objDeinit()}}
+{\footnotesize\ttfamily void obj\+Deinit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj }\end{DoxyParamCaption})}
+
+
+
+Deinitialize an object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_a1990d7344bbf3ef06205a6671cf38ffe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_a1f97b0f94c01c449bff29674f200952a}\label{_object_8h_a1f97b0f94c01c449bff29674f200952a} 
+\index{Object.h@{Object.h}!objDisableRegistration@{objDisableRegistration}}
+\index{objDisableRegistration@{objDisableRegistration}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{objDisableRegistration()}{objDisableRegistration()}}
+{\footnotesize\ttfamily void obj\+Disable\+Registration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disable registration during Obj\+Init/\+Deinit. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_a1f97b0f94c01c449bff29674f200952a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_a79a9905dd7abb56548c99cca9d49f890}\label{_object_8h_a79a9905dd7abb56548c99cca9d49f890} 
+\index{Object.h@{Object.h}!objDraw@{objDraw}}
+\index{objDraw@{objDraw}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{objDraw()}{objDraw()}}
+{\footnotesize\ttfamily void obj\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj }\end{DoxyParamCaption})}
+
+
+
+Draw this object, using it\textquotesingle{}s vtable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_a79a9905dd7abb56548c99cca9d49f890_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_aedfb2e22326e2d0d452931a37173cf37}\label{_object_8h_aedfb2e22326e2d0d452931a37173cf37} 
+\index{Object.h@{Object.h}!objEnableRegistration@{objEnableRegistration}}
+\index{objEnableRegistration@{objEnableRegistration}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{objEnableRegistration()}{objEnableRegistration()}}
+{\footnotesize\ttfamily void obj\+Enable\+Registration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_object_8h_ac94c13397756d9f60541c26df7d67483}{Obj\+Registration\+Func}}}]{register\+Func,  }\item[{\mbox{\hyperlink{_object_8h_ac94c13397756d9f60541c26df7d67483}{Obj\+Registration\+Func}}}]{deregister\+Func }\end{DoxyParamCaption})}
+
+
+
+Enable callback to a registrar on Obj\+Init/\+Deinit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em register\+Func} & \\
+\hline
+{\em deregister\+Func} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_aedfb2e22326e2d0d452931a37173cf37_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_af67e10c57aec1b3d4efc70f40af0a0b3}\label{_object_8h_af67e10c57aec1b3d4efc70f40af0a0b3} 
+\index{Object.h@{Object.h}!objInit@{objInit}}
+\index{objInit@{objInit}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{objInit()}{objInit()}}
+{\footnotesize\ttfamily void obj\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{\mbox{\hyperlink{_object_8h_a3f625389d0dcf3c137b19f132ec28f45}{Obj\+Vtable}} \texorpdfstring{$\ast$}{*}}]{vtable,  }\item[{\mbox{\hyperlink{collider_8h_a5ff3ec92937ae806d30a2431cda64990}{Collider}} \texorpdfstring{$\ast$}{*}}]{collider,  }\item[{Bounds2D}]{level\+Def,  }\item[{Coord2D}]{pos,  }\item[{Coord2D}]{vel }\end{DoxyParamCaption})}
+
+
+
+Initialize an object. Intended to be called from subclass constructors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em vtable} & \\
+\hline
+{\em pos} & \\
+\hline
+{\em vel} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_af67e10c57aec1b3d4efc70f40af0a0b3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_a4cde7f3e57f2a0202e1a90712d26f797}\label{_object_8h_a4cde7f3e57f2a0202e1a90712d26f797} 
+\index{Object.h@{Object.h}!objUpdate@{objUpdate}}
+\index{objUpdate@{objUpdate}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{objUpdate()}{objUpdate()}}
+{\footnotesize\ttfamily void obj\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Update this object, using it\textquotesingle{}s vtable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em milliseconds} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{_object_8h_a4cde7f3e57f2a0202e1a90712d26f797_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_a4cde7f3e57f2a0202e1a90712d26f797_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_object_8h_a01e09388666a70c05cebd36f3248ae4e}\label{_object_8h_a01e09388666a70c05cebd36f3248ae4e} 
+\index{Object.h@{Object.h}!SetObjectTransform@{SetObjectTransform}}
+\index{SetObjectTransform@{SetObjectTransform}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{SetObjectTransform()}{SetObjectTransform()}}
+{\footnotesize\ttfamily void Set\+Object\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{float}]{newX,  }\item[{float}]{newY }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_object_8h_a01e09388666a70c05cebd36f3248ae4e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_object_8h_a958396225450d731f9932617e4580ef5}\label{_object_8h_a958396225450d731f9932617e4580ef5} 
+\index{Object.h@{Object.h}!g\_groundLevel@{g\_groundLevel}}
+\index{g\_groundLevel@{g\_groundLevel}!Object.h@{Object.h}}
+\doxysubsubsection{\texorpdfstring{g\_groundLevel}{g\_groundLevel}}
+{\footnotesize\ttfamily float g\+\_\+ground\+Level\hspace{0.3cm}{\ttfamily [extern]}}
+

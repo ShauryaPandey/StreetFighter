@@ -1,0 +1,16 @@
+<map id="field_t" name="field_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,240,57,331"/>
+<area shape="rect" id="Node000002" href="$structobject__t.html" title=" " alt="" coords="173,5,245,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,104,120,138,93,160,70,186,49,225,44,223,65,182,90,156,117,133,171,99"/>
+<area shape="rect" id="Node000003" href="$structobject__vtable__t.html" title=" " alt="" coords="82,251,181,320"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="175,109,137,142,121,162,108,185,104,209,109,234,104,235,99,209,103,183,116,159,133,138,171,105"/>
+<area shape="rect" id="Node000005" href="$structcollision_info__t.html" title="The information about the other object which has collided with this collider." alt="" coords="205,251,295,320"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="227,159,242,234,237,235,222,160"/>
+<area shape="rect" id="Node000006" href="$structcollider__vtable__t.html" title="The collider vtable." alt="" coords="319,251,424,320"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="246,126,335,236,331,239,242,130"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,250,171,175,176,177,147,252"/>
+<area shape="rect" id="Node000004" href="$structcollider__t.html" title="An object that wants to participate in collisions must own a collider. It holds information about the..." alt="" coords="340,395,403,464"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="400,397,421,369,450,319,470,275,474,254,473,233,467,210,453,186,435,164,414,145,363,118,310,101,261,91,262,86,311,95,365,113,417,141,439,160,458,182,472,208,479,232,479,255,475,277,455,322,426,372,404,401"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="280,318,334,381,330,384,276,322"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="374,320,374,378,369,378,369,320"/>
+</map>

@@ -1,0 +1,120 @@
+\doxysection{Game/src/jumppunchbehaviour.c File Reference}
+\hypertarget{jumppunchbehaviour_8c}{}\label{jumppunchbehaviour_8c}\index{Game/src/jumppunchbehaviour.c@{Game/src/jumppunchbehaviour.c}}
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}input.\+h\"{}}\newline
+{\ttfamily \#include \"{}keycodes.\+h\"{}}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for jumppunchbehaviour.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumppunchbehaviour_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{jumppunchbehaviour_8c_a7d970d7a1bce802e0e92f3f083826635}{Jump\+Punch\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{jumppunchbehaviour_8c_af8d53d5dc06ae6808c9103c3e74a7c89}{Jump\+Punch\+\_\+\+Gameplay\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{jumppunchbehaviour_8c_ad625790bd7ee62d5d34d927b472f7a60}{Jump\+Punch\+\_\+\+Gameplay\+Controller}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{jumppunchbehaviour_8c_adecccd1fe5855ba037b68fdbac587596}{Jump\+Punch\+\_\+\+Animation\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{jumppunchbehaviour_8c_adecccd1fe5855ba037b68fdbac587596}\label{jumppunchbehaviour_8c_adecccd1fe5855ba037b68fdbac587596} 
+\index{jumppunchbehaviour.c@{jumppunchbehaviour.c}!JumpPunch\_AnimationOnStart@{JumpPunch\_AnimationOnStart}}
+\index{JumpPunch\_AnimationOnStart@{JumpPunch\_AnimationOnStart}!jumppunchbehaviour.c@{jumppunchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{JumpPunch\_AnimationOnStart()}{JumpPunch\_AnimationOnStart()}}
+{\footnotesize\ttfamily void Jump\+Punch\+\_\+\+Animation\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumppunchbehaviour_8c_adecccd1fe5855ba037b68fdbac587596_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumppunchbehaviour_8c_adecccd1fe5855ba037b68fdbac587596_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jumppunchbehaviour_8c_a7d970d7a1bce802e0e92f3f083826635}\label{jumppunchbehaviour_8c_a7d970d7a1bce802e0e92f3f083826635} 
+\index{jumppunchbehaviour.c@{jumppunchbehaviour.c}!JumpPunch\_CanStart@{JumpPunch\_CanStart}}
+\index{JumpPunch\_CanStart@{JumpPunch\_CanStart}!jumppunchbehaviour.c@{jumppunchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{JumpPunch\_CanStart()}{JumpPunch\_CanStart()}}
+{\footnotesize\ttfamily bool Jump\+Punch\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumppunchbehaviour_8c_a7d970d7a1bce802e0e92f3f083826635_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumppunchbehaviour_8c_a7d970d7a1bce802e0e92f3f083826635_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jumppunchbehaviour_8c_ad625790bd7ee62d5d34d927b472f7a60}\label{jumppunchbehaviour_8c_ad625790bd7ee62d5d34d927b472f7a60} 
+\index{jumppunchbehaviour.c@{jumppunchbehaviour.c}!JumpPunch\_GameplayController@{JumpPunch\_GameplayController}}
+\index{JumpPunch\_GameplayController@{JumpPunch\_GameplayController}!jumppunchbehaviour.c@{jumppunchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{JumpPunch\_GameplayController()}{JumpPunch\_GameplayController()}}
+{\footnotesize\ttfamily void Jump\+Punch\+\_\+\+Gameplay\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumppunchbehaviour_8c_ad625790bd7ee62d5d34d927b472f7a60_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumppunchbehaviour_8c_ad625790bd7ee62d5d34d927b472f7a60_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jumppunchbehaviour_8c_af8d53d5dc06ae6808c9103c3e74a7c89}\label{jumppunchbehaviour_8c_af8d53d5dc06ae6808c9103c3e74a7c89} 
+\index{jumppunchbehaviour.c@{jumppunchbehaviour.c}!JumpPunch\_GameplayOnStart@{JumpPunch\_GameplayOnStart}}
+\index{JumpPunch\_GameplayOnStart@{JumpPunch\_GameplayOnStart}!jumppunchbehaviour.c@{jumppunchbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{JumpPunch\_GameplayOnStart()}{JumpPunch\_GameplayOnStart()}}
+{\footnotesize\ttfamily void Jump\+Punch\+\_\+\+Gameplay\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumppunchbehaviour_8c_af8d53d5dc06ae6808c9103c3e74a7c89_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jumppunchbehaviour_8c_af8d53d5dc06ae6808c9103c3e74a7c89_icgraph}
+\end{center}
+\end{figure}

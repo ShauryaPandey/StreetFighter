@@ -1,0 +1,174 @@
+\doxysection{Game/include/field.h File Reference}
+\hypertarget{field_8h}{}\label{field_8h}\index{Game/include/field.h@{Game/include/field.h}}
+{\ttfamily \#include \"{}object.\+h\"{}}\newline
+Include dependency graph for field.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{field_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{field_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structfield__t}{field\+\_\+t}} \mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{field_8h_a331e65e634c43df6475217fb08d04ab1}{field\+New}} (Bounds2D bounds, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Instantiate and initialize a field object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{field_8h_a25f54fba72c45d2141e1e0aa1e730c52}{field\+Delete}} (\mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}} \texorpdfstring{$\ast$}{*}field)
+\begin{DoxyCompactList}\small\item\em Free up resources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{field_8h_abf1c140a63b78b3803ec63fe1e106121}{field\+Set\+Color}} (\mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}} \texorpdfstring{$\ast$}{*}field, long color)
+\begin{DoxyCompactList}\small\item\em Set the color to draw the field border. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{field_8h_ab1fd18b97cc29e6de48a9382f1f070f5}{field\+Get\+Color}} (const \mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}} \texorpdfstring{$\ast$}{*}field)
+\begin{DoxyCompactList}\small\item\em Get the current border color. \end{DoxyCompactList}\item 
+Coord2D \mbox{\hyperlink{field_8h_aad349aa64423dd1db13b46abd15a0b9e}{field\+Get\+Size}} (const \mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}} \texorpdfstring{$\ast$}{*}field)
+\begin{DoxyCompactList}\small\item\em Retrieve the size as a Coord2D where x is width and y is height. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}\label{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa} 
+\index{field.h@{field.h}!Field@{Field}}
+\index{Field@{Field}!field.h@{field.h}}
+\doxysubsubsection{\texorpdfstring{Field}{Field}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structfield__t}{field\+\_\+t}} \mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{field_8h_a25f54fba72c45d2141e1e0aa1e730c52}\label{field_8h_a25f54fba72c45d2141e1e0aa1e730c52} 
+\index{field.h@{field.h}!fieldDelete@{fieldDelete}}
+\index{fieldDelete@{fieldDelete}!field.h@{field.h}}
+\doxysubsubsection{\texorpdfstring{fieldDelete()}{fieldDelete()}}
+{\footnotesize\ttfamily void field\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}} \texorpdfstring{$\ast$}{*}}]{field }\end{DoxyParamCaption})}
+
+
+
+Free up resources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{field_8h_a25f54fba72c45d2141e1e0aa1e730c52_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{field_8h_a25f54fba72c45d2141e1e0aa1e730c52_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{field_8h_ab1fd18b97cc29e6de48a9382f1f070f5}\label{field_8h_ab1fd18b97cc29e6de48a9382f1f070f5} 
+\index{field.h@{field.h}!fieldGetColor@{fieldGetColor}}
+\index{fieldGetColor@{fieldGetColor}!field.h@{field.h}}
+\doxysubsubsection{\texorpdfstring{fieldGetColor()}{fieldGetColor()}}
+{\footnotesize\ttfamily long field\+Get\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}} \texorpdfstring{$\ast$}{*}}]{field }\end{DoxyParamCaption})}
+
+
+
+Get the current border color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{field_8h_aad349aa64423dd1db13b46abd15a0b9e}\label{field_8h_aad349aa64423dd1db13b46abd15a0b9e} 
+\index{field.h@{field.h}!fieldGetSize@{fieldGetSize}}
+\index{fieldGetSize@{fieldGetSize}!field.h@{field.h}}
+\doxysubsubsection{\texorpdfstring{fieldGetSize()}{fieldGetSize()}}
+{\footnotesize\ttfamily Coord2D field\+Get\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}} \texorpdfstring{$\ast$}{*}}]{field }\end{DoxyParamCaption})}
+
+
+
+Retrieve the size as a Coord2D where x is width and y is height. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{field_8h_a331e65e634c43df6475217fb08d04ab1}\label{field_8h_a331e65e634c43df6475217fb08d04ab1} 
+\index{field.h@{field.h}!fieldNew@{fieldNew}}
+\index{fieldNew@{fieldNew}!field.h@{field.h}}
+\doxysubsubsection{\texorpdfstring{fieldNew()}{fieldNew()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}} \texorpdfstring{$\ast$}{*} field\+New (\begin{DoxyParamCaption}\item[{Bounds2D}]{bounds,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Instantiate and initialize a field object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bounds} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+~\newline
+ 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{field_8h_a331e65e634c43df6475217fb08d04ab1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{field_8h_a331e65e634c43df6475217fb08d04ab1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{field_8h_abf1c140a63b78b3803ec63fe1e106121}\label{field_8h_abf1c140a63b78b3803ec63fe1e106121} 
+\index{field.h@{field.h}!fieldSetColor@{fieldSetColor}}
+\index{fieldSetColor@{fieldSetColor}!field.h@{field.h}}
+\doxysubsubsection{\texorpdfstring{fieldSetColor()}{fieldSetColor()}}
+{\footnotesize\ttfamily void field\+Set\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{field_8h_a0e88b09cb8bff8a5142e56bc02b93aaa}{Field}} \texorpdfstring{$\ast$}{*}}]{field,  }\item[{long}]{color }\end{DoxyParamCaption})}
+
+
+
+Set the color to draw the field border. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & \\
+\hline
+{\em color} & ~\newline
+ \\
+\hline
+\end{DoxyParams}

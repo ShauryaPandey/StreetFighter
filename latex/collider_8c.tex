@@ -1,0 +1,139 @@
+\doxysection{Game/src/collider.c File Reference}
+\hypertarget{collider_8c}{}\label{collider_8c}\index{Game/src/collider.c@{Game/src/collider.c}}
+{\ttfamily \#include \"{}collider.\+h\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \"{}base\+Types.\+h\"{}}\newline
+{\ttfamily \#include \"{}shape.\+h\"{}}\newline
+{\ttfamily \#include \"{}random.\+h\"{}}\newline
+{\ttfamily \#include \"{}field.\+h\"{}}\newline
+{\ttfamily \#include \"{}Object.\+h\"{}}\newline
+Include dependency graph for collider.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collider_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbox_collider__t}{box\+Collider\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structcircle_collider__t}{circle\+Collider\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structbox_collider__t}{box\+Collider\+\_\+t}} \mbox{\hyperlink{collider_8c_ad331e33a2db9f01de180a4c3e0027cc6}{Box\+Collider}}
+\item 
+typedef struct \mbox{\hyperlink{structcircle_collider__t}{circle\+Collider\+\_\+t}} \mbox{\hyperlink{collider_8c_a03890e5c0a86d7d997babcd8c6746e25}{Circle\+Collider}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{collider_8c_aa4232b096684beb652106a672fd270f5}{Collider\+\_\+\+On\+Collision\+Enter\+Default}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}this\+Obj, \mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}other)
+\begin{DoxyCompactList}\small\item\em DO we even need this? Maybe not. I don\textquotesingle{}t think there is a default reaction to collision in my application but this should be there in most general applications. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{collider_8c_a784aadf6e46335589e73b09a8d305af1}{Collider\+\_\+\+On\+Collision\+Enter}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}this\+Obj, \mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}other\+Obj)
+\begin{DoxyCompactList}\small\item\em When 2 objects collide, this function runs and calls on\+COllision\+Enter overriden logic in the objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{collider_8c_ace4c16c1a8cfdae4d947671afdba3886}{Collider\+\_\+\+Process\+Impact}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj)
+\begin{DoxyCompactList}\small\item\em Impact is processed in this function. This function is called in a way that it is deferred after the On\+Collision\+Enter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{collider_8c_ad331e33a2db9f01de180a4c3e0027cc6}\label{collider_8c_ad331e33a2db9f01de180a4c3e0027cc6} 
+\index{collider.c@{collider.c}!BoxCollider@{BoxCollider}}
+\index{BoxCollider@{BoxCollider}!collider.c@{collider.c}}
+\doxysubsubsection{\texorpdfstring{BoxCollider}{BoxCollider}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structbox_collider__t}{box\+Collider\+\_\+t}} \mbox{\hyperlink{collider_8c_ad331e33a2db9f01de180a4c3e0027cc6}{Box\+Collider}}}
+
+\Hypertarget{collider_8c_a03890e5c0a86d7d997babcd8c6746e25}\label{collider_8c_a03890e5c0a86d7d997babcd8c6746e25} 
+\index{collider.c@{collider.c}!CircleCollider@{CircleCollider}}
+\index{CircleCollider@{CircleCollider}!collider.c@{collider.c}}
+\doxysubsubsection{\texorpdfstring{CircleCollider}{CircleCollider}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structcircle_collider__t}{circle\+Collider\+\_\+t}} \mbox{\hyperlink{collider_8c_a03890e5c0a86d7d997babcd8c6746e25}{Circle\+Collider}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{collider_8c_a784aadf6e46335589e73b09a8d305af1}\label{collider_8c_a784aadf6e46335589e73b09a8d305af1} 
+\index{collider.c@{collider.c}!Collider\_OnCollisionEnter@{Collider\_OnCollisionEnter}}
+\index{Collider\_OnCollisionEnter@{Collider\_OnCollisionEnter}!collider.c@{collider.c}}
+\doxysubsubsection{\texorpdfstring{Collider\_OnCollisionEnter()}{Collider\_OnCollisionEnter()}}
+{\footnotesize\ttfamily void Collider\+\_\+\+On\+Collision\+Enter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{this\+Obj,  }\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{other\+Obj }\end{DoxyParamCaption})}
+
+
+
+When 2 objects collide, this function runs and calls on\+COllision\+Enter overriden logic in the objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em this\+Obj} & \\
+\hline
+{\em other\+Obj} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collider_8c_a784aadf6e46335589e73b09a8d305af1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collider_8c_a784aadf6e46335589e73b09a8d305af1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collider_8c_aa4232b096684beb652106a672fd270f5}\label{collider_8c_aa4232b096684beb652106a672fd270f5} 
+\index{collider.c@{collider.c}!Collider\_OnCollisionEnterDefault@{Collider\_OnCollisionEnterDefault}}
+\index{Collider\_OnCollisionEnterDefault@{Collider\_OnCollisionEnterDefault}!collider.c@{collider.c}}
+\doxysubsubsection{\texorpdfstring{Collider\_OnCollisionEnterDefault()}{Collider\_OnCollisionEnterDefault()}}
+{\footnotesize\ttfamily static void Collider\+\_\+\+On\+Collision\+Enter\+Default (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{this\+Obj,  }\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{other }\end{DoxyParamCaption})}
+
+
+
+DO we even need this? Maybe not. I don\textquotesingle{}t think there is a default reaction to collision in my application but this should be there in most general applications. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em this\+Obj} & \\
+\hline
+{\em other} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collider_8c_aa4232b096684beb652106a672fd270f5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{collider_8c_ace4c16c1a8cfdae4d947671afdba3886}\label{collider_8c_ace4c16c1a8cfdae4d947671afdba3886} 
+\index{collider.c@{collider.c}!Collider\_ProcessImpact@{Collider\_ProcessImpact}}
+\index{Collider\_ProcessImpact@{Collider\_ProcessImpact}!collider.c@{collider.c}}
+\doxysubsubsection{\texorpdfstring{Collider\_ProcessImpact()}{Collider\_ProcessImpact()}}
+{\footnotesize\ttfamily void Collider\+\_\+\+Process\+Impact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj }\end{DoxyParamCaption})}
+
+
+
+Impact is processed in this function. This function is called in a way that it is deferred after the On\+Collision\+Enter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collider_8c_ace4c16c1a8cfdae4d947671afdba3886_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,18 @@
+<map id="retractPayload_t" name="retractPayload_t">
+<area shape="rect" id="Node000001" title="Payload for retract action." alt="" coords="15,240,121,309"/>
+<area shape="rect" id="Node000002" href="$structpayload__t.html" title="Might need to recover to old state or store some variables between function calls for the controller ..." alt="" coords="5,37,74,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="38,128,38,171,44,215,46,223,41,225,39,217,33,171,33,128"/>
+<area shape="rect" id="Node000003" href="$structobject__t.html" title=" " alt="" coords="266,5,338,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,102,202,136,166,159,133,186,98,227,94,224,129,182,163,155,199,132,265,97"/>
+<area shape="rect" id="Node000004" href="$structobject__vtable__t.html" title=" " alt="" coords="154,240,253,309"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="268,104,222,138,201,160,185,185,180,204,183,223,177,224,175,203,180,183,197,156,218,134,265,100"/>
+<area shape="rect" id="Node000006" href="$structcollision_info__t.html" title="The information about the other object which has collided with this collider." alt="" coords="296,240,386,309"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="321,159,334,223,328,224,315,160"/>
+<area shape="rect" id="Node000007" href="$structcollider__vtable__t.html" title="The collider vtable." alt="" coords="410,240,515,309"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="340,125,426,226,422,229,336,128"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="219,239,232,215,256,168,261,171,237,217,224,241"/>
+<area shape="rect" id="Node000005" href="$structcollider__t.html" title="An object that wants to participate in collisions must own a collider. It holds information about the..." alt="" coords="431,373,494,443"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="491,376,512,348,539,303,560,265,565,246,565,227,560,207,548,185,530,164,508,145,458,118,404,100,355,91,356,86,405,95,460,113,511,141,534,160,553,183,565,205,570,227,570,247,565,266,544,306,517,351,495,379"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="374,307,422,359,418,363,370,311"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="465,309,465,356,460,356,460,309"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="objMgrUpdate" name="objMgrUpdate">
+<area shape="rect" id="Node000001" title="Updates all registered objects." alt="" coords="5,107,108,133"/>
+<area shape="rect" id="Node000002" href="$collisionmanager_8c.html#aadfd800ed11c05e1e05cb2576fc69820" title="This global function is called in the objectMgr and iterates on all objects checking collisions on th..." alt="" coords="156,69,287,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,106,144,97,145,103,109,111"/>
+<area shape="rect" id="Node000007" href="$object_8c.html#a4cde7f3e57f2a0202e1a90712d26f797" title="Update this object, using it&#39;s vtable." alt="" coords="181,132,262,159"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="109,125,166,134,166,140,108,131"/>
+<area shape="rect" id="Node000003" href="$collisionmanager_8c.html#ad56b1f36e361bc42e6433942ef320a3e" title="Checks collision between 2 objects." alt="" coords="366,5,475,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,66,334,41,357,34,358,39,336,47,263,71"/>
+<area shape="rect" id="Node000004" href="$collider_8c.html#a784aadf6e46335589e73b09a8d305af1" title="When 2 objects collide, this function runs and calls onCOllisionEnter overriden logic in the objects." alt="" coords="335,56,505,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="287,76,319,73,319,79,288,81"/>
+<area shape="rect" id="Node000006" href="$collider_8c.html#ace4c16c1a8cfdae4d947671afdba3886" title="Impact is processed in this function. This function is called in a way that it is deferred after the ..." alt="" coords="340,107,500,133"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="288,92,331,101,330,106,287,98"/>
+<area shape="rect" id="Node000005" href="$collider_8c.html#aa4232b096684beb652106a672fd270f5" title="DO we even need this? Maybe not. I don&#39;t think there is a default reaction to collision in my applica..." alt="" coords="553,48,724,91"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="505,67,538,67,538,72,505,72"/>
+<area shape="rect" id="Node000008" href="$object_8c.html#a6cfd4d4463c407fbd17d53b791470002" title=" " alt="" coords="359,157,481,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="262,148,344,158,343,164,262,153"/>
+</map>

@@ -1,0 +1,436 @@
+\doxysection{Game/src/animation.c File Reference}
+\hypertarget{animation_8c}{}\label{animation_8c}\index{Game/src/animation.c@{Game/src/animation.c}}
+{\ttfamily \#include \"{}kenanimations.\+h\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$gl/\+GLU.\+h$>$}\newline
+{\ttfamily \#include \"{}SOIL.\+h\"{}}\newline
+{\ttfamily \#include \"{}Object.\+h\"{}}\newline
+Include dependency graph for animation.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{animation_8c_a9ce91a195c2a52091ec6f337865508a5}{Animation\+Component\+\_\+\+Init}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}component, \mbox{\hyperlink{animation_8h_a70cf3f4f0d1e741d0cb63aff969dfc6e}{Animation\+Direction}} direction)
+\begin{DoxyCompactList}\small\item\em Sprite sheet Init. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_a73190bc79a9815c015991370d281840d}{Set\+Direction}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}component, \mbox{\hyperlink{animation_8h_a70cf3f4f0d1e741d0cb63aff969dfc6e}{Animation\+Direction}} direction)
+\begin{DoxyCompactList}\small\item\em The animation itself has direction like going right or left use this function to set that. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_a83f91bab556734f8162fb1622c24cd03}{Animation\+\_\+\+Set\+Uniform\+Frame\+Time}} (\mbox{\hyperlink{animation_8h_ae9fdff8ad676f3cf0ef1d1ebbacb8ed2}{Animation}} \texorpdfstring{$\ast$}{*}animation, uint32\+\_\+t frame\+Time)
+\begin{DoxyCompactList}\small\item\em If user of this function wants every frame to have equal time then use this. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_ab438ee95cd9be14b8d50d1590746ca58}{Ken\+\_\+\+Play\+Animation\+\_\+\+Uniform}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}component, \mbox{\hyperlink{animation_8h_a2a0d3a1e8d95fefba21b0ba14ace8f70}{Ken\+\_\+\+Animations}} id, uint32\+\_\+t behaviour\+Duration)
+\begin{DoxyCompactList}\small\item\em This function gives equal frame time to each of the frames by dividing the total duration by number of frames. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_ab428cdfbfd845ca90e27811aa3ff1f91}{Ken\+\_\+\+Play\+Animation\+\_\+\+Non\+Uniform}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}component, \mbox{\hyperlink{animation_8h_a2a0d3a1e8d95fefba21b0ba14ace8f70}{Ken\+\_\+\+Animations}} id)
+\begin{DoxyCompactList}\small\item\em This method expects the caller to have taken care of frame times of the animation. So particularly useful when you want frames of the animation to have different frame times. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_af4c0ab2cde063cc90dc0c025325d2e76}{Hadouken\+\_\+\+Play\+Animation}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}component, \mbox{\hyperlink{animation_8h_a0f828f72ae88e683260eacda27dd1e40}{Hadouken\+\_\+\+Animations}} id, uint32\+\_\+t anim\+Duration)
+\begin{DoxyCompactList}\small\item\em Plays hadouken animation on the ball which goes through multiple sprites as it is moving itself. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_ab10f374885a423ff87bfe1bbf6e594b3}{Play\+Punch\+Animation}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Animation for punching. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_a96d7a19ad9d121a267eb91e936b95789}{Play\+Idle\+Animation}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Idle animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_affd8ff22b880b90537ea832993965226}{Play\+Kick\+Animation}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Kick animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_ae01195f4e1c789d7bc6ac982c9a190d4}{Play\+Jump\+Kick\+Animation}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Jump kick animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_a05c8658b6d137faa1e3fea8afb9d4108}{De\+Init\+Animations}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}anim\+Component)
+\begin{DoxyCompactList}\small\item\em Gets called for both character freeing up storage within the animation component by frames data and animation struct data both were malloc\textquotesingle{}ed. Also gets called when hadouken object is being deleted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_a7e2405e3bd28b2948686822452a439e4}{Init\+Ryu\+Animations}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}anim\+Component)
+\begin{DoxyCompactList}\small\item\em This function initializes all the anims for Ryu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_a09b8252fc9c6fbf59da4819a5969545f}{Init\+Ken\+Animations}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}anim\+Component)
+\begin{DoxyCompactList}\small\item\em This function initializes all the anims for Ken. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_a56d0bce225c2e7e4aa06201a2845f4b2}{Hadouken\+Anim\+\_\+\+Init\+Moving}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}anim\+Component)
+\begin{DoxyCompactList}\small\item\em Initialize animation for moving animations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{animation_8c_a92129c339099d0f88b8189299adaee35}{Init\+Hadouken\+Animations}} (\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}anim\+Component)
+\begin{DoxyCompactList}\small\item\em Initializes hadouken\textquotesingle{}s animations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const char \mbox{\hyperlink{animation_8c_a8d405c64f541aab6923a30d53a6141cb}{CHARACTER\+\_\+\+PAGE}} \mbox{[}$\,$\mbox{]} = \"{}asset/ken.\+png\"{}
+\item 
+static const int \mbox{\hyperlink{animation_8c_a0e1ced7defa9b45eb4d23b5184f33fc3}{jump\+Kick\+Anim\+Len}} = 11
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{animation_8c_a83f91bab556734f8162fb1622c24cd03}\label{animation_8c_a83f91bab556734f8162fb1622c24cd03} 
+\index{animation.c@{animation.c}!Animation\_SetUniformFrameTime@{Animation\_SetUniformFrameTime}}
+\index{Animation\_SetUniformFrameTime@{Animation\_SetUniformFrameTime}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{Animation\_SetUniformFrameTime()}{Animation\_SetUniformFrameTime()}}
+{\footnotesize\ttfamily void Animation\+\_\+\+Set\+Uniform\+Frame\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ae9fdff8ad676f3cf0ef1d1ebbacb8ed2}{Animation}} \texorpdfstring{$\ast$}{*}}]{animation,  }\item[{uint32\+\_\+t}]{frame\+Time }\end{DoxyParamCaption})}
+
+
+
+If user of this function wants every frame to have equal time then use this. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animation} & \\
+\hline
+{\em frame\+Time} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_a83f91bab556734f8162fb1622c24cd03_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{animation_8c_a9ce91a195c2a52091ec6f337865508a5}\label{animation_8c_a9ce91a195c2a52091ec6f337865508a5} 
+\index{animation.c@{animation.c}!AnimationComponent\_Init@{AnimationComponent\_Init}}
+\index{AnimationComponent\_Init@{AnimationComponent\_Init}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{AnimationComponent\_Init()}{AnimationComponent\_Init()}}
+{\footnotesize\ttfamily void Animation\+Component\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{component,  }\item[{\mbox{\hyperlink{animation_8h_a70cf3f4f0d1e741d0cb63aff969dfc6e}{Animation\+Direction}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Sprite sheet Init. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_a9ce91a195c2a52091ec6f337865508a5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{animation_8c_a05c8658b6d137faa1e3fea8afb9d4108}\label{animation_8c_a05c8658b6d137faa1e3fea8afb9d4108} 
+\index{animation.c@{animation.c}!DeInitAnimations@{DeInitAnimations}}
+\index{DeInitAnimations@{DeInitAnimations}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{DeInitAnimations()}{DeInitAnimations()}}
+{\footnotesize\ttfamily void De\+Init\+Animations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{anim\+Component }\end{DoxyParamCaption})}
+
+
+
+Gets called for both character freeing up storage within the animation component by frames data and animation struct data both were malloc\textquotesingle{}ed. Also gets called when hadouken object is being deleted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anim\+Component} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_a05c8658b6d137faa1e3fea8afb9d4108_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{animation_8c_af4c0ab2cde063cc90dc0c025325d2e76}\label{animation_8c_af4c0ab2cde063cc90dc0c025325d2e76} 
+\index{animation.c@{animation.c}!Hadouken\_PlayAnimation@{Hadouken\_PlayAnimation}}
+\index{Hadouken\_PlayAnimation@{Hadouken\_PlayAnimation}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{Hadouken\_PlayAnimation()}{Hadouken\_PlayAnimation()}}
+{\footnotesize\ttfamily void Hadouken\+\_\+\+Play\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{component,  }\item[{\mbox{\hyperlink{animation_8h_a0f828f72ae88e683260eacda27dd1e40}{Hadouken\+\_\+\+Animations}}}]{id,  }\item[{uint32\+\_\+t}]{anim\+Duration }\end{DoxyParamCaption})}
+
+
+
+Plays hadouken animation on the ball which goes through multiple sprites as it is moving itself. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+{\em id} & \\
+\hline
+{\em anim\+Duration} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{animation_8c_af4c0ab2cde063cc90dc0c025325d2e76_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{animation_8c_a56d0bce225c2e7e4aa06201a2845f4b2}\label{animation_8c_a56d0bce225c2e7e4aa06201a2845f4b2} 
+\index{animation.c@{animation.c}!HadoukenAnim\_InitMoving@{HadoukenAnim\_InitMoving}}
+\index{HadoukenAnim\_InitMoving@{HadoukenAnim\_InitMoving}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{HadoukenAnim\_InitMoving()}{HadoukenAnim\_InitMoving()}}
+{\footnotesize\ttfamily void Hadouken\+Anim\+\_\+\+Init\+Moving (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{anim\+Component }\end{DoxyParamCaption})}
+
+
+
+Initialize animation for moving animations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anim\+Component} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_a56d0bce225c2e7e4aa06201a2845f4b2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{animation_8c_a92129c339099d0f88b8189299adaee35}\label{animation_8c_a92129c339099d0f88b8189299adaee35} 
+\index{animation.c@{animation.c}!InitHadoukenAnimations@{InitHadoukenAnimations}}
+\index{InitHadoukenAnimations@{InitHadoukenAnimations}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{InitHadoukenAnimations()}{InitHadoukenAnimations()}}
+{\footnotesize\ttfamily void Init\+Hadouken\+Animations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{anim\+Component }\end{DoxyParamCaption})}
+
+
+
+Initializes hadouken\textquotesingle{}s animations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anim\+Component} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_a92129c339099d0f88b8189299adaee35_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_a92129c339099d0f88b8189299adaee35_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{animation_8c_a09b8252fc9c6fbf59da4819a5969545f}\label{animation_8c_a09b8252fc9c6fbf59da4819a5969545f} 
+\index{animation.c@{animation.c}!InitKenAnimations@{InitKenAnimations}}
+\index{InitKenAnimations@{InitKenAnimations}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{InitKenAnimations()}{InitKenAnimations()}}
+{\footnotesize\ttfamily void Init\+Ken\+Animations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{anim\+Component }\end{DoxyParamCaption})}
+
+
+
+This function initializes all the anims for Ken. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anim\+Component} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{animation_8c_a09b8252fc9c6fbf59da4819a5969545f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_a09b8252fc9c6fbf59da4819a5969545f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{animation_8c_a7e2405e3bd28b2948686822452a439e4}\label{animation_8c_a7e2405e3bd28b2948686822452a439e4} 
+\index{animation.c@{animation.c}!InitRyuAnimations@{InitRyuAnimations}}
+\index{InitRyuAnimations@{InitRyuAnimations}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{InitRyuAnimations()}{InitRyuAnimations()}}
+{\footnotesize\ttfamily void Init\+Ryu\+Animations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{anim\+Component }\end{DoxyParamCaption})}
+
+
+
+This function initializes all the anims for Ryu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anim\+Component} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{animation_8c_a7e2405e3bd28b2948686822452a439e4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_a7e2405e3bd28b2948686822452a439e4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{animation_8c_ab428cdfbfd845ca90e27811aa3ff1f91}\label{animation_8c_ab428cdfbfd845ca90e27811aa3ff1f91} 
+\index{animation.c@{animation.c}!Ken\_PlayAnimation\_NonUniform@{Ken\_PlayAnimation\_NonUniform}}
+\index{Ken\_PlayAnimation\_NonUniform@{Ken\_PlayAnimation\_NonUniform}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{Ken\_PlayAnimation\_NonUniform()}{Ken\_PlayAnimation\_NonUniform()}}
+{\footnotesize\ttfamily void Ken\+\_\+\+Play\+Animation\+\_\+\+Non\+Uniform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{component,  }\item[{\mbox{\hyperlink{animation_8h_a2a0d3a1e8d95fefba21b0ba14ace8f70}{Ken\+\_\+\+Animations}}}]{id }\end{DoxyParamCaption})}
+
+
+
+This method expects the caller to have taken care of frame times of the animation. So particularly useful when you want frames of the animation to have different frame times. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_ab428cdfbfd845ca90e27811aa3ff1f91_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{animation_8c_ab438ee95cd9be14b8d50d1590746ca58}\label{animation_8c_ab438ee95cd9be14b8d50d1590746ca58} 
+\index{animation.c@{animation.c}!Ken\_PlayAnimation\_Uniform@{Ken\_PlayAnimation\_Uniform}}
+\index{Ken\_PlayAnimation\_Uniform@{Ken\_PlayAnimation\_Uniform}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{Ken\_PlayAnimation\_Uniform()}{Ken\_PlayAnimation\_Uniform()}}
+{\footnotesize\ttfamily void Ken\+\_\+\+Play\+Animation\+\_\+\+Uniform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{component,  }\item[{\mbox{\hyperlink{animation_8h_a2a0d3a1e8d95fefba21b0ba14ace8f70}{Ken\+\_\+\+Animations}}}]{id,  }\item[{uint32\+\_\+t}]{behaviour\+Duration }\end{DoxyParamCaption})}
+
+
+
+This function gives equal frame time to each of the frames by dividing the total duration by number of frames. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+{\em id} & \\
+\hline
+{\em behaviour\+Duration} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_ab438ee95cd9be14b8d50d1590746ca58_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_ab438ee95cd9be14b8d50d1590746ca58_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{animation_8c_a96d7a19ad9d121a267eb91e936b95789}\label{animation_8c_a96d7a19ad9d121a267eb91e936b95789} 
+\index{animation.c@{animation.c}!PlayIdleAnimation@{PlayIdleAnimation}}
+\index{PlayIdleAnimation@{PlayIdleAnimation}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{PlayIdleAnimation()}{PlayIdleAnimation()}}
+{\footnotesize\ttfamily void Play\+Idle\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{component }\end{DoxyParamCaption})}
+
+
+
+Idle animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{animation_8c_ae01195f4e1c789d7bc6ac982c9a190d4}\label{animation_8c_ae01195f4e1c789d7bc6ac982c9a190d4} 
+\index{animation.c@{animation.c}!PlayJumpKickAnimation@{PlayJumpKickAnimation}}
+\index{PlayJumpKickAnimation@{PlayJumpKickAnimation}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{PlayJumpKickAnimation()}{PlayJumpKickAnimation()}}
+{\footnotesize\ttfamily void Play\+Jump\+Kick\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{component }\end{DoxyParamCaption})}
+
+
+
+Jump kick animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{animation_8c_affd8ff22b880b90537ea832993965226}\label{animation_8c_affd8ff22b880b90537ea832993965226} 
+\index{animation.c@{animation.c}!PlayKickAnimation@{PlayKickAnimation}}
+\index{PlayKickAnimation@{PlayKickAnimation}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{PlayKickAnimation()}{PlayKickAnimation()}}
+{\footnotesize\ttfamily void Play\+Kick\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{component }\end{DoxyParamCaption})}
+
+
+
+Kick animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{animation_8c_ab10f374885a423ff87bfe1bbf6e594b3}\label{animation_8c_ab10f374885a423ff87bfe1bbf6e594b3} 
+\index{animation.c@{animation.c}!PlayPunchAnimation@{PlayPunchAnimation}}
+\index{PlayPunchAnimation@{PlayPunchAnimation}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{PlayPunchAnimation()}{PlayPunchAnimation()}}
+{\footnotesize\ttfamily void Play\+Punch\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{component }\end{DoxyParamCaption})}
+
+
+
+Animation for punching. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{animation_8c_a73190bc79a9815c015991370d281840d}\label{animation_8c_a73190bc79a9815c015991370d281840d} 
+\index{animation.c@{animation.c}!SetDirection@{SetDirection}}
+\index{SetDirection@{SetDirection}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{SetDirection()}{SetDirection()}}
+{\footnotesize\ttfamily void Set\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*}}]{component,  }\item[{\mbox{\hyperlink{animation_8h_a70cf3f4f0d1e741d0cb63aff969dfc6e}{Animation\+Direction}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+The animation itself has direction like going right or left use this function to set that. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \\
+\hline
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{animation_8c_a73190bc79a9815c015991370d281840d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{animation_8c_a8d405c64f541aab6923a30d53a6141cb}\label{animation_8c_a8d405c64f541aab6923a30d53a6141cb} 
+\index{animation.c@{animation.c}!CHARACTER\_PAGE@{CHARACTER\_PAGE}}
+\index{CHARACTER\_PAGE@{CHARACTER\_PAGE}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{CHARACTER\_PAGE}{CHARACTER\_PAGE}}
+{\footnotesize\ttfamily const char CHARACTER\+\_\+\+PAGE\mbox{[}$\,$\mbox{]} = \"{}asset/ken.\+png\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{animation_8c_a0e1ced7defa9b45eb4d23b5184f33fc3}\label{animation_8c_a0e1ced7defa9b45eb4d23b5184f33fc3} 
+\index{animation.c@{animation.c}!jumpKickAnimLen@{jumpKickAnimLen}}
+\index{jumpKickAnimLen@{jumpKickAnimLen}!animation.c@{animation.c}}
+\doxysubsubsection{\texorpdfstring{jumpKickAnimLen}{jumpKickAnimLen}}
+{\footnotesize\ttfamily const int jump\+Kick\+Anim\+Len = 11\hspace{0.3cm}{\ttfamily [static]}}
+

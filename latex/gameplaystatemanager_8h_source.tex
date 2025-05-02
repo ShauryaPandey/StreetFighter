@@ -1,0 +1,33 @@
+\doxysection{gameplaystatemanager.\+h}
+\hypertarget{gameplaystatemanager_8h_source}{}\label{gameplaystatemanager_8h_source}\index{Game/include/gameplaystatemanager.h@{Game/include/gameplaystatemanager.h}}
+\mbox{\hyperlink{gameplaystatemanager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{gameplaystatemanager_8h_af4a9092b629db33469604988460563fe}{characterGameplayBaseState\_t}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_af4a9092b629db33469604988460563fea1aff1cf22b895d9b024189f5166d5495}{Attack}},}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_af4a9092b629db33469604988460563feaa00f801460e81f86eab56d86fe627551}{Block}},}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_af4a9092b629db33469604988460563feae14b0919943b49a575136c764cadda9f}{Retract}},}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_af4a9092b629db33469604988460563fea3ff1437e42ba11dd1fb285c312027687}{Hurt}},}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_af4a9092b629db33469604988460563fea2f872369e520d046b46b7cd0b49b1882}{Dead}},}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_af4a9092b629db33469604988460563fead9efd6b0cbf7f8ace4826299b3c95706}{BlockHurt}},}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_af4a9092b629db33469604988460563feac9d3e887722f2bc482bcca9d41c512af}{None}}}
+\DoxyCodeLine{00015\ \}\mbox{\hyperlink{gameplaystatemanager_8h_a28bc57065b8757f54b070aef1dd4a64f}{CharacterGameplayBaseState}};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{gameplaystatemanager_8h_a45ec6daef76841f273252c99326b4a6c}{characterGameplaySubState\_t}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_a45ec6daef76841f273252c99326b4a6ca8a66642ee108e93a247161e608573972}{Jump}},}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_a45ec6daef76841f273252c99326b4a6ca6f9bdfdb00da9e40a259bf63a4256897}{Crouch}},}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_a45ec6daef76841f273252c99326b4a6ca2bb1455a429d814eff49c5e829aafe3d}{Stand}}}
+\DoxyCodeLine{00025\ \}\mbox{\hyperlink{gameplaystatemanager_8h_aa33c0a82fa9a425fd8671c38930f1a83}{CharacterGameplaySubState}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcharacter_gameplay_state__t}{characterGameplayState\_t}}}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_a28bc57065b8757f54b070aef1dd4a64f}{CharacterGameplayBaseState}}\ \mbox{\hyperlink{structcharacter_gameplay_state__t_a86778f8f408c887ba9deb8b0a53b6553}{baseState}};}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{gameplaystatemanager_8h_aa33c0a82fa9a425fd8671c38930f1a83}{CharacterGameplaySubState}}\ \mbox{\hyperlink{structcharacter_gameplay_state__t_ac0eae33a1dd88adce5158d308afdc059}{subState}};}
+\DoxyCodeLine{00035\ \}\ \mbox{\hyperlink{gameplaystatemanager_8h_aaa44a4bb5215c3341b53c7fdbe92827d}{CharacterGameplayState}};}
+\DoxyCodeLine{00036\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcharacter__t}{character\_t}}\ \mbox{\hyperlink{structcharacter__t}{Character}};}
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{gameplaystatemanager_8h_a59021f98c2d86ab033ca832f6907d264}{TryChangeGameplayState}}(\mbox{\hyperlink{structcharacter__t}{Character}}*\ \mbox{\hyperlink{structcharacter__t_a85f48dbd5c07d122cbae3270edfb6670}{character}},\ \mbox{\hyperlink{structcharacter_gameplay_state__t}{CharacterGameplayState}}\ newState);}
+
+\end{DoxyCode}

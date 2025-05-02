@@ -1,0 +1,65 @@
+<map id="WinMain" name="WinMain">
+<area shape="rect" id="Node000001" title="Program Entry Point (WinMain). Part of the base game framework." alt="" coords="5,892,78,919"/>
+<area shape="rect" id="Node000002" href="$game_8c.html#a2f1d3262d209f17a7eba4b214d4903e1" title=" " alt="" coords="139,284,230,311"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="43,891,174,325,180,326,49,892"/>
+<area shape="rect" id="Node000018" href="$game_8c.html#ab30d311d5430e1450c49e0a71da13387" title="Function declarations and typedefs and extern global var declarations." alt="" coords="146,1044,224,1071"/>
+<area shape="poly" id="edge13_Node000001_Node000018" title=" " alt="" coords="57,917,162,1031,159,1034,53,921"/>
+<area shape="rect" id="Node000241" href="$game_8c.html#a4d3157f85fc146303cabedf895a17df6" title="Cleanup the game and free up any allocated resources. Part of the base game framework." alt="" coords="126,1196,244,1223"/>
+<area shape="poly" id="edge17_Node000001_Node000241" title=" " alt="" coords="52,918,173,1181,168,1183,47,920"/>
+<area shape="rect" id="Node000253" href="$game_8c.html#a4c776f564425d03bdd1026bef085f589" title="Perform updates for all game objects, for the elapsed duration." alt="" coords="134,765,236,792"/>
+<area shape="poly" id="edge21_Node000001_Node000253" title=" " alt="" coords="56,890,155,800,159,804,60,894"/>
+<area shape="rect" id="Node000003" href="$game_8c.html#a59531f70a55ea71bf9811caca5759c5a" title="Draw everything to the screen for current frame." alt="" coords="302,5,416,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="185,283,194,238,213,174,244,104,265,71,290,42,294,39,297,43,294,46,269,74,248,107,218,176,199,239,191,284"/>
+<area shape="rect" id="Node000004" href="$backgroundmanager_8c.html#a36e194bdd58e8ecf436456b19ecae8f1" title="Render the background." alt="" coords="300,56,419,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="187,283,199,245,219,195,249,141,268,115,290,93,295,89,298,93,294,97,273,119,254,143,224,197,204,247,192,284"/>
+<area shape="rect" id="Node000005" href="$levelmgr_8c.html#af6196660decc7b20e3592f2af6e96c74" title="Draw timer on screen." alt="" coords="318,107,400,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="190,282,226,217,255,178,290,143,302,135,305,140,294,147,259,181,231,220,195,285"/>
+<area shape="rect" id="Node000008" href="$backgroundmanager_8c.html#a60ecba4ca153963b988c8d7b510c1cb9" title="Displaying images at the end declaring who the winner is. So this displays 2 images and a text...." alt="" coords="301,157,417,184"/>
+<area shape="poly" id="edge5_Node000002_Node000008" title=" " alt="" coords="196,282,235,239,261,215,291,194,299,189,302,193,293,198,265,219,239,243,199,285"/>
+<area shape="rect" id="Node000009" href="$levelmgr_8c.html#a1ca4f34f85db51a58aca89be9c5b0de4" title=" " alt="" coords="298,208,421,235"/>
+<area shape="poly" id="edge6_Node000002_Node000009" title=" " alt="" coords="217,281,312,239,314,244,219,286"/>
+<area shape="rect" id="Node000010" href="$levelmgr_8c.html#aab0d174dc963ec0c1acbbe4fdba13160" title="Timer for the game exit after which game loads again from start screen." alt="" coords="310,512,408,539"/>
+<area shape="poly" id="edge7_Node000002_Node000010" title=" " alt="" coords="192,310,204,347,224,398,254,451,273,476,294,498,298,502,295,506,290,502,268,479,249,454,219,400,199,349,187,312"/>
+<area shape="rect" id="Node000011" href="$levelmgr_8c.html#a01243945097b852be2b045a1bfb85704" title=" " alt="" coords="474,563,588,589"/>
+<area shape="poly" id="edge8_Node000002_Node000011" title=" " alt="" coords="230,281,274,272,326,268,379,274,405,282,428,295,456,320,479,351,497,385,510,421,526,491,532,547,526,547,521,492,505,422,492,387,475,354,453,324,425,300,402,287,378,279,326,273,275,277,231,286"/>
+<area shape="rect" id="Node000012" href="$objmgr_8c.html#aa80d7aa4f928bcd719a22f487fa546b5" title="Draws all registered objects." alt="" coords="314,309,405,336"/>
+<area shape="poly" id="edge9_Node000002_Node000012" title=" " alt="" coords="231,301,299,311,298,317,230,307"/>
+<area shape="rect" id="Node000014" href="$backgroundmanager_8c.html#a758accc7d3ea0b0ad26b287c0b879961" title="The round number is rendered &#45; like round0, round1...round75...roundn." alt="" coords="292,360,426,387"/>
+<area shape="poly" id="edge10_Node000002_Node000014" title=" " alt="" coords="215,309,293,346,307,351,305,356,291,350,213,314"/>
+<area shape="rect" id="Node000015" href="$backgroundmanager_8c.html#a7e02ecb19caa5a10703b86f7832200a3" title="draw function for the start screen. This is drawn as the game starts from where the user can press sp..." alt="" coords="298,411,420,437"/>
+<area shape="poly" id="edge11_Node000002_Node000015" title=" " alt="" coords="199,309,239,352,265,375,293,396,302,401,299,406,291,401,261,380,235,356,196,313"/>
+<area shape="rect" id="Node000016" href="$levelmgr_8c.html#a21bd7602e611af7b25b73b86014aa90a" title="Who won whats their name?" alt="" coords="294,461,424,488"/>
+<area shape="poly" id="edge12_Node000002_Node000016" title=" " alt="" coords="195,310,231,375,259,414,294,447,299,451,296,455,290,451,255,417,226,378,190,312"/>
+<area shape="rect" id="Node000019" href="$levelmgr_8c.html#ab4f5749053d79a06bd2a8770f5726aef" title="Initialize the level manager." alt="" coords="315,1019,403,1045"/>
+<area shape="poly" id="edge14_Node000018_Node000019" title=" " alt="" coords="224,1049,299,1038,300,1043,225,1054"/>
+<area shape="rect" id="Node000033" href="$levelmgr_8c.html#a5f61ddac5c680554f5ca9ad4af57d0fe" title="Loads the level and all required objects/assets." alt="" coords="310,1069,408,1096"/>
+<area shape="poly" id="edge15_Node000018_Node000033" title=" " alt="" coords="225,1060,295,1071,294,1076,224,1066"/>
+<area shape="rect" id="Node000237" href="$objmgr_8c.html#ab526120d8da215d02f519edf8313b7b8" title="Initialize the object manager." alt="" coords="320,1120,398,1147"/>
+<area shape="poly" id="edge16_Node000018_Node000237" title=" " alt="" coords="215,1069,293,1106,307,1111,305,1116,291,1110,213,1074"/>
+<area shape="rect" id="Node000242" href="$levelmgr_8c.html#a30e91f13cc312dd1390228051d5b2c0f" title="Shutdown the level manager." alt="" coords="295,1171,423,1197"/>
+<area shape="poly" id="edge18_Node000241_Node000242" title=" " alt="" coords="244,1198,279,1193,280,1198,245,1203"/>
+<area shape="rect" id="Node000243" href="$levelmgr_8c.html#acb6a2482af92cd421e3a66922ae99076" title="Unloads the level and frees up any assets associated." alt="" coords="304,1221,415,1248"/>
+<area shape="poly" id="edge19_Node000241_Node000243" title=" " alt="" coords="245,1215,289,1222,288,1227,244,1221"/>
+<area shape="rect" id="Node000251" href="$objmgr_8c.html#ace0dfc7c1b1b970cf7dd3655a6b05075" title="Shutdown the object manager." alt="" coords="300,1272,418,1299"/>
+<area shape="poly" id="edge20_Node000241_Node000251" title=" " alt="" coords="215,1221,293,1258,307,1263,305,1268,291,1262,213,1226"/>
+<area shape="poly" id="edge22_Node000253_Node000010" title=" " alt="" coords="187,764,198,724,218,669,249,610,268,581,290,555,304,545,307,549,294,559,272,584,253,612,223,672,203,726,192,766"/>
+<area shape="poly" id="edge23_Node000253_Node000011" title=" " alt="" coords="187,764,199,730,219,684,249,637,268,616,291,599,331,580,375,569,419,565,459,565,459,570,419,570,376,574,333,585,293,604,272,620,253,640,224,686,204,732,192,766"/>
+<area shape="rect" id="Node000254" href="$levelmgr_8c.html#ad3472d44c7a3f817fe6ff0743e666416" title="Checking after each round if we have a victor. We are doing whoever wins 2 first." alt="" coords="312,715,407,741"/>
+<area shape="poly" id="edge24_Node000253_Node000254" title=" " alt="" coords="233,762,296,744,297,749,234,767"/>
+<area shape="rect" id="Node000255" href="$levelmgr_8c.html#a0d67e055b277f42d892288e892380b7e" title=" " alt="" coords="310,765,408,792"/>
+<area shape="poly" id="edge25_Node000253_Node000255" title=" " alt="" coords="236,776,295,776,295,781,236,781"/>
+<area shape="rect" id="Node000256" href="$levelmgr_8c.html#adcf527b803684542639e64585bc2f6e7" title=" " alt="" coords="485,639,577,665"/>
+<area shape="poly" id="edge26_Node000253_Node000256" title=" " alt="" coords="199,763,239,731,291,700,336,683,383,671,469,655,470,661,384,676,338,688,293,705,242,735,203,767"/>
+<area shape="rect" id="Node000257" href="$objmgr_8c.html#af18796cc452cca16e78dc6549cc93ffd" title="Updates all registered objects." alt="" coords="308,816,410,843"/>
+<area shape="poly" id="edge27_Node000253_Node000257" title=" " alt="" coords="234,790,297,809,295,814,233,795"/>
+<area shape="rect" id="Node000265" href="$levelmgr_8c.html#a8f55f6f75815def1136f1046586bf24e" title="When the game ends we do this to restart the game." alt="" coords="316,867,402,893"/>
+<area shape="poly" id="edge28_Node000253_Node000265" title=" " alt="" coords="204,790,244,821,293,852,304,858,302,863,291,857,241,825,201,795"/>
+<area shape="rect" id="Node000268" href="$levelmgr_8c.html#a635843bc73947069101385ad485c89c3" title="When starting new round we want to reinitialize some of the components such as in the characters...." alt="" coords="318,917,400,944"/>
+<area shape="poly" id="edge29_Node000253_Node000268" title=" " alt="" coords="196,791,234,845,262,876,294,903,305,910,303,915,290,907,258,880,230,848,192,794"/>
+<area shape="rect" id="Node000269" href="$levelmgr_8c.html#a0d013301b0f620123463bc79bbb728de" title="When we want to start the next round." alt="" coords="294,968,424,995"/>
+<area shape="poly" id="edge30_Node000253_Node000269" title=" " alt="" coords="193,791,206,824,227,868,256,914,294,954,299,958,296,962,290,958,252,917,223,870,201,826,188,793"/>
+<area shape="rect" id="Node000271" href="$levelmgr_8c.html#a79022c62ce4500d0f75c4a8e36b09afd" title="This function checks if the round is completed &#45; either a character won or if the timer got over." alt="" coords="292,613,426,640"/>
+<area shape="poly" id="edge31_Node000253_Node000271" title=" " alt="" coords="193,763,232,713,260,683,290,657,308,645,311,650,294,661,264,687,236,716,198,766"/>
+<area shape="poly" id="edge32_Node000271_Node000011" title=" " alt="" coords="406,610,468,592,470,597,408,615"/>
+<area shape="poly" id="edge33_Node000271_Node000256" title=" " alt="" coords="427,634,470,640,469,646,426,639"/>
+</map>

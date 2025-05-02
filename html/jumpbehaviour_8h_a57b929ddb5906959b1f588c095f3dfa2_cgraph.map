@@ -1,0 +1,14 @@
+<map id="Jump_GameplayOnStart" name="Jump_GameplayOnStart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,170,57"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="441,5,666,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,37,426,23,426,28,170,42"/>
+<area shape="rect" id="Node000003" href="$gameplaystatemanager_8c.html#a59021f98c2d86ab033ca832f6907d264" title="The character can be in various states to make sure there is one centralized point where those states..." alt="" coords="218,56,393,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,51,202,55,202,60,170,56"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="374,53,469,33,470,38,375,58"/>
+<area shape="rect" id="Node000004" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="459,56,648,83"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="394,67,443,67,443,72,394,72"/>
+<area shape="rect" id="Node000005" href="$character_8c.html#a63553c66ba3b649f253f738c79d84546" title=" " alt="" coords="480,107,627,133"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="375,81,470,100,469,106,374,86"/>
+<area shape="rect" id="Node000006" href="$object_8c.html#a78dca0d7c7a63298139246387397c01c" title=" " alt="" coords="714,107,850,133"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="627,117,699,117,699,123,627,123"/>
+</map>

@@ -1,0 +1,96 @@
+\doxysection{Game/src/standblockbehaviour.c File Reference}
+\hypertarget{standblockbehaviour_8c}{}\label{standblockbehaviour_8c}\index{Game/src/standblockbehaviour.c@{Game/src/standblockbehaviour.c}}
+{\ttfamily \#include \"{}character.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}input.\+h\"{}}\newline
+{\ttfamily \#include \"{}keycodes.\+h\"{}}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for standblockbehaviour.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{standblockbehaviour_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{standblockbehaviour_8c_a287fc76da584d7e8f413ae9e5ad4bb5b}{Stand\+Block\+\_\+\+Can\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{standblockbehaviour_8c_a4f77d5da89155f2b18be141217491936}{Stand\+Block\+\_\+\+Gameplay\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\item 
+void \mbox{\hyperlink{standblockbehaviour_8c_a3dd6c0ed056cd0c1ab4be60157d0dd83}{Stand\+Block\+\_\+\+Anim\+On\+Start}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj, uint32\+\_\+t milliseconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{standblockbehaviour_8c_a3dd6c0ed056cd0c1ab4be60157d0dd83}\label{standblockbehaviour_8c_a3dd6c0ed056cd0c1ab4be60157d0dd83} 
+\index{standblockbehaviour.c@{standblockbehaviour.c}!StandBlock\_AnimOnStart@{StandBlock\_AnimOnStart}}
+\index{StandBlock\_AnimOnStart@{StandBlock\_AnimOnStart}!standblockbehaviour.c@{standblockbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{StandBlock\_AnimOnStart()}{StandBlock\_AnimOnStart()}}
+{\footnotesize\ttfamily void Stand\+Block\+\_\+\+Anim\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{standblockbehaviour_8c_a3dd6c0ed056cd0c1ab4be60157d0dd83_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{standblockbehaviour_8c_a3dd6c0ed056cd0c1ab4be60157d0dd83_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{standblockbehaviour_8c_a287fc76da584d7e8f413ae9e5ad4bb5b}\label{standblockbehaviour_8c_a287fc76da584d7e8f413ae9e5ad4bb5b} 
+\index{standblockbehaviour.c@{standblockbehaviour.c}!StandBlock\_CanStart@{StandBlock\_CanStart}}
+\index{StandBlock\_CanStart@{StandBlock\_CanStart}!standblockbehaviour.c@{standblockbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{StandBlock\_CanStart()}{StandBlock\_CanStart()}}
+{\footnotesize\ttfamily bool Stand\+Block\+\_\+\+Can\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{standblockbehaviour_8c_a287fc76da584d7e8f413ae9e5ad4bb5b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{standblockbehaviour_8c_a287fc76da584d7e8f413ae9e5ad4bb5b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{standblockbehaviour_8c_a4f77d5da89155f2b18be141217491936}\label{standblockbehaviour_8c_a4f77d5da89155f2b18be141217491936} 
+\index{standblockbehaviour.c@{standblockbehaviour.c}!StandBlock\_GameplayOnStart@{StandBlock\_GameplayOnStart}}
+\index{StandBlock\_GameplayOnStart@{StandBlock\_GameplayOnStart}!standblockbehaviour.c@{standblockbehaviour.c}}
+\doxysubsubsection{\texorpdfstring{StandBlock\_GameplayOnStart()}{StandBlock\_GameplayOnStart()}}
+{\footnotesize\ttfamily void Stand\+Block\+\_\+\+Gameplay\+On\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj,  }\item[{uint32\+\_\+t}]{milliseconds }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{standblockbehaviour_8c_a4f77d5da89155f2b18be141217491936_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{standblockbehaviour_8c_a4f77d5da89155f2b18be141217491936_icgraph}
+\end{center}
+\end{figure}

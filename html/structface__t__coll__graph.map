@@ -1,0 +1,16 @@
+<map id="face_t" name="face_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,240,96,373"/>
+<area shape="rect" id="Node000002" href="$structobject__t.html" title=" " alt="" coords="210,5,282,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,106,160,140,134,161,111,186,84,226,80,223,106,182,130,158,157,135,208,101"/>
+<area shape="rect" id="Node000003" href="$structobject__vtable__t.html" title=" " alt="" coords="120,272,219,341"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="212,111,177,143,162,163,150,185,146,202,145,220,151,256,146,257,140,220,140,201,145,183,157,160,173,140,208,107"/>
+<area shape="rect" id="Node000005" href="$structcollision_info__t.html" title="The information about the other object which has collided with this collider." alt="" coords="243,272,334,341"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="263,159,281,255,276,256,257,160"/>
+<area shape="rect" id="Node000006" href="$structcollider__vtable__t.html" title="The collider vtable." alt="" coords="357,272,462,341"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="284,131,377,257,373,260,279,134"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="178,271,212,175,217,176,183,273"/>
+<area shape="rect" id="Node000004" href="$structcollider__t.html" title="An object that wants to participate in collisions must own a collider. It holds information about the..." alt="" coords="378,437,441,507"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="438,440,459,412,492,351,503,323,510,297,513,271,509,244,499,216,482,186,465,164,444,146,396,119,345,102,297,92,299,87,346,97,398,114,447,142,469,161,486,182,504,214,514,243,518,270,516,298,508,325,497,353,464,415,442,443"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="315,340,376,422,372,425,311,343"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="412,341,412,420,407,420,407,341"/>
+</map>

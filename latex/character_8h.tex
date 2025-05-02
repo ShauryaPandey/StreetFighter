@@ -1,0 +1,603 @@
+\doxysection{Game/include/character.h File Reference}
+\hypertarget{character_8h}{}\label{character_8h}\index{Game/include/character.h@{Game/include/character.h}}
+{\ttfamily \#include \"{}animation.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaycomponent.\+h\"{}}\newline
+{\ttfamily \#include \"{}gameplaystatemanager.\+h\"{}}\newline
+{\ttfamily \#include \"{}Object.\+h\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for character.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structattack_component__t}{attack\+Component\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Every character having the capability of attacking should own this. This has information about what is the impact point where it attacked, and what is the priority of the attack. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdefense_component__t}{defense\+Component\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A character capable of defending should have this. This tells information about what is the current range in which the character is defending so that if the enemy attack has an impact point in that range this character can block it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{character_8h_a92894f008a58f03c039e681cba41f15c}{Character\+Stand\+Height}}~200
+\item 
+\#define \mbox{\hyperlink{character_8h_ae182ea396d46472e57c107d3ec2777eb}{Character\+Stand\+Width}}~100
+\item 
+\#define \mbox{\hyperlink{character_8h_a30ad9bfa28cee2c4d5d5e14bfd952b5b}{Character\+Crouch\+Height}}~(0.\+67f\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{character_8h_a92894f008a58f03c039e681cba41f15c}{Character\+Stand\+Height}})
+\item 
+\#define \mbox{\hyperlink{character_8h_a8edb451c7adcdca3862175a64bfb10d5}{Ken\+Sprite\+Sheet\+Width}}~632
+\item 
+\#define \mbox{\hyperlink{character_8h_ade330717a067ea70655eb4171221a086}{Ken\+Sprite\+Sheet\+Height}}~1040
+\item 
+\#define \mbox{\hyperlink{character_8h_a323beffa51c6f96a6d906fe24324e538}{Ryu\+Sprite\+Sheet\+Width}}~640
+\item 
+\#define \mbox{\hyperlink{character_8h_a2a1d01b4bc2498030f2ebfd190393252}{Ryu\+Sprite\+Sheet\+Height}}~1200
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structcharacter__t}{character\+\_\+t}} \mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}}
+\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{character_8h_a4f4bb87c289ed15bff0beab6e419b3cc}{Play\+Hadouken\+Sound}}) (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+typedef int \mbox{\hyperlink{character_8h_a967a98d11e0075ca46a8f168e639054c}{Attack\+Priority}}
+\item 
+typedef struct \mbox{\hyperlink{structattack_component__t}{attack\+Component\+\_\+t}} \mbox{\hyperlink{character_8h_a1e38fec80e057bc7d7ba774c23a6eb3c}{Attack\+Component}}
+\begin{DoxyCompactList}\small\item\em Every character having the capability of attacking should own this. This has information about what is the impact point where it attacked, and what is the priority of the attack. \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{character_8h_a5c6015aefa1117a431c2e61fda565ad2}{defense\+Range\+\_\+t}} \mbox{\hyperlink{character_8h_a882918ef62ed204a090f9ad5f9efa91b}{Defense\+Range}}
+\item 
+typedef struct \mbox{\hyperlink{structdefense_component__t}{defense\+Component\+\_\+t}} \mbox{\hyperlink{character_8h_aed58db01055c69193249a7cfc9fde30e}{Defense\+Component}}
+\begin{DoxyCompactList}\small\item\em A character capable of defending should have this. This tells information about what is the current range in which the character is defending so that if the enemy attack has an impact point in that range this character can block it. \end{DoxyCompactList}\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{character_8h_afa8897f1b6a584e10dddf8223423127c}{Game\+Spawn\+Hadouken\+Func}}) (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character, Coord2D position, float velocityX)
+\item 
+typedef bool(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{character_8h_ad8f6c59af3944cf33ecf38318c554dce}{Game\+Can\+Spawn\+Hadouken\+Func}}) (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+typedef struct \mbox{\hyperlink{structhealth_bar__t}{health\+Bar\+\_\+t}} \mbox{\hyperlink{character_8h_af7e8ee682d134bbdd3f1496773ca990f}{Health\+Bar}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{character_8h_a5c6015aefa1117a431c2e61fda565ad2}{defense\+Range\+\_\+t}} \{ \mbox{\hyperlink{character_8h_a5c6015aefa1117a431c2e61fda565ad2a3ec7c29377b255f8b78bad1b7942ff31}{Defense\+\_\+\+Full}}
+, \mbox{\hyperlink{character_8h_a5c6015aefa1117a431c2e61fda565ad2ada623a85f7a5d05042971f9bfb8b9241}{Defense\+\_\+\+Upper}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{character_8h_a1e38fec80e057bc7d7ba774c23a6eb3c}{Attack\+Component}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{character_8h_a200e89c90b4de88de178bb03a13fa94d}{Get\+Character\+Attack\+Component}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+\mbox{\hyperlink{character_8h_aed58db01055c69193249a7cfc9fde30e}{Defense\+Component}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{character_8h_ab2ca6ecdf49576e3b2cc7b7250d5b141}{Get\+Character\+Defense\+Component}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+void \mbox{\hyperlink{character_8h_aa9149de0e4b643454656321cde4d9989}{character\+Init\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em one time initialization of textures \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{character_8h_a242736048213757adf664ea7e8cc1f8b}{Get\+Character\+Name}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{character_8h_a1707c81b8925e6c1df11c7f60a896077}{character\+New}} (Bounds2D box, Coord2D \texorpdfstring{$\ast$}{*}position, \mbox{\hyperlink{gameplaycomponent_8h_aa21d1acf68a4557e13d73a855cefcb62}{Facing\+Direction}} direction, const char \texorpdfstring{$\ast$}{*}name\+Str, \mbox{\hyperlink{character_8h_afa8897f1b6a584e10dddf8223423127c}{Game\+Spawn\+Hadouken\+Func}} spawn\+Hadouken\+Func, \mbox{\hyperlink{character_8h_ad8f6c59af3944cf33ecf38318c554dce}{Game\+Can\+Spawn\+Hadouken\+Func}} can\+Spawn\+Hadouken\+Func, \mbox{\hyperlink{character_8h_af7e8ee682d134bbdd3f1496773ca990f}{Health\+Bar}} \texorpdfstring{$\ast$}{*}bar)
+\begin{DoxyCompactList}\small\item\em Allocates \& initializes a character object Initializing a character object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{character_8h_aa9a253fcfb83ac7e5112fb6e63546423}{character\+Delete}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}face)
+\begin{DoxyCompactList}\small\item\em Frees up resources from a character object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{character_8h_a63553c66ba3b649f253f738c79d84546}{Update\+Character\+Size}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character, \mbox{\hyperlink{gameplaystatemanager_8h_aa33c0a82fa9a425fd8671c38930f1a83}{Character\+Gameplay\+Sub\+State}} sub\+State)
+\item 
+\mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{character_8h_a5face3645f4816839bd787f4e396b975}{Get\+Character\+Animation\+Component}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+\mbox{\hyperlink{gameplaycomponent_8h_a860f41fbe94e04098a6492a89a7a0924}{Gameplay\+Component}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{character_8h_a5ebc6906e36acf7e8a3f4d7fc4333e6b}{Get\+Character\+Gameplay\+Component}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+\mbox{\hyperlink{gameplaystatemanager_8h_aaa44a4bb5215c3341b53c7fdbe92827d}{Character\+Gameplay\+State}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{character_8h_a442b735141d6315291d3e71ac19807ff}{Get\+Character\+Gameplay\+State}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+\mbox{\hyperlink{gameplaycomponent_8h_aa21d1acf68a4557e13d73a855cefcb62}{Facing\+Direction}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{character_8h_a756de494fc30153923e1544645d5f2a5}{Get\+Character\+Facing\+Direction}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+void \mbox{\hyperlink{character_8h_aea7c43e40d189355d1675eb0fc4fe2d1}{Modify\+Character\+Health}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character, uint8\+\_\+t delta)
+\item 
+bool \mbox{\hyperlink{character_8h_a368512d11c3fdf5d899082990904dcca}{Is\+Character\+Dead}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+bool \mbox{\hyperlink{character_8h_aa1dc826cc30bbee41b89099421dbc9c8}{is\+Character\+Won}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+void \mbox{\hyperlink{character_8h_ac9db88f92d3f7a302c8eb761894cd91c}{Character\+Won}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+void \mbox{\hyperlink{character_8h_adb921e0bf8969535a475daba7d607995}{Character\+Dead}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+void \mbox{\hyperlink{character_8h_af1dba1af578a1daf4dd42dde12cf39dd}{character\+Reset}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character, float x\+Pos, \mbox{\hyperlink{gameplaycomponent_8h_aa21d1acf68a4557e13d73a855cefcb62}{Facing\+Direction}} direction)
+\item 
+void \mbox{\hyperlink{character_8h_a41988f11b144e05251c2a29be10c6f56}{Try\+Spawn\+Hadouken}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character, Coord2D position, float velocityX)
+\item 
+bool \mbox{\hyperlink{character_8h_a73067d1781e3c9145108ba29faca1bc1}{Can\+Spawn\+Hadouken}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+static void \mbox{\hyperlink{character_8h_ae8a54c7b5e732369248c6fd0cba0c84d}{\+\_\+process\+Impact\+Info}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}obj)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{character_8h_a73471d49e43cec7dcf9c858743786143}{Get\+Character\+Health}} (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)
+\item 
+void \mbox{\hyperlink{character_8h_a688f9cc44824e8292421f3de027e003a}{\+\_\+character\+On\+Collision\+Enter}} (\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}this\+Obj, \mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}other\+Obj)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{character_8h_a967a98d11e0075ca46a8f168e639054c}{Attack\+Priority}} \mbox{\hyperlink{character_8h_a8ab281671dee6aad479e07a0c7b583ac}{low\+Priority}} = 1
+\item 
+static const \mbox{\hyperlink{character_8h_a967a98d11e0075ca46a8f168e639054c}{Attack\+Priority}} \mbox{\hyperlink{character_8h_a4c494363c2355a3b13e5cd250b9c8bc2}{medium\+Priority}} = 2
+\item 
+static const \mbox{\hyperlink{character_8h_a967a98d11e0075ca46a8f168e639054c}{Attack\+Priority}} \mbox{\hyperlink{character_8h_ad193e2032e7724928fc5c3fedbad0bbe}{high\+Priority}} = 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{character_8h_a30ad9bfa28cee2c4d5d5e14bfd952b5b}\label{character_8h_a30ad9bfa28cee2c4d5d5e14bfd952b5b} 
+\index{character.h@{character.h}!CharacterCrouchHeight@{CharacterCrouchHeight}}
+\index{CharacterCrouchHeight@{CharacterCrouchHeight}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{CharacterCrouchHeight}{CharacterCrouchHeight}}
+{\footnotesize\ttfamily \#define Character\+Crouch\+Height~(0.\+67f\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{character_8h_a92894f008a58f03c039e681cba41f15c}{Character\+Stand\+Height}})}
+
+\Hypertarget{character_8h_a92894f008a58f03c039e681cba41f15c}\label{character_8h_a92894f008a58f03c039e681cba41f15c} 
+\index{character.h@{character.h}!CharacterStandHeight@{CharacterStandHeight}}
+\index{CharacterStandHeight@{CharacterStandHeight}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{CharacterStandHeight}{CharacterStandHeight}}
+{\footnotesize\ttfamily \#define Character\+Stand\+Height~200}
+
+\Hypertarget{character_8h_ae182ea396d46472e57c107d3ec2777eb}\label{character_8h_ae182ea396d46472e57c107d3ec2777eb} 
+\index{character.h@{character.h}!CharacterStandWidth@{CharacterStandWidth}}
+\index{CharacterStandWidth@{CharacterStandWidth}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{CharacterStandWidth}{CharacterStandWidth}}
+{\footnotesize\ttfamily \#define Character\+Stand\+Width~100}
+
+\Hypertarget{character_8h_ade330717a067ea70655eb4171221a086}\label{character_8h_ade330717a067ea70655eb4171221a086} 
+\index{character.h@{character.h}!KenSpriteSheetHeight@{KenSpriteSheetHeight}}
+\index{KenSpriteSheetHeight@{KenSpriteSheetHeight}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{KenSpriteSheetHeight}{KenSpriteSheetHeight}}
+{\footnotesize\ttfamily \#define Ken\+Sprite\+Sheet\+Height~1040}
+
+\Hypertarget{character_8h_a8edb451c7adcdca3862175a64bfb10d5}\label{character_8h_a8edb451c7adcdca3862175a64bfb10d5} 
+\index{character.h@{character.h}!KenSpriteSheetWidth@{KenSpriteSheetWidth}}
+\index{KenSpriteSheetWidth@{KenSpriteSheetWidth}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{KenSpriteSheetWidth}{KenSpriteSheetWidth}}
+{\footnotesize\ttfamily \#define Ken\+Sprite\+Sheet\+Width~632}
+
+\Hypertarget{character_8h_a2a1d01b4bc2498030f2ebfd190393252}\label{character_8h_a2a1d01b4bc2498030f2ebfd190393252} 
+\index{character.h@{character.h}!RyuSpriteSheetHeight@{RyuSpriteSheetHeight}}
+\index{RyuSpriteSheetHeight@{RyuSpriteSheetHeight}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{RyuSpriteSheetHeight}{RyuSpriteSheetHeight}}
+{\footnotesize\ttfamily \#define Ryu\+Sprite\+Sheet\+Height~1200}
+
+\Hypertarget{character_8h_a323beffa51c6f96a6d906fe24324e538}\label{character_8h_a323beffa51c6f96a6d906fe24324e538} 
+\index{character.h@{character.h}!RyuSpriteSheetWidth@{RyuSpriteSheetWidth}}
+\index{RyuSpriteSheetWidth@{RyuSpriteSheetWidth}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{RyuSpriteSheetWidth}{RyuSpriteSheetWidth}}
+{\footnotesize\ttfamily \#define Ryu\+Sprite\+Sheet\+Width~640}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{character_8h_a1e38fec80e057bc7d7ba774c23a6eb3c}\label{character_8h_a1e38fec80e057bc7d7ba774c23a6eb3c} 
+\index{character.h@{character.h}!AttackComponent@{AttackComponent}}
+\index{AttackComponent@{AttackComponent}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{AttackComponent}{AttackComponent}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structattack_component__t}{attack\+Component\+\_\+t}} \mbox{\hyperlink{character_8h_a1e38fec80e057bc7d7ba774c23a6eb3c}{Attack\+Component}}}
+
+
+
+Every character having the capability of attacking should own this. This has information about what is the impact point where it attacked, and what is the priority of the attack. 
+
+\Hypertarget{character_8h_a967a98d11e0075ca46a8f168e639054c}\label{character_8h_a967a98d11e0075ca46a8f168e639054c} 
+\index{character.h@{character.h}!AttackPriority@{AttackPriority}}
+\index{AttackPriority@{AttackPriority}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{AttackPriority}{AttackPriority}}
+{\footnotesize\ttfamily typedef int \mbox{\hyperlink{character_8h_a967a98d11e0075ca46a8f168e639054c}{Attack\+Priority}}}
+
+\Hypertarget{character_8h_ab0a8e61dcfdccf29000580179ab166b9}\label{character_8h_ab0a8e61dcfdccf29000580179ab166b9} 
+\index{character.h@{character.h}!Character@{Character}}
+\index{Character@{Character}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{Character}{Character}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structcharacter__t}{character\+\_\+t}} \mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}}}
+
+\Hypertarget{character_8h_aed58db01055c69193249a7cfc9fde30e}\label{character_8h_aed58db01055c69193249a7cfc9fde30e} 
+\index{character.h@{character.h}!DefenseComponent@{DefenseComponent}}
+\index{DefenseComponent@{DefenseComponent}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{DefenseComponent}{DefenseComponent}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structdefense_component__t}{defense\+Component\+\_\+t}} \mbox{\hyperlink{character_8h_aed58db01055c69193249a7cfc9fde30e}{Defense\+Component}}}
+
+
+
+A character capable of defending should have this. This tells information about what is the current range in which the character is defending so that if the enemy attack has an impact point in that range this character can block it. 
+
+\Hypertarget{character_8h_a882918ef62ed204a090f9ad5f9efa91b}\label{character_8h_a882918ef62ed204a090f9ad5f9efa91b} 
+\index{character.h@{character.h}!DefenseRange@{DefenseRange}}
+\index{DefenseRange@{DefenseRange}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{DefenseRange}{DefenseRange}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{character_8h_a5c6015aefa1117a431c2e61fda565ad2}{defense\+Range\+\_\+t}} \mbox{\hyperlink{character_8h_a882918ef62ed204a090f9ad5f9efa91b}{Defense\+Range}}}
+
+\Hypertarget{character_8h_ad8f6c59af3944cf33ecf38318c554dce}\label{character_8h_ad8f6c59af3944cf33ecf38318c554dce} 
+\index{character.h@{character.h}!GameCanSpawnHadoukenFunc@{GameCanSpawnHadoukenFunc}}
+\index{GameCanSpawnHadoukenFunc@{GameCanSpawnHadoukenFunc}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{GameCanSpawnHadoukenFunc}{GameCanSpawnHadoukenFunc}}
+{\footnotesize\ttfamily typedef bool(\texorpdfstring{$\ast$}{*} Game\+Can\+Spawn\+Hadouken\+Func) (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)}
+
+\Hypertarget{character_8h_afa8897f1b6a584e10dddf8223423127c}\label{character_8h_afa8897f1b6a584e10dddf8223423127c} 
+\index{character.h@{character.h}!GameSpawnHadoukenFunc@{GameSpawnHadoukenFunc}}
+\index{GameSpawnHadoukenFunc@{GameSpawnHadoukenFunc}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{GameSpawnHadoukenFunc}{GameSpawnHadoukenFunc}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} Game\+Spawn\+Hadouken\+Func) (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character, Coord2D position, float velocityX)}
+
+\Hypertarget{character_8h_af7e8ee682d134bbdd3f1496773ca990f}\label{character_8h_af7e8ee682d134bbdd3f1496773ca990f} 
+\index{character.h@{character.h}!HealthBar@{HealthBar}}
+\index{HealthBar@{HealthBar}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{HealthBar}{HealthBar}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structhealth_bar__t}{health\+Bar\+\_\+t}} \mbox{\hyperlink{character_8h_af7e8ee682d134bbdd3f1496773ca990f}{Health\+Bar}}}
+
+\Hypertarget{character_8h_a4f4bb87c289ed15bff0beab6e419b3cc}\label{character_8h_a4f4bb87c289ed15bff0beab6e419b3cc} 
+\index{character.h@{character.h}!PlayHadoukenSound@{PlayHadoukenSound}}
+\index{PlayHadoukenSound@{PlayHadoukenSound}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{PlayHadoukenSound}{PlayHadoukenSound}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} Play\+Hadouken\+Sound) (\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}character)}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{character_8h_a5c6015aefa1117a431c2e61fda565ad2}\label{character_8h_a5c6015aefa1117a431c2e61fda565ad2} 
+\index{character.h@{character.h}!defenseRange\_t@{defenseRange\_t}}
+\index{defenseRange\_t@{defenseRange\_t}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{defenseRange\_t}{defenseRange\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{character_8h_a5c6015aefa1117a431c2e61fda565ad2}{defense\+Range\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Defense\_Full@{Defense\_Full}!character.h@{character.h}}\index{character.h@{character.h}!Defense\_Full@{Defense\_Full}}}\Hypertarget{character_8h_a5c6015aefa1117a431c2e61fda565ad2a3ec7c29377b255f8b78bad1b7942ff31}\label{character_8h_a5c6015aefa1117a431c2e61fda565ad2a3ec7c29377b255f8b78bad1b7942ff31} 
+Defense\+\_\+\+Full&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Defense\_Upper@{Defense\_Upper}!character.h@{character.h}}\index{character.h@{character.h}!Defense\_Upper@{Defense\_Upper}}}\Hypertarget{character_8h_a5c6015aefa1117a431c2e61fda565ad2ada623a85f7a5d05042971f9bfb8b9241}\label{character_8h_a5c6015aefa1117a431c2e61fda565ad2ada623a85f7a5d05042971f9bfb8b9241} 
+Defense\+\_\+\+Upper&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{character_8h_a688f9cc44824e8292421f3de027e003a}\label{character_8h_a688f9cc44824e8292421f3de027e003a} 
+\index{character.h@{character.h}!\_characterOnCollisionEnter@{\_characterOnCollisionEnter}}
+\index{\_characterOnCollisionEnter@{\_characterOnCollisionEnter}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{\_characterOnCollisionEnter()}{\_characterOnCollisionEnter()}}
+{\footnotesize\ttfamily void \+\_\+character\+On\+Collision\+Enter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{this\+Obj,  }\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{other\+Obj }\end{DoxyParamCaption})}
+
+\Hypertarget{character_8h_ae8a54c7b5e732369248c6fd0cba0c84d}\label{character_8h_ae8a54c7b5e732369248c6fd0cba0c84d} 
+\index{character.h@{character.h}!\_processImpactInfo@{\_processImpactInfo}}
+\index{\_processImpactInfo@{\_processImpactInfo}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{\_processImpactInfo()}{\_processImpactInfo()}}
+{\footnotesize\ttfamily static void \+\_\+process\+Impact\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{collider_8h_a8d704199338300abfe20c088c1c4433e}{Object}} \texorpdfstring{$\ast$}{*}}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{character_8h_a73067d1781e3c9145108ba29faca1bc1}\label{character_8h_a73067d1781e3c9145108ba29faca1bc1} 
+\index{character.h@{character.h}!CanSpawnHadouken@{CanSpawnHadouken}}
+\index{CanSpawnHadouken@{CanSpawnHadouken}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{CanSpawnHadouken()}{CanSpawnHadouken()}}
+{\footnotesize\ttfamily bool Can\+Spawn\+Hadouken (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_a73067d1781e3c9145108ba29faca1bc1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_adb921e0bf8969535a475daba7d607995}\label{character_8h_adb921e0bf8969535a475daba7d607995} 
+\index{character.h@{character.h}!CharacterDead@{CharacterDead}}
+\index{CharacterDead@{CharacterDead}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{CharacterDead()}{CharacterDead()}}
+{\footnotesize\ttfamily void Character\+Dead (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_adb921e0bf8969535a475daba7d607995_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_aa9a253fcfb83ac7e5112fb6e63546423}\label{character_8h_aa9a253fcfb83ac7e5112fb6e63546423} 
+\index{character.h@{character.h}!characterDelete@{characterDelete}}
+\index{characterDelete@{characterDelete}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{characterDelete()}{characterDelete()}}
+{\footnotesize\ttfamily void character\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+
+
+Frees up resources from a character object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{character_8h_aa9a253fcfb83ac7e5112fb6e63546423_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_aa9a253fcfb83ac7e5112fb6e63546423_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_aa9149de0e4b643454656321cde4d9989}\label{character_8h_aa9149de0e4b643454656321cde4d9989} 
+\index{character.h@{character.h}!characterInitTextures@{characterInitTextures}}
+\index{characterInitTextures@{characterInitTextures}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{characterInitTextures()}{characterInitTextures()}}
+{\footnotesize\ttfamily void character\+Init\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+one time initialization of textures 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_aa9149de0e4b643454656321cde4d9989_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_a1707c81b8925e6c1df11c7f60a896077}\label{character_8h_a1707c81b8925e6c1df11c7f60a896077} 
+\index{character.h@{character.h}!characterNew@{characterNew}}
+\index{characterNew@{characterNew}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{characterNew()}{characterNew()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*} character\+New (\begin{DoxyParamCaption}\item[{Bounds2D}]{box,  }\item[{Coord2D \texorpdfstring{$\ast$}{*}}]{position,  }\item[{\mbox{\hyperlink{gameplaycomponent_8h_aa21d1acf68a4557e13d73a855cefcb62}{Facing\+Direction}}}]{direction,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{name\+Str,  }\item[{\mbox{\hyperlink{character_8h_afa8897f1b6a584e10dddf8223423127c}{Game\+Spawn\+Hadouken\+Func}}}]{spawn\+Hadouken\+Func,  }\item[{\mbox{\hyperlink{character_8h_ad8f6c59af3944cf33ecf38318c554dce}{Game\+Can\+Spawn\+Hadouken\+Func}}}]{can\+Spawn\+Hadouken\+Func,  }\item[{\mbox{\hyperlink{character_8h_af7e8ee682d134bbdd3f1496773ca990f}{Health\+Bar}} \texorpdfstring{$\ast$}{*}}]{bar }\end{DoxyParamCaption})}
+
+
+
+Allocates \& initializes a character object Initializing a character object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em box} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+~\newline
+ 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{character_8h_a1707c81b8925e6c1df11c7f60a896077_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_a1707c81b8925e6c1df11c7f60a896077_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_af1dba1af578a1daf4dd42dde12cf39dd}\label{character_8h_af1dba1af578a1daf4dd42dde12cf39dd} 
+\index{character.h@{character.h}!characterReset@{characterReset}}
+\index{characterReset@{characterReset}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{characterReset()}{characterReset()}}
+{\footnotesize\ttfamily void character\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character,  }\item[{float}]{x\+Pos,  }\item[{\mbox{\hyperlink{gameplaycomponent_8h_aa21d1acf68a4557e13d73a855cefcb62}{Facing\+Direction}}}]{direction }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_af1dba1af578a1daf4dd42dde12cf39dd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_af1dba1af578a1daf4dd42dde12cf39dd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_ac9db88f92d3f7a302c8eb761894cd91c}\label{character_8h_ac9db88f92d3f7a302c8eb761894cd91c} 
+\index{character.h@{character.h}!CharacterWon@{CharacterWon}}
+\index{CharacterWon@{CharacterWon}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{CharacterWon()}{CharacterWon()}}
+{\footnotesize\ttfamily void Character\+Won (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_ac9db88f92d3f7a302c8eb761894cd91c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_a5face3645f4816839bd787f4e396b975}\label{character_8h_a5face3645f4816839bd787f4e396b975} 
+\index{character.h@{character.h}!GetCharacterAnimationComponent@{GetCharacterAnimationComponent}}
+\index{GetCharacterAnimationComponent@{GetCharacterAnimationComponent}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{GetCharacterAnimationComponent()}{GetCharacterAnimationComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{animation_8h_ab7ab951cbc21a57cdc5314c2f967c1c3}{Animation\+Component}} \texorpdfstring{$\ast$}{*} Get\+Character\+Animation\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+\Hypertarget{character_8h_a200e89c90b4de88de178bb03a13fa94d}\label{character_8h_a200e89c90b4de88de178bb03a13fa94d} 
+\index{character.h@{character.h}!GetCharacterAttackComponent@{GetCharacterAttackComponent}}
+\index{GetCharacterAttackComponent@{GetCharacterAttackComponent}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{GetCharacterAttackComponent()}{GetCharacterAttackComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{character_8h_a1e38fec80e057bc7d7ba774c23a6eb3c}{Attack\+Component}} \texorpdfstring{$\ast$}{*} Get\+Character\+Attack\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_a200e89c90b4de88de178bb03a13fa94d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_ab2ca6ecdf49576e3b2cc7b7250d5b141}\label{character_8h_ab2ca6ecdf49576e3b2cc7b7250d5b141} 
+\index{character.h@{character.h}!GetCharacterDefenseComponent@{GetCharacterDefenseComponent}}
+\index{GetCharacterDefenseComponent@{GetCharacterDefenseComponent}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{GetCharacterDefenseComponent()}{GetCharacterDefenseComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{character_8h_aed58db01055c69193249a7cfc9fde30e}{Defense\+Component}} \texorpdfstring{$\ast$}{*} Get\+Character\+Defense\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_ab2ca6ecdf49576e3b2cc7b7250d5b141_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_a756de494fc30153923e1544645d5f2a5}\label{character_8h_a756de494fc30153923e1544645d5f2a5} 
+\index{character.h@{character.h}!GetCharacterFacingDirection@{GetCharacterFacingDirection}}
+\index{GetCharacterFacingDirection@{GetCharacterFacingDirection}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{GetCharacterFacingDirection()}{GetCharacterFacingDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{gameplaycomponent_8h_aa21d1acf68a4557e13d73a855cefcb62}{Facing\+Direction}} \texorpdfstring{$\ast$}{*} Get\+Character\+Facing\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+\Hypertarget{character_8h_a5ebc6906e36acf7e8a3f4d7fc4333e6b}\label{character_8h_a5ebc6906e36acf7e8a3f4d7fc4333e6b} 
+\index{character.h@{character.h}!GetCharacterGameplayComponent@{GetCharacterGameplayComponent}}
+\index{GetCharacterGameplayComponent@{GetCharacterGameplayComponent}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{GetCharacterGameplayComponent()}{GetCharacterGameplayComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{gameplaycomponent_8h_a860f41fbe94e04098a6492a89a7a0924}{Gameplay\+Component}} \texorpdfstring{$\ast$}{*} Get\+Character\+Gameplay\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+\Hypertarget{character_8h_a442b735141d6315291d3e71ac19807ff}\label{character_8h_a442b735141d6315291d3e71ac19807ff} 
+\index{character.h@{character.h}!GetCharacterGameplayState@{GetCharacterGameplayState}}
+\index{GetCharacterGameplayState@{GetCharacterGameplayState}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{GetCharacterGameplayState()}{GetCharacterGameplayState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{gameplaystatemanager_8h_aaa44a4bb5215c3341b53c7fdbe92827d}{Character\+Gameplay\+State}} \texorpdfstring{$\ast$}{*} Get\+Character\+Gameplay\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+\Hypertarget{character_8h_a73471d49e43cec7dcf9c858743786143}\label{character_8h_a73471d49e43cec7dcf9c858743786143} 
+\index{character.h@{character.h}!GetCharacterHealth@{GetCharacterHealth}}
+\index{GetCharacterHealth@{GetCharacterHealth}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{GetCharacterHealth()}{GetCharacterHealth()}}
+{\footnotesize\ttfamily uint8\+\_\+t Get\+Character\+Health (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_a73471d49e43cec7dcf9c858743786143_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_a242736048213757adf664ea7e8cc1f8b}\label{character_8h_a242736048213757adf664ea7e8cc1f8b} 
+\index{character.h@{character.h}!GetCharacterName@{GetCharacterName}}
+\index{GetCharacterName@{GetCharacterName}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{GetCharacterName()}{GetCharacterName()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Get\+Character\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_a242736048213757adf664ea7e8cc1f8b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_a368512d11c3fdf5d899082990904dcca}\label{character_8h_a368512d11c3fdf5d899082990904dcca} 
+\index{character.h@{character.h}!IsCharacterDead@{IsCharacterDead}}
+\index{IsCharacterDead@{IsCharacterDead}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{IsCharacterDead()}{IsCharacterDead()}}
+{\footnotesize\ttfamily bool Is\+Character\+Dead (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_a368512d11c3fdf5d899082990904dcca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_aa1dc826cc30bbee41b89099421dbc9c8}\label{character_8h_aa1dc826cc30bbee41b89099421dbc9c8} 
+\index{character.h@{character.h}!isCharacterWon@{isCharacterWon}}
+\index{isCharacterWon@{isCharacterWon}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{isCharacterWon()}{isCharacterWon()}}
+{\footnotesize\ttfamily bool is\+Character\+Won (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_aa1dc826cc30bbee41b89099421dbc9c8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_aea7c43e40d189355d1675eb0fc4fe2d1}\label{character_8h_aea7c43e40d189355d1675eb0fc4fe2d1} 
+\index{character.h@{character.h}!ModifyCharacterHealth@{ModifyCharacterHealth}}
+\index{ModifyCharacterHealth@{ModifyCharacterHealth}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{ModifyCharacterHealth()}{ModifyCharacterHealth()}}
+{\footnotesize\ttfamily void Modify\+Character\+Health (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character,  }\item[{uint8\+\_\+t}]{delta }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_aea7c43e40d189355d1675eb0fc4fe2d1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_a41988f11b144e05251c2a29be10c6f56}\label{character_8h_a41988f11b144e05251c2a29be10c6f56} 
+\index{character.h@{character.h}!TrySpawnHadouken@{TrySpawnHadouken}}
+\index{TrySpawnHadouken@{TrySpawnHadouken}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{TrySpawnHadouken()}{TrySpawnHadouken()}}
+{\footnotesize\ttfamily void Try\+Spawn\+Hadouken (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character,  }\item[{Coord2D}]{position,  }\item[{float}]{velocityX }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{character_8h_a41988f11b144e05251c2a29be10c6f56_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{character_8h_a63553c66ba3b649f253f738c79d84546}\label{character_8h_a63553c66ba3b649f253f738c79d84546} 
+\index{character.h@{character.h}!UpdateCharacterSize@{UpdateCharacterSize}}
+\index{UpdateCharacterSize@{UpdateCharacterSize}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{UpdateCharacterSize()}{UpdateCharacterSize()}}
+{\footnotesize\ttfamily void Update\+Character\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{character_8h_ab0a8e61dcfdccf29000580179ab166b9}{Character}} \texorpdfstring{$\ast$}{*}}]{character,  }\item[{\mbox{\hyperlink{gameplaystatemanager_8h_aa33c0a82fa9a425fd8671c38930f1a83}{Character\+Gameplay\+Sub\+State}}}]{sub\+State }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{character_8h_a63553c66ba3b649f253f738c79d84546_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{character_8h_a63553c66ba3b649f253f738c79d84546_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{character_8h_ad193e2032e7724928fc5c3fedbad0bbe}\label{character_8h_ad193e2032e7724928fc5c3fedbad0bbe} 
+\index{character.h@{character.h}!highPriority@{highPriority}}
+\index{highPriority@{highPriority}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{highPriority}{highPriority}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{character_8h_a967a98d11e0075ca46a8f168e639054c}{Attack\+Priority}} high\+Priority = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{character_8h_a8ab281671dee6aad479e07a0c7b583ac}\label{character_8h_a8ab281671dee6aad479e07a0c7b583ac} 
+\index{character.h@{character.h}!lowPriority@{lowPriority}}
+\index{lowPriority@{lowPriority}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{lowPriority}{lowPriority}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{character_8h_a967a98d11e0075ca46a8f168e639054c}{Attack\+Priority}} low\+Priority = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{character_8h_a4c494363c2355a3b13e5cd250b9c8bc2}\label{character_8h_a4c494363c2355a3b13e5cd250b9c8bc2} 
+\index{character.h@{character.h}!mediumPriority@{mediumPriority}}
+\index{mediumPriority@{mediumPriority}!character.h@{character.h}}
+\doxysubsubsection{\texorpdfstring{mediumPriority}{mediumPriority}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{character_8h_a967a98d11e0075ca46a8f168e639054c}{Attack\+Priority}} medium\+Priority = 2\hspace{0.3cm}{\ttfamily [static]}}
+

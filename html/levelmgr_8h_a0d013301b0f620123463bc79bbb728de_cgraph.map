@@ -1,0 +1,7 @@
+<map id="StartCurrentRound" name="StartCurrentRound">
+<area shape="rect" id="Node000001" title="When we want to start the next round." alt="" coords="5,31,136,57"/>
+<area shape="rect" id="Node000002" href="$levelmgr_8c.html#ae17091f51a458ad53181c5150fd3a6e2" title=" " alt="" coords="184,5,364,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,33,168,29,168,34,136,39"/>
+<area shape="rect" id="Node000003" href="$levelmgr_8c.html#a7c0a7292d951b4445623a2a5a5736ba3" title="Resets it to the max time." alt="" coords="232,56,316,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,49,217,60,216,65,136,55"/>
+</map>

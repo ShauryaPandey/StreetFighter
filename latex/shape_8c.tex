@@ -1,0 +1,150 @@
+\doxysection{Game/src/shape.c File Reference}
+\hypertarget{shape_8c}{}\label{shape_8c}\index{Game/src/shape.c@{Game/src/shape.c}}
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$gl\textbackslash{}gl.\+h$>$}\newline
+{\ttfamily \#include $<$gl\textbackslash{}glu.\+h$>$}\newline
+{\ttfamily \#include \"{}glut.\+h\"{}}\newline
+{\ttfamily \#include \"{}base\+Types.\+h\"{}}\newline
+Include dependency graph for shape.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shape_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{shape_8c_ad167e93c8aeb29c44811adbfef27f024}{shape\+Draw\+Circle}} (float radius, float x, float y, uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b, bool filled)
+\begin{DoxyCompactList}\small\item\em Draws a circle to the screen w/ the given properties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shape_8c_a2df0437a2aa2873b285e55901f5694d0}{shape\+Draw\+Rectangle}} (float x, float y, float width, float height, uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b, bool filled)
+\begin{DoxyCompactList}\small\item\em Draw a rectangle shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{shape_8c_aff38d5c0ccfd1f6e8fb31a4fe3d5332b}{shape\+Draw\+Line}} (float startX, float startY, float endX, float endY, uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+\begin{DoxyCompactList}\small\item\em Draws a line to the screen with the given properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{shape_8c_acbfd2fc3314cc3762ea0c3720979f8bc}{DEG2\+RAD}} = 3.\+14159f/180.\+0f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{shape_8c_ad167e93c8aeb29c44811adbfef27f024}\label{shape_8c_ad167e93c8aeb29c44811adbfef27f024} 
+\index{shape.c@{shape.c}!shapeDrawCircle@{shapeDrawCircle}}
+\index{shapeDrawCircle@{shapeDrawCircle}!shape.c@{shape.c}}
+\doxysubsubsection{\texorpdfstring{shapeDrawCircle()}{shapeDrawCircle()}}
+{\footnotesize\ttfamily void shape\+Draw\+Circle (\begin{DoxyParamCaption}\item[{float}]{radius,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{uint8\+\_\+t}]{r,  }\item[{uint8\+\_\+t}]{g,  }\item[{uint8\+\_\+t}]{b,  }\item[{bool}]{filled }\end{DoxyParamCaption})}
+
+
+
+Draws a circle to the screen w/ the given properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & \\
+\hline
+{\em x} & center X \\
+\hline
+{\em y} & center Y \\
+\hline
+{\em r} & red \\
+\hline
+{\em g} & green \\
+\hline
+{\em b} & blue \\
+\hline
+{\em filled} & solid circle, if true, outline otherwise \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{shape_8c_ad167e93c8aeb29c44811adbfef27f024_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{shape_8c_aff38d5c0ccfd1f6e8fb31a4fe3d5332b}\label{shape_8c_aff38d5c0ccfd1f6e8fb31a4fe3d5332b} 
+\index{shape.c@{shape.c}!shapeDrawLine@{shapeDrawLine}}
+\index{shapeDrawLine@{shapeDrawLine}!shape.c@{shape.c}}
+\doxysubsubsection{\texorpdfstring{shapeDrawLine()}{shapeDrawLine()}}
+{\footnotesize\ttfamily void shape\+Draw\+Line (\begin{DoxyParamCaption}\item[{float}]{startX,  }\item[{float}]{startY,  }\item[{float}]{endX,  }\item[{float}]{endY,  }\item[{uint8\+\_\+t}]{r,  }\item[{uint8\+\_\+t}]{g,  }\item[{uint8\+\_\+t}]{b }\end{DoxyParamCaption})}
+
+
+
+Draws a line to the screen with the given properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em startX} & \\
+\hline
+{\em startY} & \\
+\hline
+{\em endX} & \\
+\hline
+{\em endY} & \\
+\hline
+{\em r} & red \\
+\hline
+{\em g} & green \\
+\hline
+{\em b} & blue \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{shape_8c_aff38d5c0ccfd1f6e8fb31a4fe3d5332b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{shape_8c_a2df0437a2aa2873b285e55901f5694d0}\label{shape_8c_a2df0437a2aa2873b285e55901f5694d0} 
+\index{shape.c@{shape.c}!shapeDrawRectangle@{shapeDrawRectangle}}
+\index{shapeDrawRectangle@{shapeDrawRectangle}!shape.c@{shape.c}}
+\doxysubsubsection{\texorpdfstring{shapeDrawRectangle()}{shapeDrawRectangle()}}
+{\footnotesize\ttfamily void shape\+Draw\+Rectangle (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{uint8\+\_\+t}]{r,  }\item[{uint8\+\_\+t}]{g,  }\item[{uint8\+\_\+t}]{b,  }\item[{bool}]{filled }\end{DoxyParamCaption})}
+
+
+
+Draw a rectangle shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em r} & \\
+\hline
+{\em g} & \\
+\hline
+{\em b} & \\
+\hline
+{\em filled} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{shape_8c_a2df0437a2aa2873b285e55901f5694d0_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{shape_8c_acbfd2fc3314cc3762ea0c3720979f8bc}\label{shape_8c_acbfd2fc3314cc3762ea0c3720979f8bc} 
+\index{shape.c@{shape.c}!DEG2RAD@{DEG2RAD}}
+\index{DEG2RAD@{DEG2RAD}!shape.c@{shape.c}}
+\doxysubsubsection{\texorpdfstring{DEG2RAD}{DEG2RAD}}
+{\footnotesize\ttfamily const float DEG2\+RAD = 3.\+14159f/180.\+0f}
+

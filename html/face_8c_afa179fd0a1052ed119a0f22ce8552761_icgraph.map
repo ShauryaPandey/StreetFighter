@@ -1,0 +1,7 @@
+<map id="_getUpdateTime" name="_getUpdateTime">
+<area shape="rect" id="Node000001" title="Tuning method for how frequently updates will occur." alt="" coords="149,31,266,57"/>
+<area shape="rect" id="Node000002" href="$face_8c.html#a69f73c4a25573b0655d3df1b098ee346" title="Updates the character&#39;s mood every so often." alt="" coords="5,5,101,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,35,101,29,102,24,134,29"/>
+<area shape="rect" id="Node000003" href="$face_8c.html#ab80628df2bf72b7bc206b3662369883c" title="Allocates &amp; initializes a face object." alt="" coords="16,56,90,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,59,90,66,90,61,133,54"/>
+</map>
