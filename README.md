@@ -24,7 +24,8 @@ I wanted every object to be capable of collision, but C doesn’t give you inher
 - A `Collider` struct
 - A `ColliderVTable` with function pointers:
     - `OnCollisionEnter`
-    - `ProcessImpact`    
+    - `ProcessImpact`
+ 
 I realized during the development that I needed to defer the actual processing of impact, since any state change in one would affect how the second collider reacts.
 `OnCollisionEnter` only records intent, and `ProcessImpact` applies it later. This avoids messing with state mid-frame.    
 ### Collision Use Cases
