@@ -2,8 +2,9 @@
 
 [![Docs](https://img.shields.io/badge/Doxygen-Documentation-blue?logo=github)](https://shauryapandey.github.io/StreetFighter/index.html)
 
-## About the Project  
+## About the Project 
 This game was built in C using a barebones OpenGL framework provided by Jeremy Paulding who is the programming professor at Florida Interactive Entertainment Academy. The framework provides a rendering loop, object manager and a level manager. From there, I built as close a clone of the original Street Fighter as possible in 2 weeks. I developed the necessary infrastructure: animation, gameplay logic, collisions, and a behavior-action architecture — everything structured so it could scale.
+
 ---
 ## 🕹️Gameplay System Design
 I leaned into separating gameplay logic from animation logic, building a behavior-action system in order to make the process of creating game content fast and feasible.  
