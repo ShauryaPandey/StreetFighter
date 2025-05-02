@@ -1,11 +1,11 @@
 # 🎮 C Game – Street Fighter (Ken vs. Ryu)
 
 ## 📚 Documentation
-For detailed description of the classes and the relationship diagrams, check this out:
+For detailed description of the classes and the relationship diagrams, check this out:  
+
 [![Docs](https://img.shields.io/badge/Doxygen-Documentation-blue?logo=github)](https://shauryapandey.github.io/StreetFighter/index.html)
 
-![Gameplay Screenshot](https://i.imgur.com/ltCjQKk.png)
-
+---
 ## About the Project 
 This game was built in C using a barebones OpenGL framework provided by Jeremy Paulding who is the programming professor at Florida Interactive Entertainment Academy. The framework provides a rendering loop, object manager and a level manager. From there, I built as close a clone of the original Street Fighter as possible in 2 weeks. I developed the necessary infrastructure: animation, gameplay logic, collisions, and a behavior-action architecture — everything structured so it could scale.
 
@@ -74,3 +74,6 @@ typedef struct object_t {
 ## 🧠 Key Learnings
 - Thinking in systems: Decoupling animations from gameplay
 - Every constraint was an opportunity to get creative
+
+
+![Gameplay Screenshot](https://i.imgur.com/ltCjQKk.png)
