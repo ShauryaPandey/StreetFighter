@@ -1,0 +1,14 @@
+<map id="collisionInfo_t" name="collisionInfo_t">
+<area shape="rect" id="Node000001" title="The information about the other object which has collided with this collider." alt="" coords="116,5,207,75"/>
+<area shape="rect" id="Node000004" href="$structcollider__t.html" title="An object that wants to participate in collisions must own a collider. It holds information about the..." alt="" coords="90,139,153,208"/>
+<area shape="poly" id="edge5_Node000004_Node000001" title=" " alt="" coords="154,75,139,123,134,121,149,74"/>
+<area shape="rect" id="Node000002" href="$structobject__t.html" title=" " alt="" coords="166,272,238,427"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,273,194,189,180,99,178,91,184,90,186,98,199,188,204,272"/>
+<area shape="rect" id="Node000003" href="$structobject__vtable__t.html" title=" " alt="" coords="235,507,334,576"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="239,376,271,408,285,428,296,450,301,470,300,490,295,490,295,470,291,452,281,431,267,412,236,380"/>
+<area shape="rect" id="Node000005" href="$structcollider__vtable__t.html" title="The collider vtable." alt="" coords="5,507,110,576"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="168,378,129,411,93,452,74,492,69,490,89,449,125,407,164,374"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,508,244,484,227,443,232,441,249,481,263,506"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="124,207,133,247,158,293,153,296,127,249,119,208"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="59,506,67,450,109,224,114,225,72,451,64,507"/>
+</map>

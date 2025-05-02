@@ -1,0 +1,7 @@
+<map id="BlockHurt_GameplayCleanup" name="BlockHurt_GameplayCleanup">
+<area shape="rect" id="Node000001" title="Like all cleanups of all behaviours this cleanup must also clear its payload." alt="" coords="5,31,199,57"/>
+<area shape="rect" id="Node000002" href="$gameplaycomponent_8c.html#ab78c28629ddc6d03e2fc71a9cbbb1698" title="When action is over or needs to be restarted or stopped previously allocated payload is handled here." alt="" coords="289,5,430,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,32,273,24,274,30,200,37"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="247,56,472,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,51,231,54,231,59,199,56"/>
+</map>

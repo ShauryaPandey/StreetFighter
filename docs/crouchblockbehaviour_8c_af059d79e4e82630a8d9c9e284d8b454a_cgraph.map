@@ -1,0 +1,11 @@
+<map id="CrouchBlock_AnimOnStart" name="CrouchBlock_AnimOnStart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,184,83"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a5face3645f4816839bd787f4e396b975" title=" " alt="" coords="232,5,456,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,53,260,33,261,38,165,58"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="232,56,457,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,67,216,67,216,72,184,72"/>
+<area shape="rect" id="Node000004" href="$animation_8c.html#ab438ee95cd9be14b8d50d1590746ca58" title="This function gives equal frame time to each of the frames by dividing the total duration by number o..." alt="" coords="250,107,438,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,81,261,100,260,106,163,86"/>
+<area shape="rect" id="Node000005" href="$animation_8c.html#a83f91bab556734f8162fb1622c24cd03" title="If user of this function wants every frame to have equal time then use this." alt="" coords="505,107,723,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="439,117,489,117,489,123,439,123"/>
+</map>

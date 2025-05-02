@@ -1,0 +1,5 @@
+<map id="standHurtPayload_t" name="standHurtPayload_t">
+<area shape="rect" id="Node000001" title="Payload for stand hurt action." alt="" coords="5,160,131,272"/>
+<area shape="rect" id="Node000002" href="$structpayload__t.html" title="Might need to recover to old state or store some variables between function calls for the controller ..." alt="" coords="34,5,103,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,96,71,143,66,143,66,96"/>
+</map>

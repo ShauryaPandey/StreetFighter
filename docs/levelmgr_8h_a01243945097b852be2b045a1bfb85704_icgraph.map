@@ -1,0 +1,13 @@
+<map id="GetRoundTimer" name="GetRoundTimer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="458,56,572,83"/>
+<area shape="rect" id="Node000002" href="$game_8c.html#a2f1d3262d209f17a7eba4b214d4903e1" title=" " alt="" coords="131,5,222,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="443,59,410,53,222,27,223,22,411,48,444,54"/>
+<area shape="rect" id="Node000004" href="$game_8c.html#a4c776f564425d03bdd1026bef085f589" title="Perform updates for all game objects, for the elapsed duration." alt="" coords="126,56,228,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="443,72,229,72,229,67,443,67"/>
+<area shape="rect" id="Node000005" href="$levelmgr_8c.html#a79022c62ce4500d0f75c4a8e36b09afd" title="This function checks if the round is completed &#45; either a character won or if the timer got over." alt="" coords="276,107,410,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="453,90,392,109,390,104,452,85"/>
+<area shape="rect" id="Node000003" href="$game_8c.html#a661c2abc03926acfaeb93b4ae7db4943" title="Program Entry Point (WinMain). Part of the base game framework." alt="" coords="5,31,78,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,33,79,40,78,35,115,27"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="110,60,78,53,79,48,111,54"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="281,104,222,86,224,81,283,99"/>
+</map>

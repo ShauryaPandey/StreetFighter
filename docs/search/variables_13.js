@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['screencoordinates_0',['screenCoordinates',['../structstart_screen_frame__t.html#a2604d9222ba218d080475f627a200ae9',1,'startScreenFrame_t']]],
+  ['secondcharacter_1',['secondCharacter',['../structlevel__t.html#a11d38bd5a96aa15e3c251f1f6270ff77',1,'level_t']]],
+  ['shen_5flong_5fpage_2',['SHEN_LONG_PAGE',['../backgroundmanager_8c.html#abd053fc88c978bcd2f45a829421e7bae',1,'backgroundmanager.c']]],
+  ['size_3',['size',['../structpayload__t.html#a0c66acff63f7e4e3e525f1bd9405b42e',1,'payload_t::size'],['../structobject__t.html#a0141a99696423f29dd6eefc28bb4272a',1,'object_t::size'],['../structface__t.html#a46e0f17381c004070ad6fa74a4db319d',1,'face_t::size'],['../structfield__t.html#af8e263f1ded04006bd4d6b7f74494d93',1,'field_t::size'],['../structround_timer__t.html#a3561b13241bc0cee029a8e82020fa29d',1,'roundTimer_t::size']]],
+  ['spawnhadoukenfunc_4',['spawnHadoukenFunc',['../structcharacter__t.html#a8937fddb7c692332bd364cd46f8cbe87',1,'character_t']]],
+  ['spritesheet_5',['spriteSheet',['../structanim_component__t.html#a661a5e0ebfa3da2ac7cb58e0441494ce',1,'animComponent_t']]],
+  ['standblockanimlen_6',['standBlockAnimLen',['../kenanimations_8c.html#aece72763c8a4ca1ab2585a84fdae73af',1,'kenanimations.c']]],
+  ['standhurtanimlen_7',['standHurtAnimLen',['../kenanimations_8c.html#a4705a496fdf09e1168c70ae26fbb45a7',1,'kenanimations.c']]],
+  ['startbutton_5fpage_8',['STARTBUTTON_PAGE',['../backgroundmanager_8c.html#a3a04fb63dbb005bb6e7eecab92f9f92b',1,'backgroundmanager.c']]],
+  ['startbuttoncoords_9',['startButtonCoords',['../backgroundmanager_8c.html#a2da900c7b95d175b98f3edaf8fe0dfd2',1,'backgroundmanager.c']]],
+  ['startbuttonimgheight_10',['startButtonImgHeight',['../backgroundmanager_8c.html#a3d7e921de0dd2e1329b74950be62bc0d',1,'backgroundmanager.c']]],
+  ['startbuttonimgwidth_11',['startButtonImgWidth',['../backgroundmanager_8c.html#a87c5c620bf1834b9351947e7b56f9df5',1,'backgroundmanager.c']]],
+  ['startbuttonpixs_12',['startButtonPixs',['../backgroundmanager_8c.html#a92e6059d1f3277322eca4726d41c08df',1,'backgroundmanager.c']]],
+  ['startscreen_5fpage_13',['STARTSCREEN_PAGE',['../backgroundmanager_8c.html#a94019207a0b327213cd9f4a6522cdac2',1,'backgroundmanager.c']]],
+  ['startscreenimgheight_14',['startScreenImgHeight',['../backgroundmanager_8c.html#a00a1f4a060d46304ee877d07e1d06571',1,'backgroundmanager.c']]],
+  ['startscreenimgwidth_15',['startScreenImgWidth',['../backgroundmanager_8c.html#a5396b36bd465cd07cf0ba75b786ea26d',1,'backgroundmanager.c']]],
+  ['startscreensoundplaying_16',['startScreenSoundPlaying',['../levelmgr_8c.html#a74189be7eb13a9ef2a05f93ff6f6f436',1,'levelmgr.c']]],
+  ['status_17',['status',['../structaction__t.html#a87a632e16607cec35a7dde3d5c0b36d2',1,'action_t']]],
+  ['straightjumpanimlen_18',['straightJumpAnimLen',['../kenanimations_8c.html#a78ebb368087a9234756ac8bf8e47d477',1,'kenanimations.c']]],
+  ['substate_19',['subState',['../structcharacter_gameplay_state__t.html#ac0eae33a1dd88adce5158d308afdc059',1,'characterGameplayState_t']]],
+  ['super_20',['super',['../structcircle_collider__t.html#a00e2feca8a3c1a29087e215eebe8c23e',1,'circleCollider_t::super'],['../structbox_collider__t.html#afb4ceacc74dc9ac430cefaed82d2ee94',1,'boxCollider_t::super'],['../structhurt_payload__t.html#a76948217909b2944758f86e1be0a4b37',1,'hurtPayload_t::super'],['../structhadouken_payload__t.html#a7523cdcd351558ccd89e6d87cacbdb04',1,'hadoukenPayload_t::super'],['../structstand_hurt_payload__t.html#ae28f3cf216bf46e19e4948d3e32f4128',1,'standHurtPayload_t::super'],['../structretract_payload__t.html#a6eaf86cde7a8886812ca51a4d4f857d3',1,'retractPayload_t::super']]]
+];

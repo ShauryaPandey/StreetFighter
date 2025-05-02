@@ -1,0 +1,5 @@
+<map id="objMgrDraw" name="objMgrDraw">
+<area shape="rect" id="Node000001" title="Draws all registered objects." alt="" coords="5,5,97,32"/>
+<area shape="rect" id="Node000002" href="$object_8c.html#a79a9905dd7abb56548c99cca9d49f890" title="Draw this object, using it&#39;s vtable." alt="" coords="145,5,214,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,16,129,16,129,21,97,21"/>
+</map>

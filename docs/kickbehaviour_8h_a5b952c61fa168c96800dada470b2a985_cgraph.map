@@ -1,0 +1,7 @@
+<map id="KickAction_GameplayCleanup" name="KickAction_GameplayCleanup">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,204,57"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a200e89c90b4de88de178bb03a13fa94d" title=" " alt="" coords="262,5,466,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,32,246,27,247,33,204,37"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="252,56,477,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,51,236,54,236,59,204,56"/>
+</map>

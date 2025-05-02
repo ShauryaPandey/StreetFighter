@@ -1,0 +1,14 @@
+<map id="CrouchKick_GameplayOnStart" name="CrouchKick_GameplayOnStart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,206,57"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="495,5,684,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,36,479,22,480,27,206,41"/>
+<area shape="rect" id="Node000003" href="$gameplaystatemanager_8c.html#a59021f98c2d86ab033ca832f6907d264" title="The character can be in various states to make sure there is one centralized point where those states..." alt="" coords="254,56,429,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,52,238,56,238,61,206,57"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="410,53,505,33,506,38,411,58"/>
+<area shape="rect" id="Node000004" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="477,56,702,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="430,67,461,67,461,72,430,72"/>
+<area shape="rect" id="Node000005" href="$character_8c.html#a63553c66ba3b649f253f738c79d84546" title=" " alt="" coords="516,107,663,133"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="411,81,506,100,505,106,410,86"/>
+<area shape="rect" id="Node000006" href="$object_8c.html#a78dca0d7c7a63298139246387397c01c" title=" " alt="" coords="750,107,886,133"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="663,117,735,117,735,123,663,123"/>
+</map>

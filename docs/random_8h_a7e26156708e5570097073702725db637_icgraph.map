@@ -1,0 +1,23 @@
+<map id="randGetInt" name="randGetInt">
+<area shape="rect" id="Node000001" title="Return a random 32&#45;bit value in the specified range." alt="" coords="675,119,757,145"/>
+<area shape="rect" id="Node000002" href="$ball_8c.html#a876408006bf6be2913a2d1a6d1324a1a" title="Sets the color of the ball to a random RGB." alt="" coords="478,43,627,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="679,113,626,84,597,72,599,67,628,79,681,108"/>
+<area shape="rect" id="Node000007" href="$face_8c.html#a7aba87faacc30bee837378f9101137d1" title="Choose a random mood." alt="" coords="489,93,616,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="659,126,616,119,617,114,660,121"/>
+<area shape="rect" id="Node000009" href="$face_8c.html#afa179fd0a1052ed119a0f22ce8552761" title="Tuning method for how frequently updates will occur." alt="" coords="494,144,611,171"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="660,143,612,151,611,146,659,138"/>
+<area shape="rect" id="Node000010" href="$face_8c.html#ab80628df2bf72b7bc206b3662369883c" title="Allocates &amp; initializes a face object." alt="" coords="336,181,409,208"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="686,156,658,173,627,185,568,198,509,203,409,201,409,196,508,197,568,192,626,180,656,168,683,152"/>
+<area shape="rect" id="Node000003" href="$ball_8c.html#adbc02f72caa0f3a8edcc8cb7d3150b59" title=" " alt="" coords="314,5,430,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="470,42,430,33,432,28,471,36"/>
+<area shape="rect" id="Node000006" href="$ball_8c.html#ac08f61c99dc9b4b993b5295116891caf" title="Instantiate and initialize a ball object." alt="" coords="338,56,406,83"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="463,65,407,69,407,64,463,60"/>
+<area shape="rect" id="Node000004" href="$ball_8c.html#a811f01dadcf181512a317a15eada5ba8" title=" " alt="" coords="144,5,266,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="298,21,267,21,267,16,298,16"/>
+<area shape="rect" id="Node000005" href="$ball_8c.html#aebbd0862c45d74863ece4cbf68e102e6" title="Mainly process ball collisions." alt="" coords="5,5,96,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="128,21,96,21,96,16,128,16"/>
+<area shape="rect" id="Node000008" href="$face_8c.html#a69f73c4a25573b0655d3df1b098ee346" title="Updates the character&#39;s mood every so often." alt="" coords="324,119,420,145"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="474,120,421,128,420,123,473,115"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="478,150,420,141,421,136,479,144"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="479,175,410,190,409,185,478,170"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="JumpKick_AnimationOnStart" name="JumpKick_AnimationOnStart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,195,83"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a5face3645f4816839bd787f4e396b975" title=" " alt="" coords="243,5,468,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,53,269,33,270,38,172,58"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="243,56,468,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,67,227,67,227,72,195,72"/>
+<area shape="rect" id="Node000004" href="$animation_8c.html#ab438ee95cd9be14b8d50d1590746ca58" title="This function gives equal frame time to each of the frames by dividing the total duration by number o..." alt="" coords="261,107,450,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="172,81,270,100,269,106,171,86"/>
+<area shape="rect" id="Node000005" href="$animation_8c.html#a83f91bab556734f8162fb1622c24cd03" title="If user of this function wants every frame to have equal time then use this." alt="" coords="516,107,734,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="450,117,500,117,500,123,450,123"/>
+</map>

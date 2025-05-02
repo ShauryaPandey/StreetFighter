@@ -1,0 +1,65 @@
+<map id="Game/include/animation.h" name="Game/include/animation.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="287,5,460,32"/>
+<area shape="rect" id="Node000002" href="$character_8h.html" title=" " alt="" coords="2492,80,2662,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="475,21,2492,87,2491,92,475,26"/>
+<area shape="rect" id="Node000022" href="$levelmgr_8c.html" title=" " alt="" coords="178,155,320,181"/>
+<area shape="poly" id="edge33_Node000001_Node000022" title=" " alt="" coords="328,41,300,59,277,82,266,100,259,119,253,155,248,154,254,118,261,97,273,78,297,55,325,37"/>
+<area shape="rect" id="Node000028" href="$hadouken_8h.html" title=" " alt="" coords="287,80,460,107"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="376,48,376,80,371,80,371,48"/>
+<area shape="rect" id="Node000031" href="$hadouken_8c.html" title=" " alt="" coords="5,155,155,181"/>
+<area shape="poly" id="edge32_Node000001_Node000031" title=" " alt="" coords="336,42,106,157,104,152,334,37"/>
+<area shape="rect" id="Node000032" href="$kenanimations_8h.html" title=" " alt="" coords="2686,80,2887,107"/>
+<area shape="poly" id="edge31_Node000001_Node000032" title=" " alt="" coords="475,17,835,18,1377,26,2018,44,2350,59,2675,77,2686,78,2686,83,2674,83,2349,64,2018,49,1377,31,835,24,475,22"/>
+<area shape="rect" id="Node000003" href="$basichurtbehaviour_8c.html" title=" " alt="" coords="3568,155,3770,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2678,104,2926,122,3119,129,3311,136,3556,152,3568,153,3568,158,3556,157,3311,142,3118,135,2925,127,2678,110"/>
+<area shape="rect" id="Node000004" href="$blockhurtbehaviour_8c.html" title=" " alt="" coords="3795,155,3997,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="2678,104,2989,123,3232,130,3474,135,3783,152,3795,153,3794,158,3782,157,3474,140,3232,135,2989,129,2678,109"/>
+<area shape="rect" id="Node000005" href="$character_8c.html" title=" " alt="" coords="345,155,492,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="2477,99,1502,118,926,135,686,146,504,157,493,158,492,153,504,152,686,140,926,130,1501,112,2477,93"/>
+<area shape="rect" id="Node000006" href="$crouchbehaviour_8c.html" title=" " alt="" coords="4022,155,4210,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="2678,104,2881,118,3053,125,3345,129,3637,133,3808,139,4010,152,4021,153,4021,158,4009,157,3808,145,3637,138,3345,134,3053,130,2880,123,2678,109"/>
+<area shape="rect" id="Node000007" href="$crouchblockbehaviour_8c.html" title=" " alt="" coords="4234,155,4454,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="2678,104,2913,119,3113,127,3452,131,3790,133,3989,139,4223,152,4234,153,4234,158,4223,157,3989,145,3790,139,3452,136,3113,133,2913,125,2678,109"/>
+<area shape="rect" id="Node000008" href="$crouchkickbehaviour_8c.html" title=" " alt="" coords="4478,155,4690,181"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="2678,104,2950,121,3181,129,3573,131,3965,131,4195,138,4465,152,4477,153,4477,158,4465,157,4194,143,3965,137,3573,136,3181,135,2950,126,2678,109"/>
+<area shape="rect" id="Node000009" href="$crouchpunchbehaviour_8c.html" title=" " alt="" coords="4714,155,4937,181"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="2678,104,2986,123,3248,131,3477,134,3692,132,4135,131,4396,137,4703,152,4713,153,4713,158,4703,157,4395,142,4135,136,3692,137,3477,139,3247,137,2986,128,2678,109"/>
+<area shape="rect" id="Node000010" href="$directionaljumpbehaviour_8c.html" title=" " alt="" coords="4960,155,5197,181"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="2678,104,3024,124,3317,134,3575,136,3815,134,4055,131,4312,130,4605,136,4949,152,4960,153,4960,158,4949,157,4605,142,4312,136,4055,136,3815,139,3575,141,3317,139,3024,130,2678,109"/>
+<area shape="rect" id="Node000011" href="$directionaljumpkickbehaviour_8c.html" title=" " alt="" coords="5220,155,5481,181"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="2678,104,3063,126,3390,137,3677,139,3945,136,4212,132,4499,131,4825,136,5209,152,5220,153,5220,158,5209,157,4825,142,4499,136,4212,137,3945,141,3677,144,3390,142,3063,132,2678,109"/>
+<area shape="rect" id="Node000012" href="$directionaljumppunchbehaviour_8c.html" title=" " alt="" coords="5504,155,5776,181"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="2678,104,3107,128,3470,139,3789,141,4087,137,4384,133,4703,131,5066,136,5493,152,5504,153,5504,158,5493,157,5066,141,4703,136,4384,138,4087,143,3789,146,3470,145,3106,134,2678,109"/>
+<area shape="rect" id="Node000013" href="$gameplaycomponent_8c.html" title=" " alt="" coords="516,155,729,181"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="2477,98,2181,102,1753,112,1252,130,742,157,730,158,729,153,741,152,1252,125,1753,107,2181,97,2476,93"/>
+<area shape="rect" id="Node000014" href="$gameplaystatemanager_8c.html" title=" " alt="" coords="754,155,982,181"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="2477,99,1852,116,1427,133,995,157,983,158,982,153,994,152,1427,128,1851,111,2477,94"/>
+<area shape="rect" id="Node000015" href="$hadoukenbehaviour_8c.html" title=" " alt="" coords="1007,155,1212,181"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="2477,100,1942,118,1586,135,1226,157,1213,158,1212,153,1225,152,1586,129,1942,113,2476,94"/>
+<area shape="rect" id="Node000016" href="$idlebehaviour_8c.html" title=" " alt="" coords="1237,155,1406,181"/>
+<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="2477,100,2019,118,1721,135,1419,157,1406,158,1406,153,1418,152,1720,130,2018,113,2476,95"/>
+<area shape="rect" id="Node000017" href="$jumpbehaviour_8c.html" title=" " alt="" coords="1430,155,1607,181"/>
+<area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="2477,102,2100,122,1620,157,1608,159,1607,153,1620,152,2100,117,2477,96"/>
+<area shape="rect" id="Node000018" href="$jumpkickbehaviour_8c.html" title=" " alt="" coords="1631,155,1833,181"/>
+<area shape="poly" id="edge17_Node000002_Node000018" title=" " alt="" coords="2477,105,1844,157,1834,158,1833,153,1844,152,2477,99"/>
+<area shape="rect" id="Node000019" href="$jumppunchbehaviour_8c.html" title=" " alt="" coords="1856,155,2069,181"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="2477,109,2069,157,2069,152,2477,104"/>
+<area shape="rect" id="Node000020" href="$kenbehaviors_8c.html" title=" " alt="" coords="2094,155,2264,181"/>
+<area shape="poly" id="edge19_Node000002_Node000020" title=" " alt="" coords="2493,113,2249,157,2248,151,2492,107"/>
+<area shape="rect" id="Node000021" href="$kickbehaviour_8c.html" title=" " alt="" coords="2288,155,2461,181"/>
+<area shape="poly" id="edge20_Node000002_Node000021" title=" " alt="" coords="2529,115,2411,157,2409,152,2527,110"/>
+<area shape="poly" id="edge21_Node000002_Node000022" title=" " alt="" coords="2477,98,1423,116,794,134,532,145,334,157,321,159,320,153,333,152,532,139,794,128,1422,111,2477,93"/>
+<area shape="rect" id="Node000023" href="$punchbehaviour_8c.html" title=" " alt="" coords="2485,155,2670,181"/>
+<area shape="poly" id="edge22_Node000002_Node000023" title=" " alt="" coords="2580,122,2580,154,2575,154,2575,122"/>
+<area shape="rect" id="Node000024" href="$retractbehaviour_8c.html" title=" " alt="" coords="2694,155,2880,181"/>
+<area shape="poly" id="edge23_Node000002_Node000024" title=" " alt="" coords="2629,110,2751,152,2749,157,2627,115"/>
+<area shape="rect" id="Node000025" href="$standblockbehaviour_8c.html" title=" " alt="" coords="2904,155,3117,181"/>
+<area shape="poly" id="edge24_Node000002_Node000025" title=" " alt="" coords="2669,107,2935,151,2934,157,2668,112"/>
+<area shape="rect" id="Node000026" href="$standhurtbehaviour_8c.html" title=" " alt="" coords="3141,155,3344,181"/>
+<area shape="poly" id="edge25_Node000002_Node000026" title=" " alt="" coords="2678,104,3130,152,3141,153,3140,159,3129,157,2677,110"/>
+<area shape="rect" id="Node000027" href="$walkbehaviour_8c.html" title=" " alt="" coords="3368,155,3544,181"/>
+<area shape="poly" id="edge26_Node000002_Node000027" title=" " alt="" coords="2678,104,2869,120,3019,128,3167,137,3356,152,3368,153,3367,158,3356,157,3167,142,3018,134,2869,125,2678,110"/>
+<area shape="poly" id="edge28_Node000028_Node000005" title=" " alt="" coords="392,119,413,153,409,156,387,122"/>
+<area shape="poly" id="edge30_Node000028_Node000022" title=" " alt="" coords="340,117,272,156,270,152,338,112"/>
+<area shape="poly" id="edge29_Node000028_Node000031" title=" " alt="" coords="308,114,132,157,131,151,306,108"/>
+</map>

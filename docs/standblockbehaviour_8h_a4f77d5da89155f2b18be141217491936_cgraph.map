@@ -1,0 +1,19 @@
+<map id="StandBlock_GameplayOnStart" name="StandBlock_GameplayOnStart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,205,133"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a5face3645f4816839bd787f4e396b975" title=" " alt="" coords="253,5,477,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,104,183,73,252,42,275,34,277,39,254,46,185,77,130,108"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#ab2ca6ecdf49576e3b2cc7b7250d5b141" title=" " alt="" coords="257,56,472,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,103,278,84,279,89,178,109"/>
+<area shape="rect" id="Node000004" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="543,157,732,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="205,131,253,136,528,160,527,166,252,141,205,136"/>
+<area shape="rect" id="Node000005" href="$object_8c.html#a78dca0d7c7a63298139246387397c01c" title=" " alt="" coords="798,183,934,209"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="205,110,317,106,455,107,604,118,678,128,751,143,792,156,828,173,826,178,790,161,750,148,677,134,603,123,455,112,317,111,205,115"/>
+<area shape="rect" id="Node000006" href="$gameplaystatemanager_8c.html#a59021f98c2d86ab033ca832f6907d264" title="The character can be in various states to make sure there is one centralized point where those states..." alt="" coords="277,208,452,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="133,131,188,159,254,187,295,201,294,206,252,192,186,163,131,136"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="440,205,547,185,548,190,441,210"/>
+<area shape="rect" id="Node000007" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="525,208,750,235"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="453,219,509,219,509,224,453,224"/>
+<area shape="rect" id="Node000008" href="$character_8c.html#a63553c66ba3b649f253f738c79d84546" title=" " alt="" coords="564,259,711,285"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="441,233,550,253,549,258,440,238"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="709,256,749,244,823,214,825,219,751,249,710,261"/>
+</map>

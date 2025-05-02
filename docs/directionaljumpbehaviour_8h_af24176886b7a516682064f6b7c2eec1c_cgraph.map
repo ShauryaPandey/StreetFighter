@@ -1,0 +1,7 @@
+<map id="DirectionalJump_CanStart" name="DirectionalJump_CanStart">
+<area shape="rect" id="Node000001" title="This behaviour &#45; the character jumps in a direction as governed by press of arrow keys or alternative..." alt="" coords="5,31,180,57"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="228,5,453,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,32,212,29,212,34,181,38"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="246,56,435,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,50,230,55,230,61,180,56"/>
+</map>
