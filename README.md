@@ -12,7 +12,7 @@ For detailed description of the classes and the relationship diagrams, check thi
 This game was built in C using a barebones OpenGL framework provided by Jeremy Paulding who is the programming professor at Florida Interactive Entertainment Academy. The framework provides a rendering loop, object manager and a level manager. From there, I built as close a clone of the original Street Fighter as possible in 2 weeks. I developed the necessary infrastructure: animation, gameplay logic, collisions, and a behavior-action architecture — everything structured so it could scale.
 If you want to play this game on your PC, then go ahead and clone the repo, then you will need visual studio to build it. I developed using VS2022 but I think earlier versions should also be able to compile the game, you may need to get the extensions for OpenGL.  
 
-### The controls are:
+### Keyboard controls:
 For player 1:  
 - W,A,S,D for moving, jumping and crouching.
 - F and G for punching and kicking. You can perform jump/crouch attacks as well by pressing the right combination of keys.
