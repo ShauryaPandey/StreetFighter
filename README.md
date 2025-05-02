@@ -1,8 +1,9 @@
 # 🎮 C Game – Street Fighter (Ken vs. Ryu)
 
+## 📚 Documentation
+For detailed description of the classes and the relationship diagrams, check this out:
 [![Docs](https://img.shields.io/badge/Doxygen-Documentation-blue?logo=github)](https://shauryapandey.github.io/StreetFighter/index.html)
 
-![Gameplay Screenshot](https://i.imgur.com/5JSmTGL.png)
 ![Gameplay Screenshot](https://i.imgur.com/ltCjQKk.png)
 
 ## About the Project 
