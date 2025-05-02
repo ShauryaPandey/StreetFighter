@@ -1,7 +1,0 @@
-<map id="DirectionalJumpKick_CanStart" name="DirectionalJumpKick_CanStart">
-<area shape="rect" id="Node000001" title="The character can jump and kick in a direction so like press right, up and kick then character does t..." alt="" coords="5,23,147,65"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="195,5,420,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,34,179,30,179,35,147,39"/>
-<area shape="rect" id="Node000003" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="213,56,402,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,49,198,55,197,60,147,54"/>
-</map>

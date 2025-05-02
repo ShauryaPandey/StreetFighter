@@ -1,5 +1,0 @@
-<map id="_ballSetRandomColor" name="_ballSetRandomColor">
-<area shape="rect" id="Node000001" title="Sets the color of the ball to a random RGB." alt="" coords="5,5,154,32"/>
-<area shape="rect" id="Node000002" href="$random_8c.html#a7e26156708e5570097073702725db637" title="Return a random 32&#45;bit value in the specified range." alt="" coords="202,5,284,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,16,186,16,186,21,154,21"/>
-</map>

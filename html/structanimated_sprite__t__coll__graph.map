@@ -1,7 +1,0 @@
-<map id="animatedSprite_t" name="animatedSprite_t">
-<area shape="rect" id="Node000001" title="The sprite of the character containing other information &#45; the facing direction, current animation,..." alt="" coords="5,315,149,448"/>
-<area shape="rect" id="Node000002" href="$structanimation__t.html" title="Animation struct holds the array of frames that define that animation." alt="" coords="38,181,116,251"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,251,80,298,75,298,75,251"/>
-<area shape="rect" id="Node000003" href="$structframe__t.html" title="A frame of animation holds information that identify it in a sprite sheet." alt="" coords="29,5,126,117"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,117,80,164,75,164,75,117"/>
-</map>

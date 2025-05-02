@@ -1,9 +1,0 @@
-<map id="Retract_GameplayOnStart" name="Retract_GameplayOnStart">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,181,57"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="229,5,454,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,32,213,29,213,34,182,38"/>
-<area shape="rect" id="Node000003" href="$object_8c.html#acae5aeff7fda52f6bf3b706b50215399" title=" " alt="" coords="266,56,416,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,50,251,58,251,63,181,56"/>
-<area shape="rect" id="Node000004" href="$object_8c.html#a01e09388666a70c05cebd36f3248ae4e" title=" " alt="" coords="502,56,640,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="417,67,486,67,486,72,417,72"/>
-</map>

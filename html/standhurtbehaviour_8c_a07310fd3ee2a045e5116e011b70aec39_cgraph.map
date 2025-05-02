@@ -1,9 +1,0 @@
-<map id="StandHurt_AnimOnStart" name="StandHurt_AnimOnStart">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,168,83"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#a5face3645f4816839bd787f4e396b975" title=" " alt="" coords="216,5,440,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,53,246,33,247,38,154,58"/>
-<area shape="rect" id="Node000003" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="216,56,441,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,67,200,67,200,72,168,72"/>
-<area shape="rect" id="Node000004" href="$animation_8c.html#ab428cdfbfd845ca90e27811aa3ff1f91" title="This method expects the caller to have taken care of frame times of the animation...." alt="" coords="222,107,434,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,81,247,100,246,106,153,86"/>
-</map>

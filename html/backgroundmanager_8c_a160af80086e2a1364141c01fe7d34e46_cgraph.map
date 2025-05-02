@@ -1,5 +1,0 @@
-<map id="PrintWord" name="PrintWord">
-<area shape="rect" id="Node000001" title="Puts a word on the screen using letters images from a sprite sheet." alt="" coords="5,5,84,32"/>
-<area shape="rect" id="Node000002" href="$backgroundmanager_8c.html#a1cc682619462a8da06a0023fcb391678" title="Using the sprite sheet that contains letters in a grid like fashion, we can extract out the coordinat..." alt="" coords="132,5,211,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,16,116,16,116,21,84,21"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="GameCanSpawnHadouken" name="GameCanSpawnHadouken">
-<area shape="rect" id="Node000001" title="In the behaviour the character must check if there is an active hadouken in which case it can not spa..." alt="" coords="5,5,185,32"/>
-<area shape="rect" id="Node000002" href="$levelmgr_8c.html#ad75917135ca2f2a7fbbb4987a8cedac3" title=" " alt="" coords="233,5,378,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,16,218,16,218,21,185,21"/>
-</map>

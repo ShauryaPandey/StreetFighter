@@ -1,5 +1,0 @@
-<map id="ballDelete" name="ballDelete">
-<area shape="rect" id="Node000001" title="Free up any resources pertaining to a ball object." alt="" coords="5,5,85,32"/>
-<area shape="rect" id="Node000002" href="$object_8c.html#a1990d7344bbf3ef06205a6671cf38ffe" title="Deinitialize an object." alt="" coords="133,5,205,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,16,117,16,117,21,85,21"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="Hadouken_GameplayController" name="Hadouken_GameplayController">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,208,83"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#a756de494fc30153923e1544645d5f2a5" title=" " alt="" coords="273,5,464,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,53,280,33,281,38,180,58"/>
-<area shape="rect" id="Node000003" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="256,56,481,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,67,240,67,240,72,208,72"/>
-<area shape="rect" id="Node000004" href="$character_8c.html#a41988f11b144e05251c2a29be10c6f56" title=" " alt="" coords="299,107,438,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,81,284,101,283,106,179,86"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="Player2_DirectionalJumpKick_CanStart" name="Player2_DirectionalJumpKick_CanStart">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,198,65"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="246,5,471,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,32,230,29,230,34,198,37"/>
-<area shape="rect" id="Node000003" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="264,56,453,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,51,248,56,248,61,198,56"/>
-</map>

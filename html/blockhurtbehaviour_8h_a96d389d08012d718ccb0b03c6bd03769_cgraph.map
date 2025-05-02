@@ -1,5 +1,0 @@
-<map id="BlockHurt_GameplayOnStart" name="BlockHurt_GameplayOnStart">
-<area shape="rect" id="Node000001" title="Only affecting character health." alt="" coords="5,5,196,32"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#aea7c43e40d189355d1675eb0fc4fe2d1" title=" " alt="" coords="244,5,399,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,16,228,16,228,21,196,21"/>
-</map>

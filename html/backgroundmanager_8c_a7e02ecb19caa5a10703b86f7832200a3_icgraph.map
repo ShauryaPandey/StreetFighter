@@ -1,7 +1,0 @@
-<map id="StartScreenDraw" name="StartScreenDraw">
-<area shape="rect" id="Node000001" title="draw function for the start screen. This is drawn as the game starts from where the user can press sp..." alt="" coords="265,5,386,32"/>
-<area shape="rect" id="Node000002" href="$game_8c.html#a2f1d3262d209f17a7eba4b214d4903e1" title=" " alt="" coords="126,5,217,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,21,217,21,217,16,249,16"/>
-<area shape="rect" id="Node000003" href="$game_8c.html#a661c2abc03926acfaeb93b4ae7db4943" title="Program Entry Point (WinMain). Part of the base game framework." alt="" coords="5,5,78,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,21,78,21,78,16,110,16"/>
-</map>

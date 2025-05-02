@@ -1,9 +1,0 @@
-<map id="Idle_GameplayController" name="Idle_GameplayController">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,170,83"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#a5face3645f4816839bd787f4e396b975" title=" " alt="" coords="218,5,442,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,53,247,33,249,38,156,58"/>
-<area shape="rect" id="Node000003" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="218,56,443,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,67,202,67,202,72,170,72"/>
-<area shape="rect" id="Node000004" href="$object_8c.html#a78dca0d7c7a63298139246387397c01c" title=" " alt="" coords="263,107,398,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,81,249,100,247,106,155,86"/>
-</map>

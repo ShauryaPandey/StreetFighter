@@ -1,7 +1,0 @@
-<map id="IsImpactInfoDirty" name="IsImpactInfoDirty">
-<area shape="rect" id="Node000001" title="Has the value of the impact value changed." alt="" coords="234,31,356,57"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#ae8f1d16c98b29d4099772f720be245bb" title=" " alt="" coords="5,5,186,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,37,186,33,187,28,219,32"/>
-<area shape="rect" id="Node000003" href="$character_8c.html#ae8a54c7b5e732369248c6fd0cba0c84d" title="Deffering the changes to the character attributes made during collision by placing the logic in this ..." alt="" coords="27,56,164,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,56,164,63,164,58,218,51"/>
-</map>

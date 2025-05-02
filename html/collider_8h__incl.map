@@ -1,7 +1,0 @@
-<map id="Game/include/collider.h" name="Game/include/collider.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="26,5,184,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,101,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,34,73,69,69,66,94,31"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="125,80,189,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,31,141,66,137,69,112,34"/>
-</map>

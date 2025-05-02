@@ -1,9 +1,0 @@
-<map id="Player2_Hadouken_CanStart" name="Player2_Hadouken_CanStart">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,196,83"/>
-<area shape="rect" id="Node000002" href="$character_8c.html#a73067d1781e3c9145108ba29faca1bc1" title=" " alt="" coords="284,5,428,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,53,270,33,271,38,172,58"/>
-<area shape="rect" id="Node000003" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="244,56,469,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,67,228,67,228,72,196,72"/>
-<area shape="rect" id="Node000004" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="262,107,451,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="172,81,271,100,270,106,171,86"/>
-</map>
