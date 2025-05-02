@@ -3,11 +3,11 @@
 [![Docs](https://img.shields.io/badge/Doxygen-Documentation-blue?logo=github)](https://shauryapandey.github.io/StreetFighter/index.html)
 
 ## About the Project  
-This game was built in C using a barebones OpenGL framework provided by Jeremy Paulding who is the programming professor at Florida Interactive Entertainment Academy. The framework provides a rendering loop, object manager and a level manager. From there, I built as close a clone of the original Street Fighter as possible in 2 weeks. I developed the necessary infrastructure: animation, gameplay logic, collisions, and a behavior-action architecture — everything structured so it could scale.  
+This game was built in C using a barebones OpenGL framework provided by Jeremy Paulding who is the programming professor at Florida Interactive Entertainment Academy. The framework provides a rendering loop, object manager and a level manager. From there, I built as close a clone of the original Street Fighter as possible in 2 weeks. I developed the necessary infrastructure: animation, gameplay logic, collisions, and a behavior-action architecture — everything structured so it could scale.
 ---
 ## 🕹️Gameplay System Design
 I leaned into separating gameplay logic from animation logic, building a behavior-action system in order to make the process of creating game content fast and feasible.  
-Each character has a `GameplayComponent` and an `AnimationComponent`.
+Each character has a `GameplayComponent` and an `AnimationComponent`. dsaf
 ### Actions
 Each action (Punch, Kick, Hadouken, etc.) holds:
 1. What logic runs at start  
@@ -39,7 +39,8 @@ Built a Sprite Animation system from scratch. Each `Animation` has a list of Fra
 4. Character-specific animation init functions (e.g. `InitRyuAnimations`) called in `LevelManager`
 ---
 ## 📦 Object Management
-
+The core logic was handled in the framework that I inherited. An `ObjectManager` that stores and updates all objects and a `LevelManager` that sets up the level.
+I extended the code in the `LevelManager` to also initialize the textures, and sounds making use of function pointers to provide function callbacks to the various objects in the level. I also handle the memory leak free loading and unloading.
 
 ---
 ## 👩‍👦 Polymorphism in C
