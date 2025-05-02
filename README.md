@@ -1,5 +1,7 @@
 # 🎮 C Game – Street Fighter (Ken vs. Ryu)
 
+![Gameplay Screenshot](https://i.imgur.com/ltCjQKk.png)
+
 ## 📚 Documentation
 For detailed description of the classes and the relationship diagrams, check this out:  
 
@@ -74,6 +76,3 @@ typedef struct object_t {
 ## 🧠 Key Learnings
 - Thinking in systems: Decoupling animations from gameplay
 - Every constraint was an opportunity to get creative
-
-
-![Gameplay Screenshot](https://i.imgur.com/ltCjQKk.png)
