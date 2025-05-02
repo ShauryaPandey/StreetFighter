@@ -11,33 +11,34 @@ I leaned into separating gameplay logic from animation logic, building a behavio
 Each character has a `GameplayComponent` and an `AnimationComponent`. dsaf
 ### Actions
 Each action (Punch, Kick, Hadouken, etc.) holds:
-1. What logic runs at start  
-2. What logic runs during timeline  
-3. What animation should play and at what rate  
-4. If this action can start or interrupt  
-5. Cleanup logic when it's interrupted   
-This structure made it really easy to extend and plug in new behaviors.
+- What logic runs at start
+- What logic runs during timeline
+- What animation should play and at what rate
+- What logic to decide if this action can start
+- Cleanup logic when it's interrupted
+- Priority which is used in processing interruptions   
+This structure made it really conducive to extend and plug in new behaviors.
 ---
 ## 💥Collisions and Impact Handling
 I wanted every object to be capable of collision, but C doesn’t give you inheritance or polymorphism. So I built:
-1. A `Collider` struct
-2. A `ColliderVTable` with function pointers:
-3. `OnCollisionEnter`
-4. `ProcessImpact`    
+- A `Collider` struct
+- A `ColliderVTable` with function pointers:
+- `OnCollisionEnter`
+- `ProcessImpact`    
 I realized during the development that I needed to defer the actual processing of impact, since any state change in one would affect how the second collider reacts.
 `OnCollisionEnter` only records intent, and `ProcessImpact` applies it later. This avoids messing with state mid-frame.    
 ### Collision Use Cases
-1. Attacks (Melee or ranged)
-2. Characters not running into each other
-3. Collision points are checked to detect successful blocks or determining type of hurt reaction
-4. Characters have `AttackComponent` and `DefenseComponent` to process hits
+- Attacks (Melee or ranged)
+- Characters not running into each other
+- Collision points are checked to detect successful blocks or determining type of hurt reaction
+- Characters have `AttackComponent` and `DefenseComponent` to process hits
 ---
 ## 🎞️ Animation System
 Built a Sprite Animation system from scratch. Each `Animation` has a list of Frames and durations.
-1. Action owns animation
-2. Frame rate controlled based on gameplay timeline
-3. Used free sprite sheets and a cutout tool to define animation sequences
-4. Character-specific animation init functions (e.g. `InitRyuAnimations`) called in `LevelManager`
+- Action owns animation
+- Frame rate controlled based on gameplay timeline
+- Used free sprite sheets and a cutout tool to define animation sequences
+- Character-specific animation init functions (e.g. `InitRyuAnimations`) called in `LevelManager`
 ---
 ## 📦 Object Management
 The core logic was handled in the framework that I inherited. An `ObjectManager` that stores and updates all objects and a `LevelManager` that sets up the level.
@@ -46,9 +47,9 @@ I extended the code in the `LevelManager` to also initialize the textures, and s
 ---
 ## 👩‍👦 Polymorphism in C
 Since C does not have classes like C++,I mimicked polymorphism using:
-1. VTable structs
-2. Function pointers in each object's VTable.
-3. Each subclass (Hadouken, Character) implements its behavior through the vtable.
+- VTable structs
+- Function pointers in each object's VTable.
+- Each subclass (Hadouken, Character) implements its behavior through the vtable.
 ```
 typedef struct object_vtable_t {
     ObjDrawFunc     draw;
@@ -66,5 +67,5 @@ typedef struct object_t {
 } Object;
 ```
 ## 🧠 Key Learnings
-1. Thinking in systems: Decoupling animations from gameplay
-2. Every constraint was an opportunity to get creative
+- Thinking in systems: Decoupling animations from gameplay
+- Every constraint was an opportunity to get creative
