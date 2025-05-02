@@ -14,17 +14,16 @@ If you want to play this game on your PC, then go ahead and clone the repo, then
 
 ### The controls are:
 For player 1:  
-W,A,S,D for moving, jumping and crouching.  
-F and G for punching and kicking.  
-You can perform jump/crouch attacks as well by pressing the right combination of keys.  
-1 to Block.  
-S+A/D+F to do the Hadouken energy blast.  
+- W,A,S,D for moving, jumping and crouching.
+- F and G for punching and kicking. You can perform jump/crouch attacks as well by pressing the right combination of keys.
+- 1 to Block.
+- S+A/D+F to do the Hadouken energy blast.  
 
 For Player 2:  
-Arrow keys for moving, jumping and crouching.  
-M and N for punching and kicking.  
-9 to block.  
-Right/Left + Down + M for Hadouken energy blast.  
+- Arrow keys for moving, jumping and crouching.
+- M and N for punching and kicking.
+- 9 to block.
+- Right/Left + Down + M for Hadouken energy blast.  
 
 ---
 ## 🕹️ Gameplay System Design
