@@ -22,7 +22,7 @@ I wanted every object to be capable of collision, but C doesn’t give you inher
 1. A `Collider` struct
 2. A `ColliderVTable` with function pointers:
 3. `OnCollisionEnter`
-4. `ProcessImpact`  
+4. `ProcessImpact`    
 I realized during the development that I needed to defer the actual processing of impact, since any state change in one would affect how the second collider reacts.
 `OnCollisionEnter` only records intent, and `ProcessImpact` applies it later. This avoids messing with state mid-frame.    
 ### Collision Use Cases
@@ -40,8 +40,7 @@ Built a Sprite Animation system from scratch. Each `Animation` has a list of Fra
 ---
 ## 📦 Object Management
 
-The core logic was handled in the framework that I inherited. An `ObjectManager` that stores and updates all objects and a `LevelManager` that sets up the level.
-I extended the code in the `LevelManager` to also initialize the textures, and sounds making use of function pointers to provide function callbacks to the various objects in the level. I also handle the memory leak free loading and unloading.
+
 ---
 ## 👩‍👦 Polymorphism in C
 Since C does not have classes like C++,I mimicked polymorphism using:
