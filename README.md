@@ -39,6 +39,7 @@ Built a Sprite Animation system from scratch. Each `Animation` has a list of Fra
 4. Character-specific animation init functions (e.g. `InitRyuAnimations`) called in `LevelManager`
 ---
 ## 📦 Object Management
+
 The core logic was handled in the framework that I inherited. An `ObjectManager` that stores and updates all objects and a `LevelManager` that sets up the level.
 I extended the code in the `LevelManager` to also initialize the textures, and sounds making use of function pointers to provide function callbacks to the various objects in the level. I also handle the memory leak free loading and unloading.
 ---
