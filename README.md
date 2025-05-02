@@ -30,3 +30,39 @@ I realized during the development that I needed to defer the actual processing o
 2. Characters not running into each other
 3. Collision points are checked to detect successful blocks or determining type of hurt reaction
 4. Characters have `AttackComponent` and `DefenseComponent` to process hits
+---
+## 🎞️ Animation System
+Built a Sprite Animation system from scratch. Each `Animation` has a list of Frames and durations.
+1. Action owns animation
+2. Frame rate controlled based on gameplay timeline
+3. Used free sprite sheets and a cutout tool to define animation sequences
+4. Character-specific animation init functions (e.g. `InitRyuAnimations`) called in `LevelManager`
+---
+## 📦 Object Management
+The core logic was handled in the framework that I inherited. An `ObjectManager` that stores and updates all objects and a `LevelManager` that sets up the level.
+I extended the code in the `LevelManager` to also initialize the textures, and sounds making use of function pointers to provide function callbacks to the various objects in the level. I also handle the memory leak free loading and unloading.
+---
+## 👩‍👦 Polymorphism in C
+Since C does not have classes like C++,I mimicked polymorphism using:
+1. VTable structs
+2. Function pointers in each object's VTable.
+3. Each subclass (Hadouken, Character) implements its behavior through the vtable.
+```
+typedef struct object_vtable_t {
+    ObjDrawFunc     draw;
+    ObjUpdateFunc   update;
+} ObjVtable;
+
+typedef struct object_t {
+    ObjVtable*      vtable;
+    Collider*       collider;
+    ObjectType      type;
+    Bounds2D        levelDef;
+    Coord2D         position;
+    Coord2D         velocity;
+    Coord2D         size;
+} Object;
+```
+## 🧠 Key Learnings
+1. Thinking in systems: Decoupling animations from gameplay
+2. Every constraint was an opportunity to get creative
