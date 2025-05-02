@@ -1,0 +1,27 @@
+<map id="JumpPunch_GameplayController" name="JumpPunch_GameplayController">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,183,218,209"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a5face3645f4816839bd787f4e396b975" title=" " alt="" coords="266,5,490,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,180,176,113,217,74,264,42,277,36,279,40,267,46,221,79,180,117,125,184"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a200e89c90b4de88de178bb03a13fa94d" title=" " alt="" coords="276,56,480,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,180,186,137,224,113,265,92,284,85,286,90,267,97,227,117,189,141,131,184"/>
+<area shape="rect" id="Node000004" href="$character_8c.html#a756de494fc30153923e1544645d5f2a5" title=" " alt="" coords="283,107,473,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="151,180,265,143,295,135,296,140,266,148,152,185"/>
+<area shape="rect" id="Node000005" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="538,259,763,285"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="147,207,202,227,266,244,398,262,522,269,522,274,397,267,265,249,201,232,145,212"/>
+<area shape="rect" id="Node000006" href="$object_8c.html#ad90b7e2e541b8d3c14ce2d90308b9023" title=" " alt="" coords="304,208,452,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="218,203,289,210,288,216,218,209"/>
+<area shape="rect" id="Node000007" href="$object_8c.html#acae5aeff7fda52f6bf3b706b50215399" title=" " alt="" coords="303,157,453,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="218,183,287,177,287,182,218,189"/>
+<area shape="rect" id="Node000009" href="$object_8c.html#a78dca0d7c7a63298139246387397c01c" title=" " alt="" coords="811,360,947,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="124,208,179,275,220,314,267,346,336,378,396,400,452,413,506,418,561,418,620,413,763,396,811,388,812,393,764,401,620,418,561,423,505,424,451,418,395,405,333,383,264,350,217,318,175,279,120,211"/>
+<area shape="rect" id="Node000010" href="$gameplaystatemanager_8c.html#a59021f98c2d86ab033ca832f6907d264" title="The character can be in various states to make sure there is one centralized point where those states..." alt="" coords="290,309,466,336"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="133,208,191,247,267,288,304,302,302,307,265,293,188,251,130,212"/>
+<area shape="rect" id="Node000008" href="$object_8c.html#a01e09388666a70c05cebd36f3248ae4e" title=" " alt="" coords="582,157,720,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="453,168,566,168,566,173,453,173"/>
+<area shape="poly" id="edge10_Node000010_Node000005" title=" " alt="" coords="453,306,560,286,561,291,454,311"/>
+<area shape="rect" id="Node000011" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="556,360,745,387"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="454,334,561,354,560,359,453,339"/>
+<area shape="rect" id="Node000012" href="$character_8c.html#a63553c66ba3b649f253f738c79d84546" title=" " alt="" coords="578,309,724,336"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="466,320,562,320,562,325,466,325"/>
+<area shape="poly" id="edge13_Node000012_Node000009" title=" " alt="" coords="715,334,801,353,800,359,714,339"/>
+</map>

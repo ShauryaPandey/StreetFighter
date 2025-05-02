@@ -1,0 +1,5 @@
+<map id="Player2_PunchAction_CanStart" name="Player2_PunchAction_CanStart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,152,48"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="200,13,389,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,24,184,24,184,29,152,29"/>
+</map>

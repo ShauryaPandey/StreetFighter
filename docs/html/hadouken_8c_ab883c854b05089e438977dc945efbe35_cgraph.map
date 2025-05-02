@@ -1,0 +1,11 @@
+<map id="_hadoukenProcessImpactInfo" name="_hadoukenProcessImpactInfo">
+<area shape="rect" id="Node000001" title="Where actual collision detection is processed. It is deferred so that all colliding objects can run t..." alt="" coords="5,56,200,83"/>
+<area shape="rect" id="Node000002" href="$hadouken_8c.html#a3e268f9978dc8d7b159bf0ad71dac141" title="Must make sure to delete the animation and frames within that along with the obj." alt="" coords="248,56,363,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,67,232,67,232,72,200,72"/>
+<area shape="rect" id="Node000003" href="$animation_8c.html#a05c8658b6d137faa1e3fea8afb9d4108" title="Gets called for both character freeing up storage within the animation component by frames data and a..." alt="" coords="411,5,532,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,53,410,35,412,40,353,58"/>
+<area shape="rect" id="Node000004" href="$impactinfo_8c.html#a1ecd20c21ac20adac4eec99f3fb27114" title=" " alt="" coords="412,56,531,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="363,67,397,67,397,72,363,72"/>
+<area shape="rect" id="Node000005" href="$object_8c.html#a1990d7344bbf3ef06205a6671cf38ffe" title="Deinitialize an object." alt="" coords="436,107,508,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="353,81,421,102,420,107,351,86"/>
+</map>

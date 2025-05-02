@@ -1,0 +1,23 @@
+<map id="GetCharacterDefenseComponent" name="GetCharacterDefenseComponent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1130,56,1346,83"/>
+<area shape="rect" id="Node000002" href="$crouchblockbehaviour_8c.html#a2f9b62d379fc677c0b2a44fbeb89624f" title=" " alt="" coords="875,5,1082,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1151,55,1050,35,1051,30,1152,50"/>
+<area shape="rect" id="Node000008" href="$character_8c.html#ad1231b0261d85e80fb253119d910d23b" title=" " alt="" coords="878,107,1079,133"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1152,89,1051,109,1050,103,1151,84"/>
+<area shape="rect" id="Node000010" href="$standblockbehaviour_8c.html#a4f77d5da89155f2b18be141217491936" title=" " alt="" coords="879,56,1078,83"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1115,72,1079,72,1079,67,1115,67"/>
+<area shape="rect" id="Node000003" href="$kenbehaviors_8c.html#aa7eed9873c801626159ce86ace2ee6e9" title=" " alt="" coords="639,31,827,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="860,34,828,37,827,32,859,28"/>
+<area shape="rect" id="Node000004" href="$kenbehaviors_8c.html#af30189a88c73170c7520c31cbbb11a28" title=" " alt="" coords="398,5,591,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="623,35,591,32,591,26,623,30"/>
+<area shape="rect" id="Node000005" href="$levelmgr_8c.html#a5f61ddac5c680554f5ca9ad4af57d0fe" title="Loads the level and all required objects/assets." alt="" coords="252,31,350,57"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="624,47,351,47,351,41,624,41"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="383,36,351,40,350,35,383,31"/>
+<area shape="rect" id="Node000006" href="$game_8c.html#ab30d311d5430e1450c49e0a71da13387" title="Function declarations and typedefs and extern global var declarations." alt="" coords="126,31,204,57"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="236,47,204,47,204,41,236,41"/>
+<area shape="rect" id="Node000007" href="$game_8c.html#a661c2abc03926acfaeb93b4ae7db4943" title="Program Entry Point (WinMain). Part of the base game framework." alt="" coords="5,31,78,57"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="110,47,78,47,78,41,110,41"/>
+<area shape="rect" id="Node000009" href="$character_8c.html#ae8f1d16c98b29d4099772f720be245bb" title=" " alt="" coords="643,107,823,133"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="863,123,823,123,823,117,863,117"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="863,60,827,56,828,51,864,55"/>
+</map>

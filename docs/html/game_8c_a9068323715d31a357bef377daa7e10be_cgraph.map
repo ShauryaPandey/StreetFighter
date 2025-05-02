@@ -1,0 +1,24 @@
+<map id="GameSpawnHadouken" name="GameSpawnHadouken">
+<area shape="rect" id="Node000001" title="This callback should be with the character object which it will use to spawn hadouken in the correpso..." alt="" coords="5,132,161,159"/>
+<area shape="rect" id="Node000002" href="$levelmgr_8c.html#acbae5b164c935cc3a4274be9425eb8e2" title="Character holds reference to this as func pointer, they create a new hadouken in their hadouken behav..." alt="" coords="224,81,380,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,129,226,109,227,115,145,134"/>
+<area shape="rect" id="Node000010" href="$game_8c.html#a9d74559837091f846f77008e08ccd0c5" title="This should not free any memory. This callback should be with the hadouken object." alt="" coords="209,132,396,159"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="161,143,193,143,193,148,161,148"/>
+<area shape="rect" id="Node000011" href="$levelmgr_8c.html#ad75917135ca2f2a7fbbb4987a8cedac3" title=" " alt="" coords="484,183,630,209"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="145,157,209,168,346,182,470,190,469,195,346,188,208,173,144,162"/>
+<area shape="rect" id="Node000003" href="$hadouken_8c.html#a6db5aa50377283bac2b07269700bb772" title=" " alt="" coords="444,31,670,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,78,471,58,472,64,374,83"/>
+<area shape="rect" id="Node000004" href="$hadouken_8c.html#ab8b1865d7e82def2a232ebb75219f61c" title=" " alt="" coords="505,81,609,108"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="381,92,489,92,489,97,381,97"/>
+<area shape="rect" id="Node000008" href="$animation_8c.html#a92129c339099d0f88b8189299adaee35" title="Initializes hadouken&#39;s animations." alt="" coords="476,132,639,159"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="374,106,472,126,471,131,373,111"/>
+<area shape="rect" id="Node000005" href="$hadouken_8c.html#a4786a49394d5be47f5bf9ae8579c2b6b" title="Initialize the animation component of the hadouken when it is initialized." alt="" coords="718,5,942,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="609,83,669,67,693,54,717,42,740,34,742,39,719,46,696,59,671,72,611,89"/>
+<area shape="rect" id="Node000006" href="$impactinfo_8c.html#a54c9eef49b7f7f5b67e18b0d35bd2ebc" title="Initializes the impact info component. On all characters." alt="" coords="779,56,881,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="610,87,764,73,764,78,610,92"/>
+<area shape="rect" id="Node000007" href="$object_8c.html#af67e10c57aec1b3d4efc70f40af0a0b3" title="Initialize an object. Intended to be called from subclass constructors." alt="" coords="802,107,858,133"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="610,97,787,113,786,119,610,102"/>
+<area shape="rect" id="Node000009" href="$hadouken_8c.html#a56d0bce225c2e7e4aa06201a2845f4b2" title="Initialize animation for moving animations." alt="" coords="741,157,919,184"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="639,150,726,158,725,164,639,156"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="374,157,472,176,471,182,373,162"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="TryChangeGameplayState" name="TryChangeGameplayState">
+<area shape="rect" id="Node000001" title="The character can be in various states to make sure there is one centralized point where those states..." alt="" coords="5,56,181,83"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="229,5,454,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,53,257,33,258,38,163,58"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="247,56,436,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,67,231,67,231,72,181,72"/>
+<area shape="rect" id="Node000004" href="$character_8c.html#a63553c66ba3b649f253f738c79d84546" title=" " alt="" coords="268,107,414,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,81,258,100,257,106,162,86"/>
+<area shape="rect" id="Node000005" href="$object_8c.html#a78dca0d7c7a63298139246387397c01c" title=" " alt="" coords="502,107,637,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="415,117,486,117,486,123,415,123"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="shapeDrawLine" name="shapeDrawLine">
+<area shape="rect" id="Node000001" title="Draws a line to the screen with the given properties." alt="" coords="137,5,248,32"/>
+<area shape="rect" id="Node000002" href="$field_8c.html#a00d21726956b9ed7936ca23782ba80a3" title="Draw the field border." alt="" coords="5,5,89,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,21,89,21,89,16,121,16"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="StandHurt_OnStart" name="StandHurt_OnStart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,138,83"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a756de494fc30153923e1544645d5f2a5" title=" " alt="" coords="203,5,394,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,53,220,33,221,39,135,58"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="186,56,411,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,67,170,67,170,72,138,72"/>
+<area shape="rect" id="Node000004" href="$character_8c.html#aea7c43e40d189355d1675eb0fc4fe2d1" title=" " alt="" coords="221,107,376,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="135,81,221,100,220,105,134,86"/>
+</map>

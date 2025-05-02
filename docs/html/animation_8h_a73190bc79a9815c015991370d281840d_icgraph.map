@@ -1,0 +1,31 @@
+<map id="SetDirection" name="SetDirection">
+<area shape="rect" id="Node000001" title="The animation itself has direction like going right or left use this function to set that." alt="" coords="1131,164,1225,191"/>
+<area shape="rect" id="Node000002" href="$basichurtbehaviour_8c.html#a61afe8bf58d55256ab81b408ff43feb4" title="Just play animation uniformly i.e divide action duration by number of frames and give that time to ea..." alt="" coords="898,5,1060,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1162,151,1131,97,1108,69,1082,46,1059,35,1062,30,1085,42,1112,66,1135,94,1167,148"/>
+<area shape="rect" id="Node000008" href="$directionaljumpbehaviour_8c.html#a0dd6d7a1980925b5a057ee7c52d2d8bb" title=" " alt="" coords="889,56,1069,99"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1147,156,1117,134,1082,113,1056,102,1058,97,1085,108,1120,129,1150,152"/>
+<area shape="rect" id="Node000009" href="$directionaljumpkickbehaviour_8c.html#aca1dcf2a46d008dcd1d42d69dbe6efba" title=" " alt="" coords="908,123,1050,165"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="1116,170,1050,159,1051,153,1117,164"/>
+<area shape="rect" id="Node000010" href="$directionaljumppunchbehaviour_8c.html#a1f82f77c2abf2bad0ca95fa2f1484e3d" title=" " alt="" coords="903,189,1055,232"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="1116,190,1056,201,1055,195,1116,185"/>
+<area shape="rect" id="Node000011" href="$hadoukenbehaviour_8c.html#a154aabada59c2d1268438999653ff8c3" title=" " alt="" coords="878,256,1080,283"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="1151,203,1120,226,1084,246,1053,258,1051,253,1082,242,1117,221,1148,199"/>
+<area shape="rect" id="Node000012" href="$walkbehaviour_8c.html#abfaeee672f295ac36b986991420b24d1" title=" " alt="" coords="875,307,1083,333"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="1165,206,1132,253,1110,277,1085,297,1061,308,1059,304,1082,292,1107,273,1128,249,1160,203"/>
+<area shape="rect" id="Node000003" href="$kenbehaviors_8c.html#aa7eed9873c801626159ce86ace2ee6e9" title=" " alt="" coords="639,164,827,191"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="889,40,876,46,835,74,798,107,747,165,743,162,794,104,832,70,874,42,887,35"/>
+<area shape="rect" id="Node000004" href="$kenbehaviors_8c.html#af30189a88c73170c7520c31cbbb11a28" title=" " alt="" coords="398,139,591,165"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="623,168,591,165,591,160,623,163"/>
+<area shape="rect" id="Node000005" href="$levelmgr_8c.html#a5f61ddac5c680554f5ca9ad4af57d0fe" title="Loads the level and all required objects/assets." alt="" coords="252,164,350,191"/>
+<area shape="poly" id="edge7_Node000003_Node000005" title=" " alt="" coords="624,180,351,180,351,175,624,175"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="383,169,351,174,350,168,383,164"/>
+<area shape="rect" id="Node000006" href="$game_8c.html#ab30d311d5430e1450c49e0a71da13387" title="Function declarations and typedefs and extern global var declarations." alt="" coords="126,164,204,191"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="236,180,204,180,204,175,236,175"/>
+<area shape="rect" id="Node000007" href="$game_8c.html#a661c2abc03926acfaeb93b4ae7db4943" title="Program Entry Point (WinMain). Part of the base game framework." alt="" coords="5,164,78,191"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="110,180,78,180,78,175,110,175"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="893,107,876,113,762,166,760,161,874,108,891,102"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="893,158,828,167,827,162,893,153"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="888,201,827,193,828,187,888,196"/>
+<area shape="poly" id="edge15_Node000011_Node000003" title=" " alt="" coords="897,254,874,247,811,220,758,194,761,189,813,215,876,241,899,249"/>
+<area shape="poly" id="edge17_Node000012_Node000003" title=" " alt="" coords="888,304,874,297,834,273,797,244,745,193,749,189,801,240,837,268,876,292,891,299"/>
+</map>

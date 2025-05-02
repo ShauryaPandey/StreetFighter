@@ -1,0 +1,7 @@
+<map id="Crouch_CanStart" name="Crouch_CanStart">
+<area shape="rect" id="Node000001" title="Crouching basic behaviour. The character plays the crouch animation and its size also reduces accordi..." alt="" coords="5,31,128,57"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="176,5,401,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,34,160,31,160,36,129,40"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a442b735141d6315291d3e71ac19807ff" title=" " alt="" coords="194,56,383,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,48,178,54,178,59,128,54"/>
+</map>

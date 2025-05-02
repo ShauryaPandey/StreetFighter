@@ -1,0 +1,11 @@
+<map id="_ballDoCollisions" name="_ballDoCollisions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,128,57"/>
+<area shape="rect" id="Node000002" href="$ball_8c.html#adbc02f72caa0f3a8edcc8cb7d3150b59" title=" " alt="" coords="176,31,292,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,41,160,41,160,47,128,47"/>
+<area shape="rect" id="Node000003" href="$ball_8c.html#a876408006bf6be2913a2d1a6d1324a1a" title="Sets the color of the ball to a random RGB." alt="" coords="340,5,488,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="292,33,324,29,325,34,293,38"/>
+<area shape="rect" id="Node000005" href="$ball_8c.html#a98e76aa61ca5c824a4f00af99fd8983b" title="Triggers the callback, if one is registered." alt="" coords="340,56,488,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="293,50,325,54,325,59,292,55"/>
+<area shape="rect" id="Node000004" href="$random_8c.html#a7e26156708e5570097073702725db637" title="Return a random 32&#45;bit value in the specified range." alt="" coords="536,5,619,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="489,16,521,16,521,21,489,21"/>
+</map>

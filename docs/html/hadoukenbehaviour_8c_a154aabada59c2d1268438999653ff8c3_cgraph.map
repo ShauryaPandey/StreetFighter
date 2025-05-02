@@ -1,0 +1,15 @@
+<map id="Hadouken_AnimationController" name="Hadouken_AnimationController">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,207,133"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a5face3645f4816839bd787f4e396b975" title=" " alt="" coords="255,5,480,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,104,184,73,254,42,277,34,279,39,256,46,187,77,131,108"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a756de494fc30153923e1544645d5f2a5" title=" " alt="" coords="272,56,462,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,103,280,84,281,89,179,109"/>
+<area shape="rect" id="Node000004" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="255,107,480,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,117,239,117,239,123,207,123"/>
+<area shape="rect" id="Node000005" href="$animation_8c.html#ab438ee95cd9be14b8d50d1590746ca58" title="This function gives equal frame time to each of the frames by dividing the total duration by number o..." alt="" coords="273,157,462,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="179,131,281,151,280,156,178,137"/>
+<area shape="rect" id="Node000007" href="$animation_8c.html#a73190bc79a9815c015991370d281840d" title="The animation itself has direction like going right or left use this function to set that." alt="" coords="321,208,414,235"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="131,132,187,163,256,193,306,208,305,213,254,199,184,167,129,136"/>
+<area shape="rect" id="Node000006" href="$animation_8c.html#a83f91bab556734f8162fb1622c24cd03" title="If user of this function wants every frame to have equal time then use this." alt="" coords="528,157,746,184"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="462,168,512,168,512,173,462,173"/>
+</map>

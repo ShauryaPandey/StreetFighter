@@ -1,0 +1,11 @@
+<map id="IdleAction_AnimationController" name="IdleAction_AnimationController">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,206,83"/>
+<area shape="rect" id="Node000002" href="$character_8c.html#a5face3645f4816839bd787f4e396b975" title=" " alt="" coords="254,5,478,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,53,279,33,280,38,179,58"/>
+<area shape="rect" id="Node000003" href="$character_8c.html#a5ebc6906e36acf7e8a3f4d7fc4333e6b" title=" " alt="" coords="254,56,479,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,67,238,67,238,72,206,72"/>
+<area shape="rect" id="Node000004" href="$animation_8c.html#ab438ee95cd9be14b8d50d1590746ca58" title="This function gives equal frame time to each of the frames by dividing the total duration by number o..." alt="" coords="272,107,460,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,81,280,101,279,106,178,86"/>
+<area shape="rect" id="Node000005" href="$animation_8c.html#a83f91bab556734f8162fb1622c24cd03" title="If user of this function wants every frame to have equal time then use this." alt="" coords="527,107,745,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="461,117,511,117,511,123,461,123"/>
+</map>

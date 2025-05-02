@@ -1,0 +1,5 @@
+<map id="randGetFloat" name="randGetFloat">
+<area shape="rect" id="Node000001" title="Return a random floating point value in the specified range." alt="" coords="122,5,218,32"/>
+<area shape="rect" id="Node000002" href="$ball_8c.html#ac08f61c99dc9b4b993b5295116891caf" title="Instantiate and initialize a ball object." alt="" coords="5,5,74,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,21,74,21,74,16,106,16"/>
+</map>

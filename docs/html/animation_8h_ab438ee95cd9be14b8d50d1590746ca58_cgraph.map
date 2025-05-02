@@ -1,0 +1,5 @@
+<map id="Ken_PlayAnimation_Uniform" name="Ken_PlayAnimation_Uniform">
+<area shape="rect" id="Node000001" title="This function gives equal frame time to each of the frames by dividing the total duration by number o..." alt="" coords="5,5,194,32"/>
+<area shape="rect" id="Node000002" href="$animation_8c.html#a83f91bab556734f8162fb1622c24cd03" title="If user of this function wants every frame to have equal time then use this." alt="" coords="242,5,460,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,16,226,16,226,21,194,21"/>
+</map>

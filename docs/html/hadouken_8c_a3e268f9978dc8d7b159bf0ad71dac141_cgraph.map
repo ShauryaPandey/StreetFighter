@@ -1,0 +1,9 @@
+<map id="hadoukenDelete" name="hadoukenDelete">
+<area shape="rect" id="Node000001" title="Must make sure to delete the animation and frames within that along with the obj." alt="" coords="5,56,121,83"/>
+<area shape="rect" id="Node000002" href="$animation_8c.html#a05c8658b6d137faa1e3fea8afb9d4108" title="Gets called for both character freeing up storage within the animation component by frames data and a..." alt="" coords="169,5,290,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,53,168,35,169,40,110,58"/>
+<area shape="rect" id="Node000003" href="$impactinfo_8c.html#a1ecd20c21ac20adac4eec99f3fb27114" title=" " alt="" coords="170,56,288,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,67,155,67,155,72,121,72"/>
+<area shape="rect" id="Node000004" href="$object_8c.html#a1990d7344bbf3ef06205a6671cf38ffe" title="Deinitialize an object." alt="" coords="193,107,266,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="110,81,179,102,178,107,109,86"/>
+</map>
