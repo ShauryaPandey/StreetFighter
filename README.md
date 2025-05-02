@@ -23,8 +23,8 @@ This structure made it really conducive to extend and plug in new behaviors.
 I wanted every object to be capable of collision, but C doesn’t give you inheritance or polymorphism. So I built:
 - A `Collider` struct
 - A `ColliderVTable` with function pointers:
-- `OnCollisionEnter`
-- `ProcessImpact`    
+    - `OnCollisionEnter`
+    - `ProcessImpact`    
 I realized during the development that I needed to defer the actual processing of impact, since any state change in one would affect how the second collider reacts.
 `OnCollisionEnter` only records intent, and `ProcessImpact` applies it later. This avoids messing with state mid-frame.    
 ### Collision Use Cases
@@ -50,7 +50,7 @@ Since C does not have classes like C++,I mimicked polymorphism using:
 - VTable structs
 - Function pointers in each object's VTable.
 - Each subclass (Hadouken, Character) implements its behavior through the vtable.
-```
+```c
 typedef struct object_vtable_t {
     ObjDrawFunc     draw;
     ObjUpdateFunc   update;
